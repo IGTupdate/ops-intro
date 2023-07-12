@@ -1,0 +1,408 @@
+#appointment {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/abstract.jpg);
+    background-size: cover;
+
+    @include devices(sm) {
+        height: unset;
+    }
+
+    .services-template {
+        .services-left_block {
+            @include devices(lg) {
+                width: 7.5%;
+            }
+
+            @include devices(md) {
+                width: 9%;
+            }
+
+            @include devices(sm) {
+                width: 10%;
+            }
+
+            @include devices(xs) {
+                width: 12%;
+            }
+
+            .services-left_block-logo {
+                img {
+                    max-width: 190px;
+                    margin-top: 50px;
+                    margin-left: 84px;
+
+                    @include devices(xl) {
+                        max-width: 140px;
+                        margin-top: 35px;
+                        margin-left: 64px;
+                    }
+
+                    @include devices(lg) {
+                        max-width: 120px;
+                        margin-top: 30px;
+                        margin-left: 50px;
+                    }
+
+                    @include devices(md) {
+                        max-width: 150px;
+                        margin-top: 50px;
+                        margin-left: 35px;
+                    }
+
+                    @include devices(xs) {
+                        max-width: 100px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .studiesDetails-left_menu {
+                .menu_btn {
+                    top: 44%;
+                    left: 45px;
+
+                    @include devices(xl) {
+                        left: 30px;
+                    }
+
+                    @include devices(lg) {
+                        left: 18px;
+                    }
+
+                    @include devices(sm) {
+                        left: 16px;
+                    }
+
+                    @include devices(xs) {
+                        left: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .appointment-right-block {
+        position: relative;
+        width: 92.5%;
+        height: 100%;
+        margin-left: auto;
+        // background-color: #2a2a2a;
+        display: grid;
+        align-items: center;
+
+        @include devices(md) {
+            width: 91%;
+        }
+
+        @include devices(sm) {
+            display: block;
+            width: 90%;
+        }
+
+        @include devices(xs) {
+            width: 88%;
+        }
+
+        .appointment_head_btn {
+            position: absolute;
+            top: 50px;
+            right: 70px;
+            z-index: 2;
+
+            @include devices(lg) {
+                top: 35px;
+                right: 20px;
+            }
+
+            @include devices(md) {
+                top: 55px;
+                right: 30px;
+            }
+
+            @include devices(xs) {
+                right: 20px;
+            }
+        }
+
+        .appointment_content {
+            margin-top: 3rem;
+
+            @include devices(md) {
+                margin-top: 0;
+                padding-top: 6rem;
+            }
+
+            @include devices(sm) {
+                padding-top: 20rem;
+                padding-bottom: 15rem;
+            }
+
+            @include devices(xs) {
+                padding-top: 12rem;
+                padding-bottom: 10rem;
+            }
+
+            .appointment_row {
+                color: #fff;
+
+                @include devices(lg) {
+                    padding-left: 1rem;
+                }
+
+                @include devices(md) {
+                    padding-left: 0;
+                }
+
+                h2 {
+                    font-style: oblique 14deg;
+                    font-size: 2.3rem;
+                    font-family: $fonts-noto;
+                    font-weight: bold;
+
+                    @include devices(xl) {
+                        font-size: 1.8rem;
+                    }
+
+                    @include devices(lg) {
+                        font-size: 1.6rem;
+                    }
+
+                    @include devices(md) {
+                        font-size: 2rem;
+                    }
+
+                    @include devices(sm) {
+                        font-size: 1.8rem;
+                    }
+
+                    @include devices(xs) {
+                        font-size: 1.3rem;
+                    }
+
+                    br {
+                        @include devices(md) {
+                            display: none;
+                        }
+                    }
+                }
+
+                ul {
+                    @include margin-y(3rem, 3rem);
+
+                    @include devices(xl) {
+                        @include margin-y(2rem, 2.2rem);
+                    }
+
+                    @include devices(lg) {
+                        @include margin-y(1.6rem, 2rem);
+                    }
+
+                    @include devices(md) {
+                        @include margin-y(2.2rem, 2.4rem);
+                    }
+
+                    @include devices(xs) {
+                        margin-top: 1.5rem;
+                    }
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.3rem;
+
+                        div {
+                            &:first-child {
+
+                                @include devices(sm) {
+                                    width: 5%;
+                                }
+
+                                img {
+                                    width: 22px;
+                                    vertical-align: unset;
+
+                                    @include devices(xl) {
+                                        width: 16px;
+                                    }
+
+                                    @include devices(lg) {
+                                        width: 14px;
+                                    }
+
+                                    @include devices(md) {
+                                        width: 18px;
+                                    }
+
+                                    @include devices(xs) {
+                                        width: 14px;
+                                    }
+                                }
+                            }
+
+                            &:last-child {
+
+                                @include devices(sm) {
+                                    width: 95%;
+                                }
+
+                                span {
+                                    font-size: 1.4rem;
+
+                                    @include devices(xl) {
+                                        font-size: 1.09rem;
+                                    }
+
+                                    @include devices(lg) {
+                                        font-size: 1rem;
+                                    }
+
+                                    @include devices(md) {
+                                        font-size: 1.4rem;
+                                    }
+
+                                    @include devices(xs) {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .appt_btn {
+                    position: relative;
+                    display: inline-block;
+
+                    &::after {
+                        @include pseudo("", -280px, auto, 500px, 500px);
+                        right: -400px;
+                        background-image: url(../images/appt-plane.svg);
+                        background-repeat: no-repeat;
+                        z-index: 1;
+
+                        @include devices(xl) {
+                            @include dimension(320px, 320px);
+                            top: -180px;
+                            right: -270px;
+                        }
+
+                        @include devices(lg) {
+                            @include dimension(280px, 280px);
+                            top: -160px;
+                            right: -250px;
+                        }
+
+                        @include devices(md) {
+                            @include dimension(200px, 200px);
+                            top: -100px;
+                            right: -160px;
+                        }
+
+                        @include devices(sm) {
+                            display: none;
+                        }
+                    }
+
+                    .btn {
+                        position: relative;
+                        z-index: 2;
+                        background-color: #feeacf;
+                        color: #000;
+                        font-size: 2rem;
+                        font-weight: 800;
+                        font-style: oblique 14deg;
+                        @include padding-x(22px, 22px);
+
+                        @include devices(xl) {
+                            font-size: 1.4rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 1.2rem;
+                        }
+
+                        @include devices(md) {
+                            font-size: 1.5rem;
+                        }
+
+                        span {
+                            &:nth-child(1) {
+                                color: #ce036b;
+                            }
+
+                            &:nth-child(2) {
+                                color: #a89dbf;
+                            }
+
+                            &:nth-child(3) {
+                                color: #c6818b;
+                            }
+
+                            &:nth-child(4) {
+                                color: #b183ba;
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 2.2rem;
+
+                    @include devices(xl) {
+                        font-size: 0.8rem;
+                    }
+
+                    @include devices(lg) {
+                        margin-top: 1.5rem;
+                    }
+
+                    @include devices(md) {
+                        font-size: 1rem;
+                        margin-top: 2.2rem;
+                    }
+
+                    br {
+                        @include devices(sm) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .bg-img {
+
+                @include devices(xs) {
+                    display: none;
+                }
+
+                img {
+                    position: absolute;
+                    pointer-events: none;
+                    width: 600px;
+                    top: -200px;
+                    right: -190px;
+                    z-index: 1;
+
+                    @include devices(xl) {
+                        width: 500px;
+                        top: -170px;
+                        right: -150px;
+                    }
+
+                    @include devices(lg) {
+                        width: 420px;
+                    }
+
+                    @include devices(md) {
+                        width: 500px;
+                    }
+
+                }
+
+            }
+        }
+    }
+}

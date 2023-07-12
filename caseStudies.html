@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/plane.png" type="image/icon" />
+
+  <!-- Swiper-slider CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <title>OPSINTRO</title>
+</head>
+
+<body>
+
+  <div>
+    <div class="services-template">
+      <!-- -------- left block ------- -->
+      <div class="services-left_block" id="left-block">
+        <div class="services-left_block-logo"><a href="/"><img src="images/logo.png"></a></div>
+        <div class="studiesDetails-left_menu">
+          <div class="menu_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000" stroke-width=".6"
+              fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+              <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                <animate dur="0.2s" attributeName="d"
+                  values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                  begin="start.begin" />
+                <animate dur="0.2s" attributeName="d"
+                  values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                  begin="reverse.begin" />
+              </path>
+              <rect width="10" height="10" stroke="none">
+                <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+              </rect>
+              <rect width="10" height="10" stroke="none">
+                <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+              </rect>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Menubar -->
+        <div id="menubar">
+          <div class="row menu_content">
+            <div class="col-2 col-lg-1 menu_left_col">
+              <div class="social_links">
+                <a href="#">
+                  <img src="./images/linkedin.svg" alt="">
+                </a>
+                <a href="mailto:contact@opslabel.com">
+                  <img src="./images/mail.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="./images/instagram.svg" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-10 col-lg-6 menu_mid_col">
+              <div>
+                <nav>
+                  <a href="/">About</a>
+                  <a href="services.html">Services</a>
+                  <a href="caseStudies.html">Case Studies</a>
+                  <a href="whyOpslabel.html">Why Opslabel</a>
+                  <a href="contact.html">Contact</a>
+                </nav>
+
+                <div class="menu_btns_group">
+                  <a class="btn green-btn" href="https://calendly.com/bookedcall/opslabelsintro">Book a Free
+                    Demo</a>
+                  <a class="btn perple-btn claim-btn" href="appointment.html">Claim your 1 free
+                    appt offer!</a>
+                </div>
+              </div>
+
+              <div class="logo-img">
+                <a href="/">
+                  <img src="./images/logo.png" alt="">
+                </a>
+              </div>
+
+              <div class="arrowfly-img">
+                <img src="./images/arrow-fly.png" alt="">
+              </div>
+            </div>
+
+            <div class="col-lg-5 ps-0 menu_right_col">
+              <div>
+                <img src="./images/menubar/menu-img.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------ left section ------ -->
+        <div class="services-left_social_media">
+          <div class="social_links">
+            <a href="#">
+              <img src="./images/linkedin.svg" alt="">
+            </a>
+            <a href="mailto:contact@opslabel.com">
+              <img src="./images/mail.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./images/instagram.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------- right block ------- -->
+      <div class="services-main" id="right">
+        <div class="feature-right_block">
+          <div class="case_studies" data-aos="fade-up" data-aos-duration="2000">
+            <div class="case_studies_heading">
+              Featured Case Studies
+            </div>
+
+            <div class="case_studies_paragraph">
+              <p>Startups, Business Professionals as well as Leading Companies have worked with the OpsIntro team in
+                order to generate new opportunities, scale their revenue and produce results by connecting with our
+                network.</p>
+              <p>Gain access to over 300+ experts and join tons of people benefiting from generating new opportunities
+                through the direct and expert contacts we’ve guaranteed them.</p>
+            </div>
+
+            <!-- button elements in grid form -->
+            <div class="case_studies_btn_grid">
+              <div class="btn green-btn">
+                <a href="https://calendly.com/bookedcall/opslabelsintro">Join the network</a>
+              </div>
+              <div class="btn perple-btn"><a href='appointment.html'>Find an industry contact</a>
+                <div class="star_bg_img"></div>
+              </div>
+            </div>
+          </div>
+          <!---------- image grid --------->
+          <div class="image_grid" data-aos="fade-up" data-aos-duration="7000">
+            <div class="image" id="img" onclick="showPopUp(0)">
+              <img src="../images/person.svg" alt="case_studies" />
+              <div class="show_on_hover">
+                <div class="hide">
+                  <h3>Perform With Pleasure</h3>
+                  <p>Appointment Setter Starter</p>
+                </div>
+              </div>
+            </div>
+            <div class="image" id="img1" onclick="showPopUp(1)">
+              <img src="../images/costudio.svg" alt="case_studies" />
+              <div class="show_on_hover">
+                <div class="hide">
+                  <h3>Keli</h3>
+                  <p>SALE Accelerator & Closer</p>
+                </div>
+              </div>
+            </div>
+            <div class="image" id="img2" onclick="showPopUp(2)">
+              <img src="../images/whitney.svg" alt="case_studies" />
+              <div class="show_on_hover">
+                <div class="hide">
+                  <h3>Whitney</h3>
+                  <p>SALE Accelerator & Closers</p>
+                </div>
+              </div>
+            </div>
+            <div class="image" id="img3" onclick="showPopUp(3)">
+              <img src="../images/deloitte.svg" alt="case_studies" />
+              <div class="show_on_hover">
+                <div class="hide">
+                  <h3>Deloitte</h3>
+                  <p>Appointment Setting Premium</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brands-section -->
+    <section class="section3-logo" id="brands">
+      <div class="container-fluid px-4">
+        <div class="row text-center text-md-start gap-4 gap-md-0">
+          <div class="col-md-3">
+            <h2 class="word-spae-para">Trusted by leading<br> Brands and Startups</h2>
+          </div>
+
+          <div class="col-md-9">
+            <div class="swiper brands-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/brands/brands1.png">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./images/brands/brands2.png">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./images/brands/brands3.png">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./images/brands/brands4.png">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./images/brands/brands5.png">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./images/brands/brands6.png">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./images/brands/brands7.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ------ Gallery Slider ------ -->
+  <div id="modals">
+    <div class="swiper caseSwiper">
+      <div class="swiper-wrapper">
+        <!-- ------- first slide ------ -->
+        <div class="swiper-slide">
+          <div class="caseStudies-details">
+            <div class="caseStudies-details-header"><button type="button" data-bs-dismiss="modal" id="btn-close"
+                onclick="hidePopUp()">
+                <div></div>
+                <div></div>
+              </button></div>
+
+            <div class="caseStudies-client-details">
+              <div class="client-details-img">
+                <div class="client-details">
+                  <div style="background-color:#fbeca6">
+                    <p>RECCOMMEND</p>
+                    <p>4/5</p>
+                  </div>
+                  <div style="background-color:#fcc980">
+                    <p>NEW LEADS</p>
+                    <p>25</p>
+                  </div>
+                </div>
+                <div class="image-section-1">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="client-details flex-end">
+                  <div style="background-color:#f5f4f4">
+                    <p>CUSTOMER SUPPORT</p>
+                    <p>4/5</p>
+                  </div>
+                  <div style="background-color:#9bcd98">
+                    <p>QUALITY OF SERVICE</p>
+                    <p>4/5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="caseStudies-business">Business Type: Coaching</div>
+
+            <div class="caseStudies-footer">
+              <div class="plane-bg"></div>
+              <div class="footer-div">
+                <h1>Client: Perform With Pleasure</h1>
+                <h3>Opslabel Service: Appointment Setter Starter</h3>
+                <p>In just two months of working with opslabel team, we were able to book consistently on average 4-5
+                  meetings per week with their ideal clients. So they could work on building relationships with those
+                  clients and closing the deal. We also booked an appointment for them with the VP of Coca Cola.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--  -------- second slide --------  -->
+        <div class="swiper-slide">
+          <div class="caseStudies-details">
+            <div class="caseStudies-details-header"><button type="button" data-bs-dismiss="modal" id="btn-close-2"
+                onclick="hidePopUp()">
+                <div></div>
+                <div></div>
+              </button></div>
+            <div class="caseStudies-client-details">
+              <div class="client-details-img">
+                <div class="client-details">
+                  <div style="background-color:#fbeca6">
+                    <p>ROI</p>
+                    <p>4614%</p>
+                  </div>
+                  <div style="background-color:#fcc980">
+                    <p>NEW INCOME</p>
+                    <p>£106,558</p>
+                  </div>
+                </div>
+                <div class="image-section-3">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="client-details flex-end">
+                  <div style="background-color:#f5f4f4">
+                    <p>CUSTOMER SUPPORT</p>
+                    <p>19</p>
+                  </div>
+                  <div style="background-color:#9bcd98">
+                    <p>NEW LEADS</p>
+                    <p>18</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caseStudies-business">Business Type: Marketing</div>
+            <div class="caseStudies-footer">
+              <div class="plane-bg"></div>
+              <div class="footer-div">
+                <h1>Client: Keli</h1>
+                <h3>Opslabel Service: SALE Accelerator & Closers</h3>
+                <p>- Started as a closer sales client with a £8K/month sales good.</p>
+                <p>- Just 1 month of sales consulting yielded her 1st £10K/month! New leads flooded her DM's, current
+                  leads warmed themselves via our authentic sales Strategy and alas marketing sales was efficient, and
+                  (dare I say) ...fun!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -------- third slide --------  -->
+        <div class="swiper-slide">
+          <div class="caseStudies-details">
+            <div class="caseStudies-details-header"><button type="button" id="btn-close-1" data-bs-dismiss="modal"
+                onclick="hidePopUp()" aria-label="Close">
+                <div></div>
+                <div></div>
+              </button></div>
+            <div class="caseStudies-client-details">
+              <div class="client-details-img">
+                <div class="client-details">
+                  <div style="background-color:#fbeca6">
+                    <p>RECCOMMEND</p>
+                    <p>4/5</p>
+                  </div>
+                  <div style="background-color:#fcc980">
+                    <p>ROI</p>
+                    <p>205%</p>
+                  </div>
+                </div>
+                <div class="image-section">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="client-details flex-end">
+                  <div style="background-color:#f5f4f4">
+                    <p>CUSTOMER SUPPORT</p>
+                    <p>5/5</p>
+                  </div>
+                  <div style="background-color:#9bcd98">
+                    <p>QUALITY OF SERVICE</p>
+                    <p>4/5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caseStudies-business">Business Type: Copywriting</div>
+            <div class="caseStudies-footer">
+              <div class="plane-bg"></div>
+              <div class="footer-div">
+                <h1>Client: Whitney</h1>
+                <h3>Opslabel Service: SALE Accelerator & Closers</h3>
+                <p>Opslabel Team took Whitney FROM £5K MONTHS TO £15K MONTHS IN JUST 2 WEEKS!</p>
+                <p>"You showed me that getting to £12-16K months for me is really just a math equation. Now that you
+                  taught me your system to create sales on autopilot... it's not as incredibly hard as I thought- it's
+                  just a process! I can't wait to create my options for the future!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -------- fourth slide --------  -->
+        <div class="swiper-slide">
+          <div class="caseStudies-details">
+            <div class="caseStudies-details-header"><button type="button" data-bs-dismiss="modal" id="btn-close-2"
+                onclick="hidePopUp()">
+                <div></div>
+                <div></div>
+              </button></div>
+            <div class="caseStudies-client-details">
+              <div class="client-details-img">
+                <div class="client-details">
+                  <div style="background-color:#fbeca6">
+                    <p>RECCOMMEND</p>
+                    <p>4/5</p>
+                  </div>
+                  <div style="background-color:#fcc980">
+                    <p>EMPLOYEE COUNT</p>
+                    <p>300,000+</p>
+                  </div>
+                </div>
+                <div class="image-section-2">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="client-details flex-end">
+                  <div style="background-color:#f5f4f4">
+                    <p>CUSTOMER SUPPORT</p>
+                    <p>5/5</p>
+                  </div>
+                  <div style="background-color:#9bcd98">
+                    <p>QUALITY OF SERVICE</p>
+                    <p>4/5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caseStudies-business">Business Type: Finance</div>
+            <div class="caseStudies-footer">
+              <div class="plane-bg"></div>
+              <div class="footer-div">
+                <h1>Client: Deloitte</h1>
+                <h3>Opslabel Service: Appointment Setting Premium</h3>
+                <p>- We provided our sales engagement software and support in training their BDRs effectively.</p>
+                <p>- Within just 14 days, they were noticing a consistent increase in booked appoinments in their
+                  calender and were targeting new untouched markets via Linkedln and Email securing high value meetings
+                  with interested leads on auto-pilot.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- left & right buttons -->
+        <div class="swiper-button-prev clr"></div>
+        <div class="swiper-button-next clr"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper-slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+
+  <!-- -- aos -- -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <script>
+
+  </script>
+
+  <script src="./js/service.js"></script>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

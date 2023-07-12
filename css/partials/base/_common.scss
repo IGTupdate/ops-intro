@@ -1,0 +1,285 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (min-width: 1600px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1480px;
+    }
+}
+
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+
+.bg-purple-light {
+    background-color: $purple_light;
+}
+
+.bg-sky-light {
+    background-color: $sky_light;
+}
+
+.bg-orange-light {
+    background-color: $orange_light;
+}
+
+.bg-peach-light {
+    background-color: $peach_light;
+}
+
+.chip {
+    border: 4px solid $black;
+    border-radius: 20px;
+    padding: 10px 2px;
+    box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
+    text-align: center;
+    color: #000;
+}
+
+.btn {
+    // border: 4px solid $black;
+    border-radius: 8px;
+    padding: 6px 55px;
+    // box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
+    // filter: drop-shadow(6px 8px 11px rgba(0, 0, 0, 0.5));
+
+    &.green-btn {
+        background: $green;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1rem;
+        position: relative;
+
+        @include devices(xl) {
+            font-size: 0.8rem;
+            @include padding-x(50px, 50px);
+        }
+
+        @include devices(lg) {
+            @include padding-x(40px, 40px);
+        }
+
+        @include devices(md) {
+            font-size: 1rem;
+            @include padding-x(50px, 50px);
+        }
+
+        @include devices(xs) {
+            font-size: 0.9rem;
+            @include padding-x(30px, 30px);
+        }
+
+
+        &::after {
+            @include pseudo($content: "", $top: -15px, $left: auto, $width: 50px, $height: 25px);
+            background-image: url(../images/plane.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @include devices(xl) {
+                width: 30px;
+            }
+        }
+    }
+
+    &.sky-btn {
+        background: $sky;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    &.sky-btn-light {
+        background-color: $sky_light;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    &.orange-btn-light {
+        background-color: $orange_light;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    &.orange-btn {
+        background: $orange;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    &.perple-btn {
+        background: $purple;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+
+        &.claim-btn {
+            position: relative;
+
+            font-size: 1rem;
+            font-weight: bold;
+
+            @include devices(xl) {
+                font-size: 0.8rem;
+                @include padding-x(50px, 50px);
+            }
+
+            @include devices(lg) {
+                @include padding-x(40px, 40px);
+            }
+
+            @include devices(md) {
+                font-size: 1rem;
+                @include padding-x(50px, 50px);
+            }
+
+            @include devices(xs) {
+                font-size: 0.9rem;
+                @include padding-x(30px, 30px);
+            }
+
+            &::after {
+                @include pseudo($content: "", $top: -48px, $left: auto, $width: 65px, $height: 65px);
+                right: -22px;
+                background-image: url(../images/spark.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                @include devices(xl) {
+                    top: -35px;
+                    right: -10px;
+                    @include dimension(50px, 50px);
+                }
+
+                @include devices(lg) {
+                    top: -32px;
+                    @include dimension(45px, 45px);
+                }
+
+                @include devices(xs) {
+                    top: -22px;
+                    @include dimension(35px, 35px);
+                }
+            }
+        }
+
+    }
+}
+
+.cp {
+    @include padding-y(7rem, 7rem)
+}
+
+h2.title_h2 {
+    color: #1e1b15;
+    font-size: 40px;
+
+    font-weight: bold;
+
+    @include devices(xl) {
+        font-size: 2rem;
+    }
+
+    @include devices(sm) {
+        font-size: 1.7rem;
+    }
+}
+
+.site-title {
+    color: #1e1b15;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: $fonts;
+
+    @include devices(sm) {
+        font-size: 30px;
+    }
+
+    @include devices(xs) {
+        font-size: 1.7rem;
+    }
+}
+
+.semi-font-text {
+    font-size: 19px;
+    width: 80%;
+    @include mx-auto();
+    margin-bottom: 40px;
+
+    @include devices(xl) {
+        font-size: 16px;
+    }
+}
+
+.social_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 2rem;
+
+    @include devices(xl) {
+        padding-bottom: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    a {
+        transition: transform 0.3s;
+
+        img {
+            width: 40px;
+
+            @include devices(xl) {
+                width: 30px;
+            }
+
+            @include devices(xs) {
+                width: 26px;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
+
+.overflow_hide {
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+.swiper-pagination {
+
+    .swiper-pagination-bullet {
+        background: #fff;
+        @include dimension(13px, 13px);
+
+        &:not(.swiper-pagination-bullet-active) {
+            border: 2px solid #fff;
+            background: none;
+            opacity: 0.3;
+        }
+    }
+}

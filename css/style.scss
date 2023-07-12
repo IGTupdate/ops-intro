@@ -1,0 +1,170 @@
+//Variables
+$fonts: 'Neuzeit Grotesk';
+$fonts-noto: 'NotoSans';
+
+
+/* Style Partials */
+
+// base-partials
+@import "./partials/base/variables";
+@import "./partials/base/mixins";
+@import "./partials/base/reset";
+@import "./partials/base/common";
+
+// ui-partials
+@import "./partials/ui/header";
+@import "./partials/ui/menubar";
+@import "./partials/ui/hero";
+@import "./partials/ui/services";
+@import "./partials/ui/features";
+@import "./partials/ui/brands";
+@import "./partials/ui/testi";
+@import "./partials/ui/works";
+@import "./partials/ui/faq";
+@import "./partials/ui/ready";
+@import "./partials/ui/footer";
+
+// pages-partials
+@import "./partials/ui/caseStudies";
+@import "./partials/ui/caseStudieDetails";
+@import "./partials/ui/subPage";
+@import "./partials/ui/service-page";
+@import "./partials/ui/subPage2";
+@import "./partials/ui/whyOpslabel";
+@import "./partials/ui/contactPage";
+@import "./partials/ui/appointment";
+
+// fonts
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/NeuzeitGroExt-Bla.eot');
+  src: local('../fonts/Neuzeit Grotesk Extra-condensed Black'), local('NeuzeitGroExt-Bla'),
+    url('../fonts/NeuzeitGroExt-Bla.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeuzeitGroExt-Bla.woff2') format('woff2'),
+    url('../fonts/NeuzeitGroExt-Bla.woff') format('woff'),
+    url('../fonts/NeuzeitGroExt-Bla.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/NeuzeitGro-Bla.eot');
+  src: local('../fonts/Neuzeit Grotesk Black'), local('NeuzeitGro-Bla'),
+    url('../fonts/NeuzeitGro-Bla.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeuzeitGro-Bla.woff2') format('woff2'),
+    url('../fonts/NeuzeitGro-Bla.woff') format('woff'),
+    url('../fonts/NeuzeitGro-Bla.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/NeuzeitGro-Reg.eot');
+  src: local('../fonts/Neuzeit Grotesk Regular'), local('NeuzeitGro-Reg'),
+    url('../fonts/NeuzeitGro-Reg.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeuzeitGro-Reg.woff2') format('woff2'),
+    url('../fonts/NeuzeitGro-Reg.woff') format('woff'),
+    url('../fonts/NeuzeitGro-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/NeuzeitGro-Lig.eot');
+  src: local('../fonts/Neuzeit Grotesk Light'), local('NeuzeitGro-Lig'),
+    url('../fonts/NeuzeitGro-Lig.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeuzeitGro-Lig.woff2') format('woff2'),
+    url('../fonts/NeuzeitGro-Lig.woff') format('woff'),
+    url('../fonts/NeuzeitGro-Lig.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/NeuzeitGro-Bol.eot');
+  src: local('../fonts/Neuzeit Grotesk Bold'), local('NeuzeitGro-Bol'),
+    url('../fonts/NeuzeitGro-Bol.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeuzeitGro-Bol.woff2') format('woff2'),
+    url('../fonts/NeuzeitGro-Bol.woff') format('woff'),
+    url('../fonts/NeuzeitGro-Bol.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/NeuzeitGroCon-Bla.eot');
+  src: local('../fonts/Neuzeit Grotesk Condensed Black'), local('NeuzeitGroCon-Bla'),
+    url('../fonts/NeuzeitGroCon-Bla.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeuzeitGroCon-Bla.woff2') format('woff2'),
+    url('../fonts/NeuzeitGroCon-Bla.woff') format('woff'),
+    url('../fonts/NeuzeitGroCon-Bla.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../fonts/NotoSans-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../fonts/NotoSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/NotoSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../fonts/NotoSans-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../fonts/NotoSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+html,
+body {
+  font-weight: normal;
+  font-family: $fonts;
+}
+
+a {
+  font-family: $fonts;
+}
+
+p {
+  font-family: $fonts;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: $fonts-noto;
+// }

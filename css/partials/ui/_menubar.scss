@@ -1,0 +1,234 @@
+.menu_btn {
+    position: fixed;
+    top: calc(58px - 32.5px);
+    left: calc(4% - 32.5px);
+    z-index: 1005;
+    overflow: hidden;
+    transition: all 0.25s linear;
+
+    @include devices(xl) {
+        top: calc(58px - 25px);
+        left: calc(4% - 25px);
+    }
+
+    @include devices(md) {
+        top: calc(54px - 25px);
+        left: calc(6% - 25px);
+    }
+
+    @include devices(xs) {
+        top: calc(38px - 20px);
+        left: calc(6% - 20px);
+    }
+
+    &.clicked {
+        top: calc(50% - 32.5px);
+
+        @include devices(md) {
+            left: calc(8.33% - 25px);
+        }
+    }
+
+    svg {
+        width: 65px;
+
+        @include devices(xl) {
+            width: 50px;
+        }
+
+        @include devices(xs) {
+            width: 40px;
+        }
+    }
+}
+
+#menubar {
+    background-image: url(../images/abstract.jpg);
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    width: 100%;
+    min-height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    pointer-events: none;
+    transition: all 0.4s ease;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+    }
+
+    .menu_left_col {
+        padding-right: 0;
+    }
+
+    .menu_mid_col {
+        display: grid;
+        place-items: center;
+        position: relative;
+
+        @include devices(md) {
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+
+            @include devices(md) {
+                gap: 3rem;
+                margin-top: 0;
+            }
+
+            @include devices(xs) {
+                gap: 1rem;
+            }
+
+            a {
+                font-size: 4.4rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $white;
+                transition: color 0.2s linear;
+
+                @include devices(xl) {
+                    font-size: 3rem;
+                }
+
+                @include devices(lg) {
+                    font-size: 2.5rem;
+                }
+
+                @include devices(md) {
+                    font-size: 3rem;
+                }
+
+                @include devices(xs) {
+                    font-size: 2rem;
+                }
+
+                &:nth-child(1) {
+                    color: $orange;
+                }
+
+                &:nth-child(2) {
+                    color: $purple;
+                }
+
+                &:nth-child(3) {
+                    color: $sky_light;
+                }
+
+                &:nth-child(4) {
+                    color: $green;
+                }
+
+                &:nth-child(5) {
+                    color: $orange_light;
+                }
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        .menu_btns_group {
+            margin-top: 2rem;
+
+            @include devices(md) {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-top: 3rem;
+            }
+
+            @include devices(xs) {
+                margin-top: 1.5rem;
+            }
+
+            .green-btn {
+                margin-right: 3rem;
+
+                @include devices(xl) {
+                    margin-right: 1.8rem;
+                }
+
+                @include devices(lg) {
+                    margin-right: 0.7rem;
+                }
+
+                @include devices(md) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .logo-img {
+            position: absolute;
+            top: 30px;
+            left: -80px;
+            width: 200px;
+
+            @include devices(xl) {
+                width: 150px;
+            }
+
+            @include devices(lg) {
+                width: 135px;
+                left: -60px;
+            }
+
+            @include devices(md) {
+                width: 200px;
+                left: -80px;
+            }
+
+            @include devices(xs) {
+                width: 100px;
+                left: -30px;
+            }
+        }
+
+        .arrowfly-img {
+            position: absolute;
+            top: 85px;
+            right: -45px;
+
+            @include devices(xl) {
+                width: 180px;
+            }
+
+            @include devices(lg) {
+                width: 160px;
+            }
+
+            @include devices(md) {
+                display: none;
+            }
+        }
+    }
+
+    .menu_right_col {
+        display: grid;
+        min-height: 100vh;
+        border-left: 12px solid #E5EBE5;
+
+        @include devices(md) {
+            display: none;
+        }
+
+        div {
+            img {
+                @include img-fit();
+            }
+        }
+    }
+}

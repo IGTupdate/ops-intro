@@ -1,0 +1,1363 @@
+.services-template {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+    .services-main {
+        background: #2a2a2a;
+        width: 92.5%;
+        position: relative;
+        float: left;
+        margin-left: 7.5%;
+
+        @include devices(lg) {
+            width: 93%;
+            margin-left: 7%;
+        }
+
+        @include devices(md) {
+            width: 88%;
+            margin-left: 92px;
+        }
+
+        @include devices(sm) {
+            width: 80%;
+            margin-left: 19%;
+        }
+
+        .options {
+            text-align: right;
+            color: white;
+            margin-top: 28px;
+            font-size: 1rem;
+
+            @include devices(md) {
+                margin-top: 5px;
+            }
+
+            @include devices(sm) {
+                font-size: .7rem;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .services-logo-main {
+        max-width: 1530px;
+        margin: 0 50px 0 49px;
+        overflow: hidden;
+        padding: 44px 0 0 0px;
+
+        @include devices(xl) {
+            margin: 28px 25px 17px 55px;
+        }
+
+        @include devices(lg) {
+            margin: 25px 25px 0px 31px;
+        }
+
+        @include devices(md) {
+            padding: 0;
+        }
+
+        @include devices(xs) {
+            margin: 25px 7px 0px 7px;
+        }
+
+        .pdng {
+            padding-top: 0rem;
+
+            @include devices(md) {
+                padding-top: 3.5rem;
+            }
+
+            @include devices(xs) {
+                padding-top: 5.5rem;
+            }
+
+        }
+
+        .site-logo {
+            max-width: 260px;
+        }
+    }
+
+    .services-left_block-logo {
+        position: relative;
+
+        img {
+            position: absolute;
+            margin: 55px 0 0 28px;
+            z-index: 99;
+            max-width: 217px;
+
+            @include devices(xl) {
+                margin: 32px 0 0 42px;
+                max-width: 142px;
+            }
+
+            @include devices(lg) {
+                margin: 51px 0 0 21px;
+                max-width: 140px;
+            }
+
+            @include devices(md) {
+                max-width: 118px;
+                margin: 38px 0 0 41px;
+                ;
+            }
+
+            @include devices(sm) {
+                max-width: 133px;
+                margin: 29px 0 0 24px;
+            }
+        }
+    }
+
+}
+
+.talk-btn {
+    float: right;
+    margin: 0 30px 0 0px;
+    position: relative;
+
+    @include devices(xl) {
+        margin: 0 30px 32px 0px;
+        margin-top: -30px;
+    }
+
+    @include devices(lg) {
+        margin: 0px 30px 0px 0px;
+        margin-top: 0;
+    }
+
+    a {
+        width: 100%;
+        max-width: 266px;
+        display: inline-block;
+        text-align: center;
+        background: #ede9cc;
+        border-radius: 10px;
+        color: #000;
+        font-weight: 700;
+        font-size: 0.75rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+        @include devices(lg) {
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+
+        @include devices(sm) {
+            font-size: 0.65rem;
+            padding: 8px;
+        }
+
+        span {
+            color: #ce036b;
+        }
+    }
+}
+
+.services-tabbs {
+    padding: 7px 0 0 0;
+
+    .nav-tabs {
+
+        .btn {
+            background-color: white;
+            font-weight: 500;
+            display: none;
+        }
+
+        @include devices(md) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+
+            .nav-item {
+                width: 100%;
+
+
+            }
+        }
+
+        @include devices(sm) {
+            grid-template-columns: auto;
+        }
+    }
+
+    #sales_show {
+        display: block;
+    }
+
+    #sales_hide {
+        display: none;
+    }
+
+    .lead-booster-block-container {
+
+        .hide {
+            display: block;
+        }
+
+        .hide1 {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        #booster {
+            @include devices(md) {
+                width: 100%;
+            }
+        }
+
+        .lead-booster-left {
+
+            .lead-booster-pro-section {
+
+                @include devices(sm) {
+                    display: none;
+                }
+
+                .lead-booster-pro-strip {
+                    .lead-booster-pro-strip22 {
+                        .btn {
+                            width: 283px;
+                            text-align: center;
+                            padding: 7px 88px;
+
+                            @include devices(xl) {
+                                width: 235px;
+                                padding: 0px 62px;
+                            }
+
+                            @include devices(lg) {
+                                width: 193px;
+                            }
+
+                            @include devices(sm) {
+                                width: 285px;
+                            }
+                        }
+
+                        .pink-btn {
+                            background-color: #3aa4d8;
+                            font-size: 31px;
+                            font-weight: bold;
+                            color: #000;
+                            line-height: 36px;
+                            position: relative;
+
+                            @include devices(xl) {
+                                padding: 0px 54px;
+                                font-size: 23px;
+                            }
+
+                            @include devices(lg) {
+                                font-size: 18px;
+                            }
+
+                            @include devices(sm) {
+                                font-size: 15px;
+                                line-height: 30px;
+                            }
+
+                            @include devices(xs) {
+                                line-height: 38px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .lead-booster-scnd-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            @include devices(md) {
+                grid-template-columns: auto;
+                gap: 20px;
+            }
+
+            .lead-booster-sales {
+                @include devices(xl) {
+                    margin: -18px 0px 0px 0px;
+                }
+
+                @include devices(lg) {
+                    margin: 0;
+                }
+
+                .exclusive-contact {
+                    .btn {
+                        pointer-events: none;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        position: relative;
+                        top: 39px;
+                        left: 23%;
+
+                        @include devices(xl) {
+                            top: 33px;
+                            font-size: 1rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 0.85rem;
+                            top: 33px;
+                            left: 20%;
+                        }
+
+                        @include devices(md) {
+                            left: 27%;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 0.65rem;
+                            top: 28px;
+                            left: 14%;
+                        }
+                    }
+
+                    .sky-btn-light {
+                        padding: 20px 50px;
+
+                        @include devices(xl) {
+                            padding: 10px 24px;
+                        }
+
+                        @include devices(lg) {
+                            padding: 15px 20px;
+                        }
+
+                        @include devices(xs) {
+                            padding: 10px 17px;
+                        }
+
+                    }
+
+                    .orange-btn {
+                        padding: 20px 120px;
+
+
+                        @include devices(xl) {
+                            padding: 10px 79px;
+                        }
+
+                        @include devices(xs) {
+                            padding: 10px 52px;
+                        }
+                    }
+
+                    .contact-details-div {
+                        border: 4px solid black;
+                        border-radius: 15px;
+                        padding: 53px 20px 20px 20px;
+                        background-color: white;
+                        width: 70%;
+                        margin: auto;
+                        font-size: 1.2rem;
+                        text-align: center;
+                        line-height: 21.5px;
+
+                        img {
+                            height: 18px;
+                            width: 18px;
+                            margin-right: -3px;
+
+                            @include devices(xl) {
+                                height: 15px;
+                                width: 15px;
+                            }
+
+                            @include devices(xs) {
+                                width: 11px;
+                                height: 11px;
+                            }
+                        }
+
+                        @include devices(xl) {
+                            padding: 47px 15px 15px 15px;
+                            width: 77%;
+                            font-size: 1rem;
+                            line-height: 19.5px;
+                        }
+
+                        @include devices(lg) {
+                            padding: 53px 20px 20px 20px;
+                            width: 89%;
+                            font-size: 0.85rem;
+                        }
+
+                        @include devices(sm) {
+                            padding: 49px 15px 15px 15px;
+                            width: 100%;
+                            font-size: 0.65rem;
+                        }
+
+                        @include devices(xs) {
+                            line-height: 11.5px;
+                        }
+
+                        .heart-div {
+                            position: absolute;
+                            top: 190px;
+                            ;
+                            left: 37%;
+                            width: 19%;
+                            height: 122px;
+
+                            @include devices(xl) {
+                                top: 133px;
+                                left: 36%;
+                                width: 22%;
+                                height: 103px;
+                            }
+
+                            @include devices(lg) {
+                                top: 248px;
+                                width: 25%;
+                                height: 103px;
+                                left: 37%;
+                                ;
+                            }
+
+                            @include devices(md) {
+                                display: none;
+                            }
+
+                            div {
+                                &:first-child {
+                                    background-image: url('../images/Asset_2.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: 100% 100%;
+                                    height: 50%;
+                                    width: 100%;
+
+                                    @include devices(xl) {
+                                        height: 43%;
+                                    }
+
+                                    @include devices(lg) {
+                                        height: 38%;
+                                    }
+                                }
+
+                                &:last-child {
+                                    color: #e50764;
+                                    text-transform: uppercase;
+                                    margin-left: 100px;
+                                    margin-top: 30px;
+                                    font-weight: lighter;
+
+                                    @include devices(lg) {
+                                        margin-left: 98px;
+                                        margin-top: 22px;
+                                        font-size: 0.75rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .bg-image {
+                            top: 493px;
+
+                            @include devices(xl) {
+                                top: 394px;
+                            }
+
+                            @include devices(lg) {
+                                width: 21%;
+                                height: 99px;
+                                top: 443px;
+                                left: 40%;
+                            }
+
+                            div {
+                                &:first-child {
+                                    background-image: url("../images/Asset_3.svg");
+                                }
+
+                                &:last-child {
+                                    color: #e6d99b;
+
+                                    @include devices(xl) {
+                                        margin-left: 123px;
+                                    }
+
+                                    @include devices(lg) {
+                                        margin-left: 66px;
+                                        margin-right: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .lead-booster-consultant {
+                position: relative;
+
+                .line_plane {
+                    width: 93%;
+                    height: 95px;
+                    background-image: url("../images/ser-page-line.svg");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    margin-right: 74px;
+                    margin-top: 52px;
+
+                    @include devices(xl) {
+                        margin-top: 0;
+                    }
+
+                    @include devices(md) {
+                        display: none;
+                    }
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    color: #e50764;
+                    text-decoration: underline;
+                    text-align: center;
+                    font-weight: 600;
+
+                    @include devices(xl) {
+                        font-size: 1.5rem;
+                        text-align: right;
+                        margin-right: 44px;
+                    }
+
+                    @include devices(lg) {
+                        text-align: center;
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
+
+                    @include devices(xs) {
+                        font-size: 17px;
+                        margin-top: 12px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 35%;
+                        left: 23%;
+                        width: 62%;
+                        margin: auto;
+                        border: 0.5px dashed #a4a1a2;
+
+                        @include devices(xl) {
+                            left: 29%;
+                            top: 28%;
+                        }
+
+                        @include devices(lg) {
+                            top: 33.5%;
+                            left: 23%;
+                        }
+
+                        @include devices(md) {
+                            top: 13.5%;
+                            left: 20%;
+                        }
+
+                        @include devices(xs) {
+                            display: none;
+                        }
+                    }
+                }
+
+                .consultant-text {
+                    width: 70%;
+                    margin: auto;
+                    margin-top: 100px;
+                    text-align: right;
+                    color: white;
+                    font-size: 1.1rem;
+
+                    @include devices(xl) {
+                        width: 77%;
+                        margin-top: 70px;
+                        margin-left: 93px;
+                        font-size: 0.9rem;
+                    }
+
+                    @include devices(lg) {
+                        margin-top: 46px;
+                        margin-left: 115px;
+                        font-size: 0.8rem;
+                    }
+
+                    @include devices(md) {
+                        width: 80%;
+                        margin: auto;
+                        margin-top: 46px;
+                        text-align: center;
+                    }
+
+                    @include devices(xs) {
+                        width: 100%;
+                        text-align: justify;
+                        padding: 0px 8px;
+                        line-height: 16.5px;
+                        margin-top: 22px;
+                    }
+                }
+
+                .refer-box {
+                    width: 70%;
+                    margin: auto;
+                    margin-top: 30px;
+                    border: 4px solid black;
+                    border-radius: 14px;
+                    background-color: white;
+                    padding: 20px;
+
+                    @include devices(xl) {
+                        width: 78%;
+                        margin-left: 17%;
+                        margin-top: 37px;
+                        padding: 15px;
+                    }
+
+                    @include devices(lg) {
+                        width: 81%;
+                        margin-left: 19%;
+                        margin-top: 32px;
+                        padding: 10px;
+                    }
+
+                    @include devices(md) {
+                        margin-left: 10%;
+                    }
+
+                    @include devices(xs) {
+                        width: 100%;
+                        margin: 0;
+                        margin-top: 32px;
+                        padding: 7px;
+                    }
+
+                    p {
+                        text-transform: uppercase;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        text-align: center;
+
+                        @include devices(xl) {
+                            font-size: 0.92rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 0.72rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 0.55rem;
+                        }
+
+                        span {
+                            img {
+                                width: 14px;
+                                height: 14px;
+
+                                @include devices(xl) {
+                                    width: 11.5px;
+                                    height: 11.5px;
+                                }
+
+                                @include devices(xs) {
+                                    width: 9px;
+                                    height: 9px;
+                                }
+                            }
+                        }
+                    }
+
+                    div {
+                        margin-top: 4%;
+
+                        .txt {
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            text-transform: none;
+
+                            @include devices(lg) {
+                                font-size: 0.61rem;
+                            }
+
+                            @include devices(xs) {
+                                font-size: 0.53rem;
+                            }
+
+                            span {
+                                img {
+                                    width: 14px;
+                                    height: 14px;
+
+                                    @include devices(xl) {
+                                        width: 11px;
+                                        height: 11px;
+                                    }
+
+                                    @include devices(xs) {
+                                        width: 8px;
+                                        height: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .prices {
+                    text-align: right;
+                    color: white;
+                    margin-top: 37px;
+
+                    @include devices(xl) {
+                        margin-top: 10px;
+                    }
+
+                    @include devices(lg) {
+                        margin-top: 20px;
+                    }
+
+                    @include devices(xs) {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .nav-tabs .nav-link {
+        background: #f9f1eb;
+        margin: 0 16px 0 0px;
+        padding: 6px 26px;
+        border-radius: 50px;
+        border: 4px solid #000;
+        color: #000;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: rgb(0, 0, 0) 4px 4px 0.6px;
+
+
+        @include devices(xl) {
+            font-size: 14px;
+        }
+
+        @include devices(lg) {
+            font-size: 11px;
+            padding: 11px 16px;
+        }
+
+        @include devices(sm) {
+            margin: 0 4px 0 0px;
+        }
+
+
+    }
+
+    .nav-item {
+        width: 25%;
+        font-weight: 500;
+
+        @include devices(md) {
+            width: 100%;
+        }
+    }
+
+    #ex1 {
+        border: 0;
+    }
+}
+
+#blue_bg {
+    background-color: #3aa4d8;
+}
+
+
+.services-head h1 {
+    color: #ecedef;
+    font-style: italic;
+    font-size: 49px;
+    font-weight: bolder;
+    position: relative;
+    padding: 30px 0 10px 0px;
+
+    @include devices(xl) {
+        font-size: 35px;
+        margin-top: -41px;
+        padding: 0px;
+    }
+
+    @include devices(lg) {
+        margin-top: -12px;
+    }
+
+    @include devices(md) {
+        font-size: 35px;
+        padding: 0px 0 7px 0px;
+    }
+
+    @include devices(sm) {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 1000px;
+        background: #ecedef;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        border-radius: 10px;
+    }
+}
+
+.sr-1 {
+    color: #fff;
+    margin: 11px 0 0 0px;
+
+    @include devices(xs) {
+        text-align: center;
+    }
+
+    span {
+        color: #3aa4d8;
+        text-decoration: underline;
+        display: none;
+
+        @include devices(sm) {
+            display: block;
+        }
+    }
+}
+
+.lead-booster-block {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 16px 0 0 0;
+    padding-bottom: 50px;
+
+    @include devices(xl) {
+        padding-bottom: 0px;
+        margin: 8px 0 0 0;
+    }
+}
+
+.lead-booster-left {
+    width: 50%;
+    float: left;
+    padding-right: 12px;
+
+    @include devices(md) {
+        width: 75%;
+    }
+
+    @include devices(sm) {
+        width: 100%;
+    }
+
+    @include devices(xs) {
+        padding-right: 0;
+    }
+}
+
+.lead-booster-block-container {
+    width: 100%;
+    display: inline-block;
+}
+
+.lead-booster-info {
+    background: #eaeeef;
+    padding: 40px 40px;
+    border-radius: 47px;
+    border: 6px solid #000;
+
+    @include devices(xl) {
+        padding: 17px 37px;
+    }
+
+    @include devices(lg) {
+        padding: 20px;
+    }
+
+    @include devices(sm) {
+        padding: 20px 15px;
+        border-radius: 27px;
+    }
+
+    h2 {
+        font-size: 22.8px;
+        color: #000;
+        font-weight: bold;
+        padding: 0 0 14px 0;
+
+        @include devices(xl) {
+            font-size: 17.8px;
+        }
+
+        @include devices(lg) {
+            font-size: 18px;
+        }
+
+        @include devices(sm) {
+            font-size: 20px;
+        }
+
+        @include devices(xs) {
+            font-size: 14px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        font-size: 20px;
+        color: #000;
+        padding: 0 0 1px 0;
+
+        @include devices(xl) {
+            font-size: 13px;
+        }
+
+        @include devices(lg) {
+            font-size: 14px;
+        }
+
+        @include devices(sm) {
+            font-size: 11px;
+        }
+
+        img {
+            max-width: 14px;
+            margin: 0 5px 0 0;
+
+            @include devices(lg) {
+                max-width: 13px;
+            }
+
+            @include devices(sm) {
+                max-width: 10px;
+            }
+        }
+    }
+
+    h2 span {
+        color: #ce036b;
+    }
+}
+
+.lead-booster-btn {
+    text-align: center;
+    margin: 80px 0 0 0;
+
+    .btn.green-btn-secondary {
+        padding: 4px 76px;
+        margin: 0 19px 0px 0;
+        background: #9ccd98;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
+.lead-booster-text {
+    margin-top: 74px;
+
+    @include devices(xl) {
+        margin-top: 0px;
+    }
+
+    @include devices(lg) {
+        margin-top: 10px;
+    }
+
+    h3 {
+        text-align: right;
+        color: #e50764;
+        text-decoration: underline;
+        padding: 21px 0 0px 0px;
+        position: relative;
+        max-width: 565px;
+        margin: auto;
+        font-weight: 600;
+        font-size: 30px;
+        margin-left: 25%;
+
+        @include devices(xl) {
+            width: 68%;
+            margin-left: 25%;
+            font-size: 27px;
+        }
+
+        @include devices(lg) {
+            font-size: 22px;
+            width: 75%;
+            margin-left: 21%;
+        }
+
+        @include devices(md) {
+            width: 92%;
+            font-size: 27px;
+            max-width: 100%;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        @include devices(sm) {
+            width: 100%;
+            font-size: 17px;
+            max-width: 100%;
+            text-align: center;
+            border-bottom: none;
+        }
+
+        @include devices(xs) {
+            font-size: 16px;
+        }
+    }
+
+    #lead-text {
+        color: #fff;
+        max-width: 763px;
+        margin-left: 231px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+        letter-spacing: 0.0135rem;
+
+        @include devices(xl) {
+            margin-left: 159px;
+            margin-right: 18px;
+            font-size: 15px;
+            margin-top: 19px;
+            line-height: 22px;
+        }
+
+        @include devices(lg) {
+            margin-left: 91px;
+            margin-right: 14px;
+            font-size: 12.5px;
+            margin-top: 20px;
+            line-height: 19.5px;
+        }
+
+        @include devices(md) {
+            font-size: 16px;
+            margin-top: -10px;
+            padding: 19px;
+            text-align: unset;
+            margin: 0;
+        }
+
+        @include devices(sm) {
+            font-size: 14px;
+            margin-top: 9px;
+            padding: 8px;
+            text-align: center;
+        }
+    }
+
+    .btn-text {
+        width: 47%;
+        position: relative;
+        top: 32px;
+        left: 38.5%;
+        font-size: 1rem;
+        line-height: 53px;
+
+        @include devices(xl) {
+            font-size: 0.8rem;
+        }
+
+        @include devices(lg) {
+            width: 62%;
+            font-size: 0.8rem;
+            line-height: 47px;
+        }
+
+        @include devices(md) {
+            display: none;
+        }
+
+
+        p {
+            &:first-child {
+                color: #e50764;
+            }
+
+            &:last-child {
+                color: #fbeca6;
+            }
+        }
+
+    }
+}
+
+.lead-booster-pro-section {
+    width: 52%;
+    position: relative;
+    left: -19px;
+    top: -19px;
+    display: inline-block;
+    margin: -289px 0 0 -17px;
+
+    @include devices(xl) {
+        top: -40px;
+    }
+
+    @include devices(lg) {
+        top: -28px;
+    }
+
+    @include devices(md) {
+        position: absolute;
+        top: 27%;
+        left: 64%;
+        margin: 0;
+    }
+
+    @include devices(sm) {
+        top: -29.5%;
+        left: 72%;
+    }
+}
+
+.lead-booster-pro-strip {
+    margin: 0px 0 3px 0;
+    width: 100%;
+    display: inline-block;
+
+    @include devices(xl) {
+        margin: 0;
+    }
+
+    @include devices(lg) {
+        margin: 0;
+    }
+
+    .btn.orange-btn {
+        background-color: white;
+        padding: 0px 88px;
+        font-size: 31px;
+        font-weight: bold;
+        color: #000;
+        line-height: 36px;
+        position: relative;
+
+        @include devices(xl) {
+            font-size: 24px;
+        }
+
+        @include devices(lg) {
+            padding: 0px 68px;
+            font-size: 18px;
+        }
+
+        @include devices(sm) {
+            padding: 0px 60px;
+            font-size: 15px;
+            line-height: 39px;
+        }
+
+        &::after {
+            content: "";
+            background-image: url('../images/Asset_2.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 45px;
+            width: 149px;
+            position: absolute;
+            top: 2px;
+            left: 87%;
+
+            @include devices(xl) {
+                height: 37px;
+                width: 122px;
+                top: 0;
+                left: 87%;
+            }
+
+            @include devices(lg) {
+                height: 31px;
+                width: 104px;
+                top: 3px;
+                left: 87%;
+            }
+
+            @include devices(md) {
+                display: none;
+            }
+        }
+    }
+
+    .btn.white-btn {
+        padding: 0px 53px;
+        font-size: 31px;
+        font-weight: bold;
+        color: #000;
+        line-height: 36px;
+        position: relative;
+
+        @include devices(xl) {
+            font-size: 24px;
+        }
+
+        @include devices(lg) {
+            font-size: 18px;
+        }
+
+        @include devices(sm) {
+            padding: 0px 42px;
+            font-size: 15px;
+            line-height: 39px;
+        }
+
+        &::after {
+            content: "";
+            background-image: url("../images/Asset_3.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 45px;
+            width: 149px;
+            position: absolute;
+            top: 2px;
+            left: 87%;
+
+            @include devices(xl) {
+                height: 37px;
+                width: 122px;
+                top: 0;
+                left: 87%;
+            }
+
+            @include devices(lg) {
+                height: 31px;
+                width: 104px;
+                top: 3px;
+                left: 87%;
+            }
+
+            @include devices(md) {
+                display: none;
+            }
+        }
+    }
+
+    span {
+        color: #db1063;
+        margin: 13px 0 0 0px;
+        font-size: 18px;
+        width: 50%;
+        float: right;
+        text-align: center;
+
+        @include devices(sm) {
+            margin: 9px 0 0 0px;
+        }
+
+        &.sr-2 {
+            color: #e6d99b;
+        }
+    }
+}
+
+.lead-booster-left.sr-3 {
+    position: relative;
+
+    &::after {
+        // position: absolute;
+        // content: "";
+        // right: -669px;
+        // top: -10px;
+        // background: url("../images/ser-page-line.svg");
+        // background-repeat: no-repeat;
+        // width: 683px;
+        // height: 138px;
+
+        // @include devices(xl){
+        //     right: -568px;
+        //     top: -1px;
+        //     width: 579px;
+        //     height: 96px;
+        // }
+        display: none;
+
+        // @include devices(lg){
+        //     right: -574px;
+        //     top: -12px;
+        //     width: 573px;
+        //     height: 81px;
+        // }
+
+        // @include devices(md){
+        //     display:none;
+        // }
+    }
+}
+
+.services-left_block {
+    width: 7.5%;
+    float: left;
+    position: fixed;
+    // background: #eaeeef;
+    height: 1165px;
+    z-index: 999;
+    height: 100vh;
+}
+
+.services-left_block-toggle {
+    position: absolute;
+    top: 44%;
+    left: 22px;
+}
+
+.talk-btn::before {
+    position: absolute;
+    content: "";
+    background: url("../images/stars.png");
+    width: 32px;
+    height: 34px;
+    right: 7px;
+    top: -13px;
+    background-repeat: no-repeat;
+    background-size: 26px;
+}
+
+.lead-booster-pro-strip22 {
+    width: 50%;
+    float: left;
+}
+
+.btn.white-btn {
+    background: #fff;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 18px;
+}

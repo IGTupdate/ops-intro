@@ -1,0 +1,121 @@
+// width & height
+@mixin dimension($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+// margins
+@mixin mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin margin-x($mLeft, $mRight) {
+    margin-left: $mLeft;
+    margin-right: $mRight;
+}
+
+@mixin margin-y($mTop, $mBottom) {
+    margin-top: $mTop;
+    margin-bottom: $mBottom;
+}
+
+// paddings
+@mixin padding-x($pLeft, $pRight) {
+    padding-left: $pLeft;
+    padding-right: $pRight;
+}
+
+@mixin padding-y($pTop, $pBottom) {
+    padding-top: $pTop;
+    padding-bottom: $pBottom;
+}
+
+// centering horizontally & vertically
+@mixin centered {
+    display: grid;
+    place-items: center;
+}
+
+// flex-box
+@mixin flex($justCont: flex-start, $alignItm: flex-start) {
+    display: flex;
+    justify-content: $justCont;
+    align-items: $alignItm;
+}
+
+// grids
+@mixin grid-cols($colsCount, $colsWidth, $gap) {
+    grid-template-columns: repeat($colsCount, $colsWidth);
+    gap: $gap;
+}
+
+// image-fit
+@mixin img-fit {
+    @include dimension(100%, 100%);
+    object-fit: cover;
+}
+
+// background-cover
+@mixin bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// transition
+@mixin transition($prop: all, $duration, $timeFn: ease) {
+    transition: $prop $duration $timeFn;
+}
+
+// visibility toggling
+@mixin toggleVisibility($visibility, $opacity) {
+    visibility: $visibility;
+    opacity: $opacity;
+}
+
+// pseudo-element
+@mixin pseudo($content: "", $top: 0, $left: 0, $width: auto, $height: auto) {
+    content: $content;
+    position: absolute;
+    top: $top;
+    left: $left;
+    @include dimension($width, $height);
+    pointer-events: none;
+}
+
+
+
+// Media-queries
+@mixin devices($breakpoint) {
+
+    @if $breakpoint==xl {
+        @media (max-width: $xl) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==lg {
+        @media (max-width: $lg) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==md {
+        @media (max-width: $md) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==sm {
+        @media (max-width: $sm) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==xs {
+        @media (max-width: $xs) {
+            @content;
+        }
+    }
+}

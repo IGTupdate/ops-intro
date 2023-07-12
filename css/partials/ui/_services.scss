@@ -1,0 +1,289 @@
+.services_sect {
+    background-image: url(../images/section_2.svg);
+    position: relative;
+    z-index: 1;
+    margin-top: -340px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // background-position-x: center;
+
+    @include devices(lg) {
+        background-image: url(../images/section_2.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    @include devices(xs) {
+        padding-top: 5rem;
+    }
+
+    &::after {
+        @include pseudo("", 3.3%, 50%, 90px, 90px);
+        background-image: url(../images/plane.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateX(-50%);
+
+        @include devices(xl) {
+            @include dimension(70px, 70px);
+        }
+
+        @include devices(md) {
+            top: 6%;
+        }
+    }
+
+    // &::before {
+    //     @include pseudo("", 180px, 0, 100%, 100%);
+    //     background-image: url(../images/section2-line.svg);
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+
+    //     @include devices(md) {
+    //         top: 360px;
+    //     }
+    // }
+
+    .title_h2 {
+        color: #ffffff;
+        @include padding-y(20px, 6px);
+
+        @include devices(md) {
+            padding-top: 180px;
+        }
+    }
+
+    .titleh3 {
+        color: #ffffff;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.3rem;
+    }
+
+    .box {
+        position: relative;
+        background-image: url(../images/service_box.png);
+        @include bg-cover();
+        color: #fff;
+        border-radius: 30px;
+        padding: 2rem 3rem;
+
+        .services-swiper {
+            .swiper-pagination {
+                width: auto;
+                top: 35px;
+                left: 34%;
+                bottom: auto;
+            }
+
+            .swiper-button-next {
+                width: fit-content;
+                height: auto;
+                margin: 0;
+                top: 15px;
+                left: 45%;
+                display: inline-block;
+
+                &::after {
+                    content: '';
+                }
+            }
+        }
+
+        .left_col {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .right_col {
+            align-self: flex-end;
+
+            h5 {
+                font-weight: 400;
+                margin-bottom: 0.6rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+.services-swiper1,
+.services-swiper2,
+.services-swiper3 {
+    @include padding-y(2rem, 2rem);
+
+    .swiper-wrapper {
+        align-items: center;
+        margin-bottom: 1.8rem;
+    }
+
+    .swiper-pagination {
+        width: auto;
+
+        .swiper-pagination-bullet {
+            background: #000;
+            @include dimension(11px, 11px);
+
+            @include devices(xl) {
+                @include dimension(9px, 9px);
+            }
+
+            @include devices(md) {
+                @include dimension(11px, 11px);
+            }
+
+            &:not(.swiper-pagination-bullet-active) {
+                border: 2px solid #000;
+                background: none;
+                opacity: 0.3;
+            }
+        }
+    }
+
+    .swiper-button-next {
+        font-size: 2.8rem;
+        top: auto;
+        @include dimension(auto, auto);
+        color: #000;
+
+        @include devices(xl) {
+            font-size: 2.6rem;
+        }
+
+        @include devices(md) {
+            font-size: 2.8rem;
+        }
+
+        &::after {
+            content: '';
+        }
+    }
+
+    .swiper-slide {
+
+        @include devices(xl) {
+            font-size: 0.91vw;
+        }
+
+        @include devices(lg) {
+            font-size: 1.16vw;
+        }
+
+        @include devices(md) {
+            font-size: 1.5rem;
+        }
+
+        @include devices(md) {
+            font-size: 1.3rem;
+        }
+
+        @include devices(xs) {
+            font-size: 1rem;
+        }
+
+        &.slide1 {
+            p {
+                @include margin-y(2.5rem, 2.5rem);
+            }
+        }
+
+        &.slide2 {
+            text-align: center;
+
+            ul {
+                text-align: left;
+            }
+
+            h6 {
+                color: deeppink;
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin-bottom: 0.2rem;
+
+                @include devices(xl) {
+                    font-size: 1rem;
+                }
+
+                @include devices(lg) {
+                    font-size: 0.8rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.5rem;
+                }
+
+                @include devices(sm) {
+                    font-size: 1.4rem;
+                }
+
+                @include devices(xs) {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .plus-btn {
+                position: unset;
+                padding: 0.2rem 4rem;
+                max-width: unset;
+                font-weight: 800;
+                font-size: 1rem;
+                pointer-events: none;
+                filter: none;
+                @include margin-y(1.2rem, 1.8rem);
+
+                @include devices(lg) {
+                    font-size: 0.9rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.4rem;
+                    @include margin-y(1.4rem, 2rem);
+                }
+
+                @include devices(xs) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        &.slide3 {
+            text-align: center;
+
+            p {
+                &:nth-child(2) {
+                    @include margin-y(1.5rem, 1.5rem);
+                }
+            }
+
+            div {
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .check-img,
+    .burn-img {
+        width: 15px;
+
+        @include devices(xl) {
+            width: 11px;
+        }
+
+        @include devices(lg) {
+            width: 10px;
+        }
+
+        @include devices(md) {
+            width: 16px;
+        }
+
+        @include devices(xs) {
+            width: 11px;
+        }
+    }
+}

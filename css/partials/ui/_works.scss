@@ -1,0 +1,309 @@
+.section5 {
+    position: relative;
+
+    .bg-img {
+        position: absolute;
+        top: -135px;
+        right: -176px;
+        pointer-events: none;
+
+        @include devices(md) {
+            top: -70px;
+        }
+
+        @include devices(sm) {
+            top: -40px;
+        }
+
+        @include devices(xs) {
+            top: -20px;
+            right: -280px;
+        }
+    }
+
+    .container-fluid {
+        position: relative;
+        z-index: 1;
+        @include padding-x(4rem, 4rem);
+
+        @include devices(sm) {
+            @include padding-x(3rem, 3rem);
+        }
+
+        @include devices(xs) {
+            @include padding-x(0.75rem, 0.75rem);
+        }
+    }
+
+    .works-title {
+        position: relative;
+
+        img {
+            width: 20%;
+            position: absolute;
+
+            @include devices(xs) {
+                display: none;
+            }
+
+            &:first-child {
+                top: 0;
+                left: 150px;
+
+                @include devices(xl) {
+                    left: 90px;
+                }
+            }
+
+            &:last-child {
+                top: -40px;
+                right: 150px;
+
+                @include devices(xl) {
+                    right: 90px;
+                }
+            }
+        }
+
+        &+p {
+            font-size: 1.1rem;
+            margin-top: 0.8rem;
+
+            @include devices(xl) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .works_row {
+        @include margin-y(8rem, 70px);
+        justify-content: space-between;
+
+        @include devices(md) {
+            justify-content: center;
+            gap: 6rem;
+        }
+
+        @include devices(sm) {
+            gap: 7rem;
+        }
+
+        @include devices(xs) {
+            gap: 4rem;
+        }
+
+        .works_box {
+            width: 27%;
+
+            @include devices(lg) {
+                width: 28%;
+                @include padding-x(0, 0);
+            }
+
+            @include devices(md) {
+                width: 100%;
+                @include padding-x(1.5rem, 1.5rem);
+            }
+
+            @include devices(xs) {
+                @include padding-x(0.75rem, 0.75rem);
+            }
+        }
+
+        .works_box_1 {
+            text-align: center;
+
+            @include devices(lg) {
+                @include padding-x(0, 0);
+                width: 5%;
+            }
+
+            @include devices(md) {
+                width: 100%;
+                @include padding-x(1.5rem, 1.5rem);
+            }
+
+            @include devices(xs) {
+                @include padding-x(0.75rem, 0.75rem);
+            }
+
+            .arrow-right {
+                width: 70px;
+
+                @include devices(xl) {
+                    width: 60px;
+                }
+
+                @include devices(lg) {
+                    width: 50px;
+                }
+
+                @include devices(md) {
+                    width: 90px;
+                    transform: rotate(90deg);
+                    margin-bottom: 2rem;
+                }
+
+                @include devices(xs) {
+                    width: 60px;
+                    margin-bottom: 1.3rem;
+                }
+            }
+        }
+
+
+        .box {
+            position: relative;
+            margin-top: 50px;
+            background: #ffffff;
+            color: $black;
+            padding: 2.5rem 1.5rem 1.5rem;
+            height: auto;
+            border: 5px solid #030405;
+            border-radius: 30px;
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+
+            @include devices(lg) {
+                @include padding-x(0.9rem, 0.9rem);
+            }
+
+            @include devices(md) {
+                padding: 5.8rem 2.2rem 2.5rem;
+            }
+
+            @include devices(xs) {
+                padding: 3rem 1.2rem 1.2rem;
+            }
+
+            .info_text {
+                position: absolute;
+                top: -46px;
+                left: 0;
+                right: 0;
+                max-width: 80%;
+                height: 80px;
+                @include mx-auto();
+                border: 4px solid black;
+                border-radius: 24px;
+                padding: 1rem 0.2rem 0.3rem;
+                box-shadow: none;
+                box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
+                text-align: center;
+                @include centered();
+
+                @include devices(xl) {
+                    height: 60px;
+                    top: -35px;
+                }
+
+                @include devices(md) {
+                    height: 140px;
+                    top: -75px;
+                }
+
+                @include devices(xs) {
+                    max-width: 85%;
+                    height: 80px;
+                    top: -45px;
+                    padding: 1rem 0.5rem 0.3rem;
+                }
+
+                &.sky-btn {
+                    background-color: #dcefee;
+                }
+
+                &.purple-btn {
+                    background-color: #e0cce4;
+                }
+
+                &.orange-btn {
+                    background-color: #feeca6;
+                }
+
+                span {
+                    position: absolute;
+                    top: -40px;
+                    left: 0;
+                    right: 0;
+                    @include mx-auto();
+                    background: black;
+                    color: white;
+                    @include dimension(56px, 56px);
+                    font-weight: 600;
+                    font-size: 32px;
+                    font-style: oblique 14deg;
+                    border-radius: 50%;
+                    align-items: center;
+                    font-family: 'NotoSans';
+                    padding-right: 6px;
+                    display: grid;
+                    place-items: center;
+
+                    @include devices(xl) {
+                        top: -35px;
+                        @include dimension(46px, 46px);
+                        font-size: 26px;
+                        padding-right: 5px;
+                    }
+
+                    @include devices(md) {
+                        @include dimension(65px, 65px);
+                        font-size: 40px;
+                        padding-right: 7px;
+                    }
+
+                    @include devices(xs) {
+                        @include dimension(44px, 44px);
+                        font-size: 24px;
+                        top: -30px;
+                        padding-right: 4px;
+                    }
+                }
+
+                h6 {
+                    font-weight: bold;
+
+                    @include devices(xl) {
+                        font-size: 0.8rem;
+                    }
+
+                    @include devices(md) {
+                        font-size: 2rem;
+                    }
+
+                    @include devices(sm) {
+                        font-size: 1.6rem;
+                    }
+
+                    @include devices(xs) {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            p {
+                text-align: center;
+                margin-top: 1.5rem;
+                font-weight: bold;
+
+                @include devices(xl) {
+                    margin-top: 0.9rem;
+                    font-size: 0.9rem;
+                }
+
+                @include devices(md) {
+                    font-size: 2rem;
+                }
+
+                @include devices(sm) {
+                    font-size: 1.6rem;
+                }
+
+                @include devices(xs) {
+                    font-size: 1.05rem;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,484 @@
+#why_opslabel {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/abstract.jpg);
+    background-size: cover;
+
+    @include devices(md) {
+        height: unset;
+    }
+
+    .services-template {
+        .services-left_block {
+            @include devices(lg) {
+                width: 7.5%;
+            }
+
+            @include devices(md) {
+                width: 9%;
+            }
+
+            @include devices(sm) {
+                width: 10%;
+            }
+
+            @include devices(xs) {
+                width: 12%;
+            }
+
+            .studiesDetails-left_menu {
+                .menu_btn {
+                    top: 44%;
+                    left: 45px;
+
+                    @include devices(xl) {
+                        left: 30px;
+                    }
+
+                    @include devices(lg) {
+                        left: 18px;
+                    }
+
+                    @include devices(sm) {
+                        left: 16px;
+                    }
+
+                    @include devices(xs) {
+                        left: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .whyops-right-block {
+        position: relative;
+        width: 92.5%;
+        height: 100%;
+        margin-left: auto;
+        // background-color: #2a2a2a;
+        display: grid;
+        place-items: center;
+
+        @include devices(md) {
+            display: block;
+            width: 91%;
+        }
+
+        @include devices(sm) {
+            width: 90%;
+        }
+
+        @include devices(xs) {
+            width: 88%;
+        }
+
+        .whyops_head_btn {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+
+            @include devices(xs) {
+                right: 20px;
+            }
+        }
+
+        .whyops_content {
+            margin-top: 1rem;
+
+            @include devices(xl) {
+                margin-top: 2rem;
+            }
+
+            @include devices(md) {
+                margin-top: 0;
+                padding-top: 8rem;
+                padding-bottom: 3rem;
+            }
+
+            @include devices(xs) {
+                padding-bottom: 2rem;
+            }
+
+            .whyops_row {
+                align-items: center;
+                justify-content: center;
+                gap: 6rem;
+
+                @include devices(xl) {
+                    gap: 3rem;
+                }
+
+                @include devices(lg) {
+                    gap: 0;
+                }
+
+                @include devices(md) {
+                    gap: 4rem;
+                }
+
+                @include devices(xs) {
+                    gap: 2.5rem;
+                }
+
+                .whyops_left_col {
+                    width: 38%;
+
+                    @include devices(xl) {
+                        width: 36.66%;
+                    }
+
+                    @include devices(lg) {
+                        width: 37%;
+                    }
+
+                    @include devices(md) {
+                        width: 80%;
+                    }
+
+                    @include devices(xs) {
+                        width: 96%;
+                    }
+                }
+
+                .whyops_img_box {
+                    border: 5px solid #000;
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    .whyops_head {
+                        background-color: #f3f2ee;
+                        border-bottom: 5px solid #000;
+                        padding: 0.8rem 0.95rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: right;
+                        gap: 1rem;
+
+                        @include devices(xl) {
+                            @include padding-y(0.6rem, 0.6rem);
+                        }
+
+                        span.circle-span {
+                            padding: 10px;
+                            border-radius: 50%;
+                            border: 3px solid black;
+
+                            @include devices(xl) {
+                                padding: 8px;
+                            }
+
+                            @include devices(md) {
+                                padding: 10px;
+                            }
+
+                            @include devices(xs) {
+                                padding: 7px;
+                            }
+
+                            &.sky-circle {
+                                background: #a0d2d6;
+                            }
+
+                            &.purple-circle {
+                                background: #b183ba;
+                            }
+
+                            &.blue-cicle {
+                                background: #2d2765;
+                            }
+                        }
+
+                    }
+
+                    .whyops_img {
+
+                        img {
+                            @include img-fit();
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+                .whyops_text_box {
+                    color: $white;
+                    @include margin-x(1rem, 1rem);
+
+                    @include devices(xs) {
+                        @include margin-x(0.6rem, 0.6rem);
+                    }
+
+                    h2 {
+                        text-transform: uppercase;
+                        margin-bottom: 0.5rem;
+                        font-size: 3.5rem;
+
+                        @include devices(xl) {
+                            font-size: 2.2rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 1.8rem;
+                        }
+
+                        @include devices(md) {
+                            font-size: 2.5rem;
+                        }
+
+                        @include devices(sm) {
+                            font-size: 2rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 1.5rem;
+                        }
+
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        line-height: 1.3;
+
+                        @include devices(xl) {
+                            font-size: 0.95rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 0.875rem;
+                        }
+
+                        @include devices(md) {
+                            font-size: 1rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 0.8rem;
+                        }
+
+                        br {
+                            @include devices(md) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bg-img {
+
+                @include devices(md) {
+                    display: none;
+                }
+
+                img {
+                    position: absolute;
+                    pointer-events: none;
+
+                    &:first-child {
+                        width: 600px;
+                        bottom: -200px;
+                        right: -200px;
+
+                        @include devices(xl) {
+                            width: 450px;
+                            bottom: -155px;
+                            right: -150px;
+                        }
+
+                        @include devices(lg) {
+                            width: 400px;
+                        }
+                    }
+
+                    &:last-child {
+                        width: 200px;
+                        bottom: 0;
+                        left: 590px;
+
+                        @include devices(xl) {
+                            width: 160px;
+                            left: 380px;
+                            bottom: -12px;
+                        }
+
+                        @include devices(lg) {
+                            left: 220px;
+                            bottom: 0;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.whyops_swiper {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+
+    @include devices(xl) {
+        margin-top: 0;
+        padding-top: 1.5rem;
+    }
+
+    @include devices(md) {
+        padding-top: 2rem;
+        margin-top: 1rem;
+    }
+
+    .swiper-slide {
+
+        .box {
+            @include margin-x(1rem, 1rem);
+            color: $black;
+            border: 4px solid $black;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
+
+            @include devices(sm) {
+                @include margin-x(0.4rem, 0.4rem);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+
+                @include devices(xl) {
+                    margin-bottom: 1.5rem;
+                }
+
+                @include devices(lg) {
+                    margin-bottom: 1.2rem;
+                }
+
+                @include devices(md) {
+                    margin-bottom: 1.8rem;
+                }
+            }
+
+            &.peach {
+                background-color: $peach_light;
+            }
+
+            &.orange-light {
+                background-color: $orange_light;
+            }
+
+            &.orange {
+                background-color: $orange;
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 2.4rem;
+        top: 0;
+        color: #fff;
+        height: auto;
+
+        &::after {
+            content: '';
+        }
+
+        @include devices(xl) {
+            font-size: 2rem;
+            top: 8px;
+        }
+
+        @include devices(md) {
+            font-size: 2.2rem;
+        }
+    }
+
+    .swiper-button-prev {
+        left: auto;
+        right: 60px;
+    }
+
+    .swiper-button-next {
+        right: 22px;
+    }
+}
+
+.whyops_inner_swiper {
+
+    .swiper-wrapper {
+        align-items: center;
+    }
+
+    .swiper-slide {
+        padding: 0.8rem 1rem;
+
+        @include devices(xl) {
+            @include padding-y(0.6rem, 0.6rem);
+        }
+
+        @include devices(xs) {
+            @include padding-x(0.6rem, 0.6rem);
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: normal;
+
+            @include devices(xl) {
+                font-size: 1.06rem;
+            }
+
+            @include devices(lg) {
+                font-size: 1rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.3rem;
+            }
+
+            @include devices(xs) {
+                font-size: 1rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.3;
+
+            @include devices(xl) {
+                font-size: 0.9rem;
+            }
+
+            @include devices(lg) {
+                font-size: 0.875rem;
+            }
+
+            @include devices(md) {
+                font-size: 1rem;
+            }
+
+            @include devices(xs) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        width: auto;
+        left: auto;
+        bottom: 3px;
+        right: 10px;
+
+        .swiper-pagination-bullet {
+            background: #000;
+
+            &:not(.swiper-pagination-bullet-active) {
+                border: 2px solid #000;
+                background: none;
+                opacity: 0.3;
+            }
+        }
+    }
+}

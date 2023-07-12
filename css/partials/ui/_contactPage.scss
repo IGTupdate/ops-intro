@@ -1,0 +1,717 @@
+#contact_page {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/abstract.jpg);
+    background-size: cover;
+
+    @include devices(md) {
+        height: unset;
+    }
+
+    &.contactSuccess {
+        @include devices(md) {
+            height: 100vh;
+        }
+
+        @include devices(xs) {
+            height: unset;
+        }
+
+        .contactpage-right-block {
+            @include devices(md) {
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+
+    .services-template {
+        .services-left_block {
+            @include devices(lg) {
+                width: 7.5%;
+            }
+
+            @include devices(md) {
+                width: 9%;
+            }
+
+            @include devices(sm) {
+                width: 10%;
+            }
+
+            @include devices(xs) {
+                width: 12%;
+            }
+
+            .services-left_block-logo {
+                img {
+                    max-width: 190px;
+                    margin-top: 50px;
+                    margin-left: 84px;
+
+                    @include devices(xl) {
+                        max-width: 140px;
+                        margin-top: 35px;
+                        margin-left: 64px;
+                    }
+
+                    @include devices(lg) {
+                        max-width: 120px;
+                        margin-top: 15px;
+                        margin-left: 50px;
+                    }
+
+                    @include devices(md) {
+                        max-width: 150px;
+                        margin-left: 35px;
+                        margin-top: 20px;
+                    }
+
+                    @include devices(xs) {
+                        max-width: 100px;
+                        margin-left: 20px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+
+            .studiesDetails-left_menu {
+                .menu_btn {
+                    top: 44%;
+                    left: 45px;
+
+                    @include devices(xl) {
+                        left: 30px;
+                    }
+
+                    @include devices(lg) {
+                        left: 18px;
+                    }
+
+                    @include devices(sm) {
+                        left: 16px;
+                    }
+
+                    @include devices(xs) {
+                        left: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactpage-right-block {
+        position: relative;
+        width: 92.5%;
+        height: 100%;
+        margin-left: auto;
+        // background-color: #2a2a2a;
+        display: grid;
+        place-items: center;
+
+        @include devices(md) {
+            display: block;
+            width: 91%;
+        }
+
+        @include devices(sm) {
+            width: 90%;
+        }
+
+        @include devices(xs) {
+            width: 88%;
+        }
+    }
+
+    .contactpage_head_btn {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        z-index: 2;
+
+        @include devices(xl) {
+            top: 20px;
+            right: 20px;
+        }
+
+        @include devices(md) {
+            top: 40px;
+            right: 50px;
+        }
+
+        @include devices(xs) {
+            right: 20px;
+        }
+    }
+
+    .contactpage_content {
+        margin-top: 3rem;
+
+        @include devices(md) {
+            margin-top: 0;
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+        }
+
+        @include devices(sm) {
+            padding-top: 8rem;
+            padding-bottom: 4rem;
+        }
+
+        .container {
+            position: relative;
+            z-index: 3;
+        }
+
+        .bg-img {
+
+            @include devices(xs) {
+                display: none;
+            }
+
+            img {
+                position: absolute;
+                pointer-events: none;
+                z-index: 1;
+
+                &:first-child {
+                    width: 600px;
+                    top: -200px;
+                    right: -190px;
+
+                    @include devices(xl) {
+                        width: 500px;
+                        top: -170px;
+                        right: -150px;
+                    }
+
+                    @include devices(lg) {
+                        width: 420px;
+                    }
+
+                    @include devices(md) {
+                        width: 500px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 800px;
+                    bottom: 40px;
+                    left: 0;
+
+                    @include devices(xl) {
+                        width: 600px;
+                        bottom: 10px;
+                    }
+
+                    @include devices(lg) {
+                        width: 330px;
+                        bottom: 20px;
+                    }
+
+                    @include devices(md) {
+                        display: none;
+                    }
+                }
+
+                &:nth-child(3) {
+                    width: 400px;
+                    top: 300px;
+                    right: 0;
+
+                    @include devices(xl) {
+                        width: 250px;
+                        top: 240px;
+                    }
+
+                    @include devices(lg) {
+                        width: 150px;
+                    }
+
+                    @include devices(md) {
+                        display: none;
+                    }
+                }
+
+                &:last-child {
+                    width: 300px;
+                    bottom: 20px;
+                    right: 145px;
+
+                    @include devices(xl) {
+                        width: 250px;
+                        bottom: 0;
+                        right: 90px;
+                    }
+
+                    @include devices(lg) {
+                        width: 200px;
+                        right: 5px;
+                    }
+
+                    @include devices(md) {
+                        right: -10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .contact_form_box {
+        border: 5px solid $black;
+        border-radius: 12px;
+        overflow: hidden;
+
+        @include devices(lg) {
+            border-width: 3px;
+        }
+
+        .contact_head {
+            background-color: #b8ddcf;
+            border-bottom: 5px solid #000;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include devices(xl) {
+                @include padding-y(0.6rem, 0.6rem);
+                border-width: 3px;
+            }
+
+            @include devices(lg) {
+                @include padding-y(0.4rem, 0.4rem);
+            }
+
+            @include devices(md) {
+                @include padding-y(1.2rem, 1.2rem);
+            }
+
+            @include devices(sm) {
+                @include padding-y(0.8rem, 0.8rem);
+            }
+
+            @include devices(xs) {
+                @include padding-x(0.8rem, 0.8rem);
+            }
+
+            div {
+                &:first-child {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+
+                &:last-child {
+                    h2 {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 2.5rem;
+
+                        @include devices(xl) {
+                            font-size: 1.8rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 1.5rem;
+                        }
+
+                        @include devices(md) {
+                            font-size: 2.5rem;
+                        }
+
+                        @include devices(sm) {
+                            font-size: 2rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            span.circle-span {
+                padding: 12px;
+                border-radius: 50%;
+                border: 3px solid black;
+
+                @include devices(xl) {
+                    padding: 8px;
+                }
+
+                @include devices(lg) {
+                    padding: 6px;
+                }
+
+                @include devices(md) {
+                    padding: 10px;
+                }
+
+                @include devices(sm) {
+                    padding: 8px;
+                }
+
+                @include devices(xs) {
+                    padding: 6px;
+                }
+
+                &.sky-circle {
+                    background: #a0d2d6;
+                }
+
+                &.purple-circle {
+                    background: #b183ba;
+                }
+
+                &.blue-cicle {
+                    background: #2d2765;
+                }
+            }
+        }
+
+        .contact_body {
+            background-color: $white;
+            padding: 2.5rem 0 5rem;
+
+            @include devices(xl) {
+                padding: 1.5rem 0 2.8rem;
+            }
+
+            @include devices(lg) {
+                padding: 1rem 0 2rem;
+            }
+
+            @include devices(md) {
+                padding: 3rem 3rem 5rem;
+            }
+
+            @include devices(sm) {
+                padding: 2rem 2rem 4rem;
+            }
+
+            @include devices(xs) {
+                padding: 1.5rem 1.3rem 3rem;
+            }
+
+            .row {
+                justify-content: center;
+                gap: 5rem;
+
+                @include devices(lg) {
+                    gap: 4rem;
+                }
+
+                @include devices(md) {
+                    gap: 5rem;
+                }
+
+                @include devices(sm) {
+                    gap: 4rem;
+                }
+            }
+        }
+    }
+
+    .contact_left_col {
+        display: flex;
+        align-items: end;
+
+        h3 {
+            font-weight: 600;
+            font-size: 2.5rem;
+
+            @include devices(xl) {
+                font-size: 1.5rem;
+            }
+
+            @include devices(lg) {
+                font-size: 1.4rem;
+            }
+
+            @include devices(md) {
+                font-size: 2.4rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1.8rem;
+            }
+
+            @include devices(xs) {
+                font-size: 1.2rem;
+            }
+        }
+
+        h5 {
+            text-transform: uppercase;
+            @include margin-y(2rem, 1.5rem);
+            font-weight: 600;
+
+            @include devices(xl) {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .mail_box {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            border-top: 1px solid rgba($color: #000000, $alpha: 0.5);
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+            @include padding-y(1.2rem, 1.2rem);
+
+            @include devices(xl) {
+                @include padding-y(1rem, 1rem);
+            }
+
+            @include devices(md) {
+                @include padding-y(1.5rem, 1.5rem);
+            }
+
+            @include devices(sm) {
+                gap: 1.2rem;
+            }
+
+            img {
+                width: 45px;
+
+                @include devices(xl) {
+                    width: 35px;
+                }
+
+                @include devices(md) {
+                    width: 50px;
+                }
+
+                @include devices(sm) {
+                    width: 40px;
+                }
+            }
+
+            span {
+                font-size: 1.2rem;
+
+                @include devices(xl) {
+                    font-size: 0.875rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.4rem;
+                }
+
+                @include devices(sm) {
+                    font-size: 1rem;
+                }
+            }
+
+            a {
+                font-size: 1.2rem;
+                font-weight: bold;
+                opacity: 0.9;
+
+                @include devices(xl) {
+                    font-size: 0.95rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.6rem;
+                }
+
+                @include devices(sm) {
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .contact_right_col {
+
+        .input_box {
+            margin-bottom: 1.5rem;
+
+            @include devices(xl) {
+                margin-bottom: 0.9rem;
+            }
+
+            @include devices(lg) {
+                margin-bottom: 0.8rem;
+            }
+
+            @include devices(md) {
+                margin-bottom: 1.5rem;
+            }
+
+            @include devices(sm) {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        label {
+            @include devices(xl) {
+                font-size: 0.875rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.2rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1rem;
+            }
+
+            sup {
+                color: red;
+                font-size: 1rem;
+                top: 0;
+            }
+        }
+
+        .form-control {
+            background-color: #fbfbfb;
+            border-radius: 2px;
+            @include padding-y(0.5rem, 0.5rem);
+            font-size: 1.1rem;
+
+            @include devices(xl) {
+                @include padding-y(0.375rem, 0.375rem);
+                font-size: 1rem;
+            }
+
+            @include devices(md) {
+                @include padding-y(0.5rem, 0.5rem);
+                font-size: 1.4rem;
+            }
+
+            @include devices(sm) {
+                @include padding-y(0.4rem, 0.4rem);
+                font-size: 1rem;
+            }
+        }
+
+        .btn {
+            margin-top: 1rem;
+
+            @include devices(md) {
+                margin-top: 2rem;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .contactSuccess_body {
+        padding: 6rem 0 !important;
+
+        @include devices(xl) {
+            padding: 4rem 0 !important;
+        }
+
+        @include devices(md) {
+            padding: 5rem 4rem !important;
+        }
+
+        @include devices(sm) {
+            padding: 3rem 2rem !important;
+        }
+
+        @include devices(xs) {
+            padding: 3rem 1rem !important;
+        }
+
+        h3,
+        h4 {
+            font-weight: 800;
+            font-family: $fonts-noto;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            @include devices(xl) {
+                font-size: 1.5rem;
+            }
+
+            @include devices(lg) {
+                font-size: 1.3rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.4rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1.2rem;
+            }
+        }
+
+        h4 {
+            @include devices(xl) {
+                font-size: 1.2rem;
+            }
+
+            @include devices(lg) {
+                font-size: 1.09rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.25rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1.1rem;
+            }
+        }
+
+        p {
+            font-weight: bold;
+            margin-top: 0.8rem;
+
+            @include devices(xl) {
+                font-size: 0.875rem;
+            }
+
+            @include devices(lg) {
+                font-size: 0.8rem;
+            }
+
+            @include devices(md) {
+                font-size: 1rem;
+            }
+        }
+
+        .btns_group {
+            display: grid;
+            gap: 4.5rem;
+
+            @include devices(xl) {
+                gap: 3.5rem;
+            }
+
+            @include devices(lg) {
+                gap: 3rem;
+            }
+
+            .claim-btn {
+                @include padding-x(0, 0);
+            }
+        }
+    }
+}

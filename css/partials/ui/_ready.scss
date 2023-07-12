@@ -1,0 +1,74 @@
+#ready {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+    .site-upercase-title {
+        color: #1e1b15;
+        font-size: 40px;
+        font-weight: bold;
+
+        @include devices(xl) {
+            font-size: 35px;
+        }
+
+        @include devices(xs) {
+            font-size: 30px;
+        }
+    }
+
+    .semi-font-text {
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        font-weight: bold;
+        color: #333;
+        width: 70%;
+
+        @include devices(xl) {
+            margin-top: 1.5rem;
+            margin-bottom: 2.3rem;
+        }
+
+        @include devices(lg) {
+            width: 90%;
+        }
+
+        @include devices(md) {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+        @include devices(xs) {
+            font-size: 0.9rem;
+            margin-top: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            font-weight: 800;
+        }
+    }
+
+    .stars {
+        display: flex;
+        gap: 1.6rem;
+        justify-content: center;
+
+        img {
+            width: 32px;
+            filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+
+            @include devices(xl) {
+                width: 26px;
+            }
+
+            @include devices(md) {
+                width: 32px;
+            }
+
+            @include devices(xs) {
+                width: 22px;
+            }
+        }
+    }
+}

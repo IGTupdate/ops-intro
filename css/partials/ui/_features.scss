@@ -1,0 +1,85 @@
+.section3 {
+    position: relative;
+
+    &::after {
+        @include pseudo("", 145px, 0, 25%, 35%);
+        background-image: url(../images/section3-line.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include devices(xs) {
+            display: none;
+        }
+    }
+
+    .bg-img {
+        pointer-events: none;
+
+        img {
+            position: absolute;
+
+            &:first-child {
+                top: 100px;
+                left: -131px;
+            }
+
+            &:last-child {
+                bottom: -160px;
+                right: -100px;
+            }
+        }
+    }
+
+    .semi-font-text {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 0.9rem;
+
+        @include devices(xs) {
+            font-size: 0.9rem;
+        }
+
+        br {
+            @include devices(xs) {
+                display: none;
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.features-row {
+    margin-top: 5rem;
+    align-items: center;
+
+    @include devices(md) {
+        gap: 4rem;
+    }
+
+    @include devices(xs) {
+        margin-top: 3.3rem;
+    }
+
+    .arrow-right {
+        width: 60px;
+    }
+}
+
+.features-text {
+    p {
+        @include margin-y(1rem, 2rem);
+    }
+
+    ul {
+        display: grid;
+        gap: 1rem;
+
+        li {
+            font-size: 1.5rem;
+        }
+    }
+}
