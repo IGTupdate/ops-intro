@@ -1,14 +1,76 @@
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Semibold.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Variable.ttf');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Bernoru-BlackUltraExpanded';
+    src: url('../fonts/Bernoru-BlackUltraExpanded.otf');
+}
+
+@font-face {
+    font-family: 'EmojiOneColor';
+    src: url('../fonts/EmojiOneColor.otf');
+}
+
+
+// Fonts
+$font_primary: 'ClashDisplay', sans-serif;
+$font_secondary: 'MyriadPro-Regular', sans-serif;
+$font_tertiary: 'Bernoru-BlackUltraExpanded', sans-serif;
+$font_extra: 'EmojiOneColor', sans-serif;
+
+
 // Colors
 $black: #000000;
 $white: #ffffff;
 $green: #9ccd98;
+$green2: #B0E0C4;
+$green3: #8BC3A2;
+$green_light: #D4EEE1;
+$green_dark: #070E18;
+$green_off: #EEF8F3;
 $sky: #9fd1d6;
+$sky2: #8FC8CD;
+$sky_light: #dcefee;
 $orange: #fcc980;
+$orange_light: #feeca6;
 $purple: #e0cce4;
 $purple_light: #e0cce5;
-$sky_light: #dcefee;
-$orange_light: #feeca6;
+$peach: #FBAEA7;
 $peach_light: #feeacf;
+$peach_dark: #F85F53;
+$blue: #383997;
+$blue_dark: #151755;
+
 
 // Breakpoints
 $xl: 1399.98px;

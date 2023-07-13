@@ -1,10 +1,12 @@
 html {
     font-size: 16px;
-    overflow-x: hidden;
 }
 
+html,
 body {
+    font-family: $font_primary;
     overflow-x: hidden;
+    letter-spacing: 0.6px;
 }
 
 img {
@@ -15,6 +17,7 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    font-family: $font_primary;
 }
 
 ul {
@@ -43,4 +46,9 @@ h6,
 p,
 figure {
     margin-bottom: 0;
+}
+
+p {
+    font-family: $font_secondary;
+    font-weight: 600;
 }

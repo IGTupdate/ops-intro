@@ -2,10 +2,12 @@
     position: relative;
 
     &::after {
-        @include pseudo("", 145px, 0, 25%, 35%);
+        @include pseudo("", 145px, auto, 25%, 35%);
+        right: -50px;
         background-image: url(../images/section3-line.svg);
         background-repeat: no-repeat;
         background-size: contain;
+        transform: rotateY(180deg);
 
         @include devices(xs) {
             display: none;
@@ -53,7 +55,7 @@
 }
 
 .features-row {
-    margin-top: 5rem;
+    margin-top: 6rem;
     align-items: center;
 
     @include devices(md) {
@@ -63,15 +65,28 @@
     @include devices(xs) {
         margin-top: 3.3rem;
     }
-
-    .arrow-right {
-        width: 60px;
-    }
 }
 
 .features-text {
+    h4 {
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: 700;
+
+        &::before {
+            @include pseudo("", 0, 0, 60px, 100%);
+            background-image: url(../images/arrow-right.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: -150px;
+            border-bottom: 12px solid $green;
+            padding-bottom: 2rem;
+        }
+    }
+
     p {
         @include margin-y(1rem, 2rem);
+        font-size: 1.1rem;
     }
 
     ul {
@@ -79,7 +94,8 @@
         gap: 1rem;
 
         li {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 500;
         }
     }
 }

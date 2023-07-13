@@ -250,16 +250,15 @@ footer {
                 }
 
                 .contact-inner {
-                    background: #dcefee;
+                    background: $green_light;
                     padding: 1.6rem 1.4rem 3.2rem;
                     border-bottom-left-radius: inherit;
                     border-bottom-right-radius: inherit;
 
                     h3.contact-title {
-                        color: #1e1b15;
-                        font-size: 35px;
+                        font-size: 2.1rem;
                         margin-bottom: 25px;
-                        font-weight: bold;
+                        font-weight: 700;
 
                         @include devices(xl) {
                             font-size: 30px;
@@ -298,7 +297,7 @@ footer {
 
                                 img {
                                     position: absolute;
-                                    right: -150px;
+                                    right: -180px;
                                     left: auto;
                                     top: -8px;
 
@@ -343,7 +342,7 @@ footer {
                             a {
                                 width: inherit;
                                 padding: 0.6rem 0.3rem;
-                                font-weight: bold;
+                                font-weight: 600;
                                 font-size: 1.3rem;
 
                                 @include devices(xl) {
@@ -411,7 +410,7 @@ footer {
     }
 
     &::before {
-        @include pseudo("", -120px, 150px, 70px, 50px);
+        @include pseudo("", -100px, 150px, 70px, 50px);
         background-image: url(../images/plane.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -468,8 +467,7 @@ footer {
 
     h3 {
         color: white;
-        font-style: italic;
-        font-size: 26px;
+        font-size: 1.5rem;
         margin-top: 2.5rem;
         margin-bottom: 1.2rem;
 
@@ -501,6 +499,7 @@ footer {
 
     a {
         color: white;
+        font-weight: 400;
 
         @include devices(md) {
             font-size: 1.4rem;

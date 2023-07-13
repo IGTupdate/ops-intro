@@ -187,8 +187,7 @@ button:not(:disabled) {
 h2.title_h2 {
     color: #1e1b15;
     font-size: 40px;
-
-    font-weight: bold;
+    font-weight: 600;
 
     @include devices(xl) {
         font-size: 2rem;
@@ -203,7 +202,6 @@ h2.title_h2 {
     color: #1e1b15;
     font-size: 40px;
     font-weight: bold;
-    font-family: $fonts;
 
     @include devices(sm) {
         font-size: 30px;
@@ -215,10 +213,9 @@ h2.title_h2 {
 }
 
 .semi-font-text {
-    font-size: 19px;
+    font-size: 17px;
     width: 80%;
     @include mx-auto();
-    margin-bottom: 40px;
 
     @include devices(xl) {
         font-size: 16px;

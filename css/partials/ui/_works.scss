@@ -208,16 +208,16 @@
                     padding: 1rem 0.5rem 0.3rem;
                 }
 
-                &.sky-btn {
-                    background-color: #dcefee;
+                &.info_text1 {
+                    background-color: $green_light;
                 }
 
-                &.purple-btn {
-                    background-color: #e0cce4;
+                &.info_text2 {
+                    background-color: $peach;
                 }
 
-                &.orange-btn {
-                    background-color: #feeca6;
+                &.info_text3 {
+                    background-color: $green3;
                 }
 
                 span {
@@ -234,7 +234,6 @@
                     font-style: oblique 14deg;
                     border-radius: 50%;
                     align-items: center;
-                    font-family: 'NotoSans';
                     padding-right: 6px;
                     display: grid;
                     place-items: center;
@@ -261,7 +260,6 @@
                 }
 
                 h6 {
-                    font-weight: bold;
 
                     @include devices(xl) {
                         font-size: 0.8rem;

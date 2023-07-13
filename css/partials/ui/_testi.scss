@@ -95,16 +95,6 @@
     }
 }
 
-.t1 {
-    color: #fff;
-    font-size: 19px;
-    padding-bottom: 13px;
-
-    @include devices(xl) {
-        font-size: 1rem;
-    }
-}
-
 .qt_text {
     text-align: center;
     color: #fff;
@@ -133,6 +123,11 @@
     padding-top: 30px;
     font-size: 20px;
 
+    b {
+        margin-left: 1rem;
+        font-weight: 500;
+    }
+
     @include devices(xl) {
         font-size: 1.05rem;
     }
@@ -145,6 +140,22 @@
 .testi-swiper-img {
     padding-top: 2.5rem;
     filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+
+    .testi-info {
+        p {
+            color: #fff;
+            font-size: 19px;
+            font-weight: 500;
+
+            b {
+                font-weight: 600;
+            }
+
+            @include devices(xl) {
+                font-size: 1rem;
+            }
+        }
+    }
 
     .swiper-pagination {
         width: auto;
@@ -160,7 +171,7 @@
         position: relative;
         @include dimension(410px, 310px);
         margin-left: 3rem;
-        margin-top: 2rem;
+        margin-top: 3rem;
 
         @include devices(xl) {
             @include dimension(340px, 240px);
