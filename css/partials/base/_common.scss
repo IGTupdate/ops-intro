@@ -23,21 +23,76 @@ button:not(:disabled) {
     cursor: pointer;
 }
 
+.bg_green {
+    background-color: $green;
+}
 
-.bg-purple-light {
+.bg_green2 {
+    background-color: $green2;
+}
+
+.bg_green3 {
+    background-color: $green3;
+}
+
+.bg_green_light {
+    background-color: $green_light;
+}
+
+.bg_green_dark {
+    background-color: $green_dark;
+}
+
+.bg_green_off {
+    background-color: $green_off;
+}
+
+.bg_purple {
+    background-color: $purple;
+}
+
+.bg_purple_light {
     background-color: $purple_light;
 }
 
-.bg-sky-light {
+.bg_sky {
+    background-color: $sky;
+}
+
+.bg_sky2 {
+    background-color: $sky2;
+}
+
+.bg_sky_light {
     background-color: $sky_light;
 }
 
-.bg-orange-light {
+.bg_orange {
+    background-color: $orange;
+}
+
+.bg_orange_light {
     background-color: $orange_light;
 }
 
-.bg-peach-light {
+.bg_peach {
+    background-color: $peach;
+}
+
+.bg_peach_light {
     background-color: $peach_light;
+}
+
+.bg_peach_dark {
+    background-color: $peach_dark;
+}
+
+.bg_blue {
+    background-color: $blue;
+}
+
+.bg_blue_dark {
+    background-color: $blue_dark;
 }
 
 .chip {
@@ -184,6 +239,10 @@ button:not(:disabled) {
     @include padding-y(7rem, 7rem)
 }
 
+.divider {
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.5);
+}
+
 h2.title_h2 {
     color: #1e1b15;
     font-size: 40px;
@@ -259,6 +318,11 @@ h2.title_h2 {
 
 .overflow_hide {
     overflow: hidden;
+}
+
+.services-template {
+    background-image: url(../images/abstract.jpg);
+    @include bg-cover();
 }
 
 .swiper {

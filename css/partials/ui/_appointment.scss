@@ -156,9 +156,8 @@
                 }
 
                 h2 {
-                    font-style: oblique 14deg;
                     font-size: 2.3rem;
-                    font-weight: bold;
+                    font-weight: 600;
 
                     @include devices(xl) {
                         font-size: 1.8rem;
@@ -219,8 +218,7 @@
                                 }
 
                                 img {
-                                    width: 22px;
-                                    vertical-align: unset;
+                                    width: 30px;
 
                                     @include devices(xl) {
                                         width: 16px;
@@ -308,12 +306,10 @@
                     .btn {
                         position: relative;
                         z-index: 2;
-                        background-color: #feeacf;
                         color: #000;
-                        font-size: 2rem;
-                        font-weight: 800;
-                        font-style: oblique 14deg;
-                        @include padding-x(22px, 22px);
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        padding: 0.8rem 2.5rem;
 
                         @include devices(xl) {
                             font-size: 1.4rem;
@@ -327,28 +323,29 @@
                             font-size: 1.5rem;
                         }
 
-                        span {
-                            &:nth-child(1) {
-                                color: #ce036b;
-                            }
+                        // span {
+                        //     &:nth-child(1) {
+                        //         color: #ce036b;
+                        //     }
 
-                            &:nth-child(2) {
-                                color: #a89dbf;
-                            }
+                        //     &:nth-child(2) {
+                        //         color: #a89dbf;
+                        //     }
 
-                            &:nth-child(3) {
-                                color: #c6818b;
-                            }
+                        //     &:nth-child(3) {
+                        //         color: #c6818b;
+                        //     }
 
-                            &:nth-child(4) {
-                                color: #b183ba;
-                            }
-                        }
+                        //     &:nth-child(4) {
+                        //         color: #b183ba;
+                        //     }
+                        // }
                     }
                 }
 
-                p {
+                h5 {
                     margin-top: 2.2rem;
+                    font-weight: normal;
 
                     @include devices(xl) {
                         font-size: 0.8rem;
@@ -363,10 +360,8 @@
                         margin-top: 2.2rem;
                     }
 
-                    br {
-                        @include devices(sm) {
-                            display: none;
-                        }
+                    span {
+                        color: $peach_dark;
                     }
                 }
             }
