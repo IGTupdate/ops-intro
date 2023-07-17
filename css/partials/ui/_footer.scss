@@ -162,7 +162,6 @@ footer {
         .contact-box {
             position: relative;
             width: 28%;
-            filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
 
             @include devices(xl) {
                 width: 33%;
@@ -233,18 +232,6 @@ footer {
 
                         @include devices(xs) {
                             padding: 7px;
-                        }
-
-                        &.sky-circle {
-                            background: #a0d2d6;
-                        }
-
-                        &.purple-circle {
-                            background: #b183ba;
-                        }
-
-                        &.blue-cicle {
-                            background: #2d2765;
                         }
                     }
                 }
@@ -392,6 +379,7 @@ footer {
 }
 
 .footer-section {
+    color: #fff;
     position: relative;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -437,8 +425,12 @@ footer {
         }
     }
 
+    .foot-para {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
     p {
-        color: white;
         font-size: 1.2rem;
         font-weight: 100;
         padding-right: 90px;
@@ -465,9 +457,16 @@ footer {
         // }
     }
 
+    h5 {
+        @include margin-y(2rem, 1.3rem);
+        font-weight: 400;
+        font-size: 1.125rem;
+    }
+
     h3 {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
         margin-top: 2.5rem;
         margin-bottom: 1.2rem;
 
@@ -498,7 +497,6 @@ footer {
     }
 
     a {
-        color: white;
         font-weight: 400;
 
         @include devices(md) {

@@ -1,5 +1,6 @@
 .section3 {
     position: relative;
+    padding-top: 9rem;
 
     &::after {
         @include pseudo("", 145px, auto, 25%, 35%);

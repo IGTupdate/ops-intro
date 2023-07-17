@@ -1,0 +1,99 @@
+#opportunities {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/abstract.jpg);
+    @include bg-cover();
+    color: #fff;
+
+    @include devices(md) {
+        height: unset;
+    }
+}
+
+.opportunities_content {
+    margin-top: 9rem;
+
+    .title {
+        position: relative;
+
+        &::after {
+            @include pseudo("", -120px, auto, 900px, 100%);
+            right: 0;
+            background-image: url(../images/oppor-plane.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        h2 {
+            font-size: 4rem;
+            font-weight: 600;
+            padding-bottom: 0.8rem;
+            position: relative;
+
+            &::after {
+                @include pseudo("", auto, 0, 70%, 4px);
+                bottom: 0;
+                background-color: #fff;
+                border-radius: 10px;
+            }
+        }
+
+        h3 {
+            margin-top: 1rem;
+            font-style: italic;
+            color: $pink;
+            font-size: 2rem;
+        }
+    }
+}
+
+.opportunities_row {
+    margin-top: 4rem;
+
+    .left_col {
+        .box {
+            margin-left: 3rem;
+
+            h5 {
+                text-decoration: underline;
+                font-size: 1.4rem;
+                color: $pink;
+            }
+
+            p {
+                @include margin-y(1.8rem, 1.8rem);
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+
+            ul {
+                li {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+            }
+
+            .btn {
+                margin-top: 4rem;
+            }
+        }
+    }
+
+    .right_col {
+        margin-top: 5rem;
+        @include mx-auto();
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            button {
+                font-size: 1.4rem;
+                font-weight: 600;
+                border-radius: 18px;
+            }
+        }
+    }
+}

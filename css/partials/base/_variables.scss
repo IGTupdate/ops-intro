@@ -22,7 +22,7 @@
 }
 
 @font-face {
-    font-family: 'ClashDisplay';
+    font-family: 'ClashDisplay-Variable';
     src: url('../fonts/ClashDisplay-Variable.ttf');
 }
 
@@ -44,6 +44,7 @@
 
 // Fonts
 $font_primary: 'ClashDisplay', sans-serif;
+$font_primary_variable: 'ClashDisplay-Variable', sans-serif;
 $font_secondary: 'MyriadPro-Regular', sans-serif;
 $font_tertiary: 'Bernoru-BlackUltraExpanded', sans-serif;
 $font_extra: 'EmojiOneColor', sans-serif;
@@ -61,6 +62,7 @@ $green_off: #EEF8F3;
 $sky: #9fd1d6;
 $sky2: #8FC8CD;
 $sky_light: #dcefee;
+$pink: #F40758;
 $orange: #fcc980;
 $orange_light: #feeca6;
 $purple: #ABA3CE;

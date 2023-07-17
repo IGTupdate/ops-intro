@@ -1,7 +1,7 @@
 .section4 {
     position: relative;
+    color: #fff;
     background: url(../images/section_4.png);
-    background-color: #fff;
     background-repeat: no-repeat;
     background-size: 103% 100%;
     background-position-y: -110px;
@@ -78,8 +78,8 @@
     }
 
     .title_h2 {
-        text-align: left;
         color: #fff;
+        text-align: left;
 
         @include devices(sm) {
             text-align: center;
@@ -97,43 +97,47 @@
 
 .qt_text {
     text-align: center;
-    color: #fff;
-    font-size: 20px;
 
-    @include devices(xl) {
-        font-size: 1.05rem;
-    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
 
-    @include devices(lg) {
-        font-size: 0.95rem;
-    }
+        @include devices(xl) {
+            font-size: 1.05rem;
+        }
 
-    br {
-        @include devices(xs) {
-            display: none;
+        @include devices(lg) {
+            font-size: 0.95rem;
+        }
+
+        br {
+            @include devices(xs) {
+                display: none;
+            }
         }
     }
-
-
 }
 
 .qt_text-1 {
-    color: #fff;
     text-align: center;
-    padding-top: 30px;
-    font-size: 20px;
+    margin-top: 1.8rem;
 
-    b {
-        margin-left: 1rem;
-        font-weight: 500;
-    }
+    p {
+        font-size: 1.4rem;
+        font-weight: normal;
 
-    @include devices(xl) {
-        font-size: 1.05rem;
-    }
+        b {
+            margin-left: 1rem;
+            font-weight: 600;
+        }
 
-    @include devices(lg) {
-        font-size: 1rem;
+        @include devices(xl) {
+            font-size: 1.05rem;
+        }
+
+        @include devices(lg) {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -143,9 +147,8 @@
 
     .testi-info {
         p {
-            color: #fff;
-            font-size: 19px;
-            font-weight: 500;
+            font-size: 1.2rem;
+            font-weight: normal;
 
             b {
                 font-weight: 600;

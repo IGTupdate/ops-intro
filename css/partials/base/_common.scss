@@ -67,6 +67,10 @@ button:not(:disabled) {
     background-color: $sky_light;
 }
 
+.bg_pink {
+    background-color: $pink;
+}
+
 .bg_orange {
     background-color: $orange;
 }
@@ -108,6 +112,7 @@ button:not(:disabled) {
     // border: 4px solid $black;
     border-radius: 8px;
     padding: 6px 55px;
+    color: $black;
     // box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
     // filter: drop-shadow(6px 8px 11px rgba(0, 0, 0, 0.5));
 
@@ -268,16 +273,6 @@ h2.title_h2 {
 
     @include devices(xs) {
         font-size: 1.7rem;
-    }
-}
-
-.semi-font-text {
-    font-size: 17px;
-    width: 80%;
-    @include mx-auto();
-
-    @include devices(xl) {
-        font-size: 16px;
     }
 }
 

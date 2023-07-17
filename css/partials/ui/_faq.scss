@@ -152,9 +152,9 @@
 }
 
 .accordion-header button {
-    font-family: $font_secondary;
+    font-family: $font_primary_variable;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 4%) !important;
 
     @include devices(xl) {

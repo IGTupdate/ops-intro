@@ -208,18 +208,6 @@
                     padding: 1rem 0.5rem 0.3rem;
                 }
 
-                &.info_text1 {
-                    background-color: $green_light;
-                }
-
-                &.info_text2 {
-                    background-color: $peach;
-                }
-
-                &.info_text3 {
-                    background-color: $green3;
-                }
-
                 span {
                     position: absolute;
                     top: -40px;
@@ -260,6 +248,8 @@
                 }
 
                 h6 {
+                    font-size: 1.1em;
+                    font-weight: 600;
 
                     @include devices(xl) {
                         font-size: 0.8rem;
@@ -282,7 +272,6 @@
             p {
                 text-align: center;
                 margin-top: 1.5rem;
-                font-weight: bold;
 
                 @include devices(xl) {
                     margin-top: 0.9rem;

@@ -36,41 +36,11 @@ AOS.init({
 });
 
 const servicesSwiper = new Swiper(".services-swiper", {
-  //   slidesPerView: 1,
+  slidesPerView: 1,
   loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-  },
-});
-
-const servicesSwiper1 = new Swiper(".services-swiper1", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-  },
-});
-
-const servicesSwiper2 = new Swiper(".services-swiper2", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-  },
-});
-
-const servicesSwiper3 = new Swiper(".services-swiper3", {
-  loop: true,
+  effect: "fade",
+  fadeEffect: { crossFade: true },
+  grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

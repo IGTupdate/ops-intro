@@ -128,18 +128,6 @@
             .chip {
                 @include padding-y(1rem, 1rem);
 
-                &:first-child {
-                    background-color: $peach_dark;
-                }
-
-                &:nth-child(2) {
-                    background-color: $green_light;
-                }
-
-                &:last-child {
-                    background-color: $blue;
-                }
-
                 h6 {
                     font-size: 1.2rem;
                 }
