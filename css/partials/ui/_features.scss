@@ -69,34 +69,54 @@
 }
 
 .features-text {
-    h4 {
+    .accordion-button {
         position: relative;
-        font-size: 1.8rem;
-        font-weight: 700;
+        font-family: $font_primary_variable;
+        font-size: 1.5rem;
+        font-weight: 600;
+        box-shadow: none !important;
+
+        // &::before {
+        //     @include pseudo("", 0, 0, 60px, 100%);
+        //     background-image: url(../images/arrow-right.png);
+        //     background-repeat: no-repeat;
+        //     background-size: contain;
+        //     left: -150px;
+        //     border-bottom: 12px solid $green;
+        //     padding-bottom: 2rem;
+        // }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .accordion-button:focus {
+        box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #000000;
+        background-color: transparent;
+        position: relative;
 
         &::before {
-            @include pseudo("", 0, 0, 60px, 100%);
+            @include pseudo("", 20px, 0, 60px, 100%);
             background-image: url(../images/arrow-right.png);
             background-repeat: no-repeat;
             background-size: contain;
             left: -150px;
             border-bottom: 12px solid $green;
-            padding-bottom: 2rem;
         }
     }
 
-    p {
-        @include margin-y(1rem, 2rem);
-        font-size: 1.1rem;
+    .accordion-item {
+        background-color: #fff;
+        border: none;
+        margin-bottom: 0.5rem;
     }
 
-    ul {
-        display: grid;
-        gap: 1rem;
-
-        li {
-            font-size: 1.4rem;
-            font-weight: 500;
-        }
+    .accordion-body {
+        padding-top: 0;
     }
 }

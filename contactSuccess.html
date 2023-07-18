@@ -30,91 +30,44 @@
     <!-- Why Opslabel Page -->
     <section id="contact_page" class="contactSuccess">
 
-        <div class="services-template">
-            <div class="services-left_block">
-                <div class="services-left_block-logo"><a href="/"><img src="images/logo.png"></a></div>
-                <div class="studiesDetails-left_menu">
-                    <div class="menu_btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#fff" stroke-width=".6"
-                            fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
-                            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
-                                <animate dur="0.2s" attributeName="d"
-                                    values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
-                                    fill="freeze" begin="start.begin" />
-                                <animate dur="0.2s" attributeName="d"
-                                    values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
-                                    fill="freeze" begin="reverse.begin" />
-                            </path>
-                            <rect width="10" height="10" stroke="none">
-                                <animate dur="2s" id="reverse" attributeName="width" begin="click" />
-                            </rect>
-                            <rect width="10" height="10" stroke="none">
-                                <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze"
-                                    begin="click" />
-                                <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze"
-                                    begin="reverse.begin" />
-                            </rect>
-                        </svg>
+        <div class="services-left_block">
+            <div class="logo_img">
+                <a href="/">
+                    <img src="./images/logo02.svg" alt="logo">
+                </a>
+            </div>
+
+            <button class="menu_btn">
+                <img src="./images/menu-btn-2.svg" alt="menu">
+            </button>
+
+            <div class="social_links">
+                <a href="#">
+                    <img src="./images/linkedin.svg" alt="">
+                </a>
+                <a href="mailto:contact@opslabel.com">
+                    <img src="./images/mail.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Menubar -->
+        <div id="menubar">
+            <div class="row menu_content">
+                <div class="col-2 col-lg-1 menu_left_col">
+                    <div class="logo_img">
+                        <a href="/">
+                            <img src="./images/logo02.svg" alt="logo">
+                        </a>
                     </div>
-                </div>
 
-                <!-- Menubar -->
-                <div id="menubar">
-                    <div class="row menu_content">
-                        <div class="col-2 col-lg-1 menu_left_col">
-                            <div class="social_links">
-                                <a href="#">
-                                    <img src="./images/linkedin.svg" alt="">
-                                </a>
-                                <a href="mailto:contact@opslabel.com">
-                                    <img src="./images/mail.svg" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="./images/instagram.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
+                    <button class="menu_close_btn">
+                        <img src="./images/menu-btn-2.svg" alt="menu">
+                    </button>
 
-                        <div class="col-10 col-lg-6 menu_mid_col">
-                            <div>
-                                <nav>
-                                    <a href="/">About</a>
-                                    <a href="services.html">Services</a>
-                                    <a href="caseStudies.html">Case Studies</a>
-                                    <a href="whyOpslabel.html">Why Opslabel</a>
-                                    <a href="contact.html">Contact</a>
-                                </nav>
-
-                                <div class="menu_btns_group">
-                                    <a class="btn green-btn" href="https://calendly.com/bookedcall/opslabelsintro">Book
-                                        a Free
-                                        Demo</a>
-                                    <a class="btn perple-btn claim-btn" href="appointment.html">Claim your 1 free
-                                        appt offer!</a>
-                                </div>
-                            </div>
-
-                            <div class="logo-img">
-                                <a href="/">
-                                    <img src="./images/logo.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="arrowfly-img">
-                                <img src="./images/arrow-fly.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 ps-0 menu_right_col">
-                            <div>
-                                <img src="./images/menubar/menu-img.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- left section -->
-                <div class="services-left_social_media">
                     <div class="social_links">
                         <a href="#">
                             <img src="./images/linkedin.svg" alt="">
@@ -127,8 +80,41 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="col-10 col-lg-6 menu_mid_col">
+                    <div>
+                        <nav>
+                            <a href="/">About</a>
+                            <a href="opportunities.html">Opportunities</a>
+                            <a href="caseStudies.html">Case Studies</a>
+                            <a href="whyOpslabel.html">Why Opslabel</a>
+                            <a href="contact.html">Contact</a>
+                        </nav>
+
+                        <div class="menu_btns_group">
+                            <a class="btn diamond_btn border_btn bg_green_light"
+                                href="https://calendly.com/bookedcall/opslabelsintro">Join
+                                the
+                                Network</a>
+                            <a class="btn plane_btn border_btn bg-white" href="appointment.html">Find an industry
+                                contact</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="logo-img">
+                    <a href="/">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </div> -->
+
+                    <div class="arrowfly_img">
+                        <img src="./images/plane-colored.svg" alt="plane-img">
+                    </div>
+                </div>
+
+                <div class="col-lg-5 menu_right_col">
+                </div>
             </div>
-        </div>
         </div>
 
         <div class="contactpage-right-block">
@@ -176,14 +162,11 @@
 
                                         <div class="col-lg-4">
                                             <div class="btns_group">
-                                                <a class="btn green-btn"
-                                                    href="https://calendly.com/bookedcall/opslabelsintro">Free 15 Minute
-                                                    Intro</a>
-                                                <a class="btn perple-btn claim-btn" href="appointment.html">Claim
-                                                    your
-                                                    1
-                                                    free
-                                                    appt offer!</a>
+                                                <a class="btn diamond_btn bg_green_light"
+                                                    href="https://calendly.com/bookedcall/opslabelsintro">Join the
+                                                    Network</a>
+                                                <a class="btn plane_btn border_btn bg-white"
+                                                    href="appointment.html">Find an industry contact</a>
                                             </div>
                                         </div>
                                     </div>

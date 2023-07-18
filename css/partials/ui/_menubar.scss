@@ -1,50 +1,6 @@
-.menu_btn {
-    position: fixed;
-    top: calc(58px - 32.5px);
-    left: calc(4% - 32.5px);
-    z-index: 1005;
-    overflow: hidden;
-    transition: all 0.25s linear;
-
-    @include devices(xl) {
-        top: calc(58px - 25px);
-        left: calc(4% - 25px);
-    }
-
-    @include devices(md) {
-        top: calc(54px - 25px);
-        left: calc(6% - 25px);
-    }
-
-    @include devices(xs) {
-        top: calc(38px - 20px);
-        left: calc(6% - 20px);
-    }
-
-    &.clicked {
-        top: calc(50% - 32.5px);
-
-        @include devices(md) {
-            left: calc(8.33% - 25px);
-        }
-    }
-
-    svg {
-        width: 65px;
-
-        @include devices(xl) {
-            width: 50px;
-        }
-
-        @include devices(xs) {
-            width: 40px;
-        }
-    }
-}
-
 #menubar {
     background-image: url(../images/abstract.jpg);
-    background-repeat: no-repeat;
+    @include bg-cover();
     position: fixed;
     top: 0;
     right: 0;
@@ -66,11 +22,39 @@
 
     .menu_left_col {
         padding-right: 0;
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo_img {
+            @include dimension(190px, 100%);
+            margin-left: 10rem;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 1;
+
+            a {
+                display: block;
+
+                img {
+                    @include img-fit();
+                }
+            }
+
+        }
+
+        .menu_close_btn {
+            @include dimension(50px, 50px);
+        }
     }
 
     .menu_mid_col {
         display: grid;
-        place-items: center;
+        align-items: center;
+        padding-left: 5rem;
         position: relative;
 
         @include devices(md) {
@@ -94,7 +78,7 @@
             a {
                 font-size: 4.4rem;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 600;
                 color: $white;
                 transition: color 0.2s linear;
 
@@ -123,11 +107,11 @@
                 }
 
                 &:nth-child(3) {
-                    color: $purple;
+                    color: $sky_light;
                 }
 
                 &:nth-child(4) {
-                    color: $peach_light;
+                    color: $blue;
                 }
 
                 &:nth-child(5) {
@@ -154,7 +138,7 @@
                 margin-top: 1.5rem;
             }
 
-            .green-btn {
+            .diamond_btn {
                 margin-right: 3rem;
 
                 @include devices(xl) {
@@ -171,36 +155,37 @@
             }
         }
 
-        .logo-img {
-            position: absolute;
-            top: 30px;
-            left: -80px;
-            width: 200px;
+        // .logo-img {
+        //     position: absolute;
+        //     top: 30px;
+        //     left: -80px;
+        //     width: 200px;
 
-            @include devices(xl) {
-                width: 150px;
-            }
+        //     @include devices(xl) {
+        //         width: 150px;
+        //     }
 
-            @include devices(lg) {
-                width: 135px;
-                left: -60px;
-            }
+        //     @include devices(lg) {
+        //         width: 135px;
+        //         left: -60px;
+        //     }
 
-            @include devices(md) {
-                width: 200px;
-                left: -80px;
-            }
+        //     @include devices(md) {
+        //         width: 200px;
+        //         left: -80px;
+        //     }
 
-            @include devices(xs) {
-                width: 100px;
-                left: -30px;
-            }
-        }
+        //     @include devices(xs) {
+        //         width: 100px;
+        //         left: -30px;
+        //     }
+        // }
 
-        .arrowfly-img {
+        .arrowfly_img {
             position: absolute;
             top: 85px;
             right: -45px;
+            width: 15rem;
 
             @include devices(xl) {
                 width: 180px;
@@ -217,18 +202,13 @@
     }
 
     .menu_right_col {
-        display: grid;
         min-height: 100vh;
         border-left: 12px solid #E5EBE5;
+        background-image: url(../images/menu.jpg);
+        @include bg-cover();
 
         @include devices(md) {
             display: none;
-        }
-
-        div {
-            img {
-                @include img-fit();
-            }
         }
     }
 }

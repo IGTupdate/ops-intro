@@ -3,7 +3,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    @include padding-y(0.4rem, 0.4rem);
+    // @include padding-y(0.4rem, 0.4rem);
+    padding-top: 0.5rem;
     z-index: 99;
     transition: all 0.3s ease;
 
@@ -14,40 +15,31 @@ header {
     }
 
     .site-logo {
-        width: 160px;
+        width: 150px;
 
         @include devices(xl) {
             width: 140px;
         }
 
-        @include devices(lg) {
-            margin-left: 3rem;
-        }
-
-        @include devices(md) {
-            margin-left: 2rem;
-        }
-
-        @include devices(sm) {
-            margin-left: 0;
-        }
-
         @include devices(xs) {
             width: 80px;
-            margin-left: 3rem;
         }
     }
 
     .nav_btn {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
 
         @include devices(xs) {
             transform: scale(0.8);
         }
 
-        .btn.green-btn {
-            @include devices(xs) {
-                @include padding-x(1.2rem, 1.2rem);
-                font-size: 0.8rem;
+        button {
+            @include dimension(50px, 50px);
+
+            img {
+                @include img-fit();
             }
         }
     }

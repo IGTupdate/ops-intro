@@ -20,19 +20,32 @@ const whyopsInnerSwiper = new Swiper(".whyops_inner_swiper", {
 });
 
 // menubar
-const menuBtn = document.querySelector(".menu_btn");
 const menubar = document.querySelector("#menubar");
+const menuBtn = document.querySelector(".menu_btn");
+const menuCloseBtn = document.querySelector(".menu_close_btn");
 
 menuBtn.addEventListener("click", () => {
-  document.documentElement.classList.toggle("overflow_hide");
-  menuBtn.classList.toggle("clicked");
-  menubar.classList.toggle("show");
+  document.documentElement.classList.add("overflow_hide");
+  menubar.classList.add("show");
+});
+
+menuCloseBtn.addEventListener("click", () => {
+  document.documentElement.classList.remove("overflow_hide");
+  menubar.classList.remove("show");
 });
 
 // AOS
 AOS.init({
   duration: 600, // values from 0 to 3000, with step 50ms
   mirror: true, // whether elements should animate out while scrolling past them
+});
+
+// hero-findMore-btn
+const findMoreBtn = document.querySelector(".find_more");
+const heroPara = $(".hero_para");
+
+findMoreBtn.addEventListener("click", () => {
+  heroPara.slideToggle("fast", "linear");
 });
 
 const servicesSwiper = new Swiper(".services-swiper", {

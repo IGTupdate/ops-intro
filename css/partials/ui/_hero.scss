@@ -36,7 +36,8 @@
         height: 713px;
     }
 
-    .hero-left {
+    .hero_txt {
+        padding-top: 2rem;
 
         h1 {
             color: #030405;
@@ -79,9 +80,11 @@
         }
 
         p {
-            width: 580px;
+            display: none;
+            width: 600px;
             font-size: 1rem;
             line-height: 1.5;
+            margin-bottom: 1.5rem;
 
             @include devices(xl) {
                 font-size: 0.92rem;
@@ -105,25 +108,40 @@
                 font-size: 0.9rem;
             }
         }
-    }
 
-    .hero-img {
-        position: relative;
-        text-align: center;
-        @include mx-auto();
+        .btns_group {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding-top: 1rem;
 
-        &::before {
-            @include pseudo("", 0, 0, 100%, 100%);
-            background-image: url(../images/hero-ring.png);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
+            .btn {
+                &.find_more {
+                    @include padding-x(1.3rem, 1.3rem);
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                }
+
+                &.diamond_btn {
+                    text-decoration: underline;
+
+                    &::after {
+                        width: 16px;
+                        top: -12px;
+                        right: 110px;
+                    }
+                }
+            }
         }
 
+    }
+
+    .hero_img {
+        position: relative;
+
         .hand-img {
-            margin-top: -60px;
-            // margin-left: 4rem;
-            // object-fit: contain;
+            margin-top: -40px;
             position: relative;
             z-index: 1;
 

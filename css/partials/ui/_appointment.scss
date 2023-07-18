@@ -275,9 +275,10 @@
 
                     &::after {
                         @include pseudo("", -280px, auto, 500px, 500px);
-                        right: -400px;
+                        right: -600px;
                         background-image: url(../images/appt-plane.svg);
                         background-repeat: no-repeat;
+                        background-size: contain;
                         z-index: 1;
 
                         @include devices(xl) {
@@ -306,21 +307,13 @@
                     .btn {
                         position: relative;
                         z-index: 2;
-                        color: #000;
-                        font-size: 1.8rem;
-                        font-weight: 600;
-                        padding: 0.8rem 2.5rem;
+                        font-size: 1.3rem;
+                        @include padding-x(2.5rem, 2.5rem);
 
-                        @include devices(xl) {
-                            font-size: 1.4rem;
-                        }
-
-                        @include devices(lg) {
-                            font-size: 1.2rem;
-                        }
-
-                        @include devices(md) {
-                            font-size: 1.5rem;
+                        &::after {
+                            width: 30px;
+                            top: -16px;
+                            right: 10px;
                         }
 
                         // span {
@@ -361,7 +354,7 @@
                     }
 
                     span {
-                        color: $peach_dark;
+                        color: $pink;
                     }
                 }
             }

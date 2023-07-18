@@ -109,134 +109,39 @@ button:not(:disabled) {
 }
 
 .btn {
-    // border: 4px solid $black;
-    border-radius: 8px;
-    padding: 6px 55px;
+    position: relative;
+    font-family: $font_primary_variable;
+    font-weight: 600;
+    text-transform: uppercase;
     color: $black;
-    // box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
-    // filter: drop-shadow(6px 8px 11px rgba(0, 0, 0, 0.5));
+    @include padding-y(0.67rem, 0.67rem);
 
-    &.green-btn {
-        background: $green;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 1rem;
-        position: relative;
+    &.border_btn {
+        border: 1px solid $black;
+    }
 
-        @include devices(xl) {
-            font-size: 0.8rem;
-            @include padding-x(50px, 50px);
-        }
-
-        @include devices(lg) {
-            @include padding-x(40px, 40px);
-        }
-
-        @include devices(md) {
-            font-size: 1rem;
-            @include padding-x(50px, 50px);
-        }
-
-        @include devices(xs) {
-            font-size: 0.9rem;
-            @include padding-x(30px, 30px);
-        }
-
+    &.plane_btn {
 
         &::after {
-            @include pseudo($content: "", $top: -15px, $left: auto, $width: 50px, $height: 25px);
-            background-image: url(../images/plane.png);
+            @include pseudo($content: "", $top: -20px, $left: auto, $width: 40px, $height: 100%);
+            right: 50px;
+            background-image: url(../images/plane-colored-2.svg);
             background-repeat: no-repeat;
             background-size: contain;
-
-            @include devices(xl) {
-                width: 30px;
-            }
+            filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.5));
         }
     }
 
-    &.sky-btn {
-        background: $sky;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 18px;
-    }
+    &.diamond_btn {
+        @include padding-x(2.2rem, 2.2rem);
 
-    &.sky-btn-light {
-        background-color: $sky_light;
-        text-transform: uppercase;
-        font-size: 18px;
-    }
-
-    &.orange-btn-light {
-        background-color: $orange_light;
-        text-transform: uppercase;
-        font-size: 18px;
-    }
-
-    &.orange-btn {
-        background: $orange;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 18px;
-    }
-
-    &.perple-btn {
-        background: $purple;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 18px;
-
-        &.claim-btn {
-            position: relative;
-
-            font-size: 1rem;
-            font-weight: bold;
-
-            @include devices(xl) {
-                font-size: 0.8rem;
-                @include padding-x(50px, 50px);
-            }
-
-            @include devices(lg) {
-                @include padding-x(40px, 40px);
-            }
-
-            @include devices(md) {
-                font-size: 1rem;
-                @include padding-x(50px, 50px);
-            }
-
-            @include devices(xs) {
-                font-size: 0.9rem;
-                @include padding-x(30px, 30px);
-            }
-
-            &::after {
-                @include pseudo($content: "", $top: -48px, $left: auto, $width: 65px, $height: 65px);
-                right: -22px;
-                background-image: url(../images/spark.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-
-                @include devices(xl) {
-                    top: -35px;
-                    right: -10px;
-                    @include dimension(50px, 50px);
-                }
-
-                @include devices(lg) {
-                    top: -32px;
-                    @include dimension(45px, 45px);
-                }
-
-                @include devices(xs) {
-                    top: -22px;
-                    @include dimension(35px, 35px);
-                }
-            }
+        &::after {
+            @include pseudo($content: "", $top: -15px, $left: auto, $width: 26px, $height: 100%);
+            right: 90px;
+            background-image: url(../images/diamond.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
         }
-
     }
 }
 
@@ -282,7 +187,6 @@ h2.title_h2 {
     gap: 1.8rem;
     align-items: center;
     justify-content: flex-end;
-    height: 100%;
     padding-bottom: 2rem;
 
     @include devices(xl) {
@@ -318,6 +222,36 @@ h2.title_h2 {
 .services-template {
     background-image: url(../images/abstract.jpg);
     @include bg-cover();
+}
+
+.services-left_block {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo_img {
+        @include dimension(190px, auto);
+        margin-left: 10rem;
+        margin-top: 2rem;
+        position: relative;
+        z-index: 1;
+
+        a {
+            display: block;
+
+            img {
+                @include img-fit();
+            }
+        }
+
+    }
+
+    .menu_btn {
+        @include dimension(50px, 50px);
+    }
 }
 
 .swiper {

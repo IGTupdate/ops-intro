@@ -36,43 +36,35 @@
             <div class="navbar">
                 <div>
                     <a href="/">
-                        <img class="site-logo" src="./images/logo.png" alt="logo">
+                        <img class="site-logo" src="./images/logo.svg" alt="logo">
                     </a>
                 </div>
                 <div class="nav_btn">
-                    <a class="btn border" href="https://calendly.com/bookedcall/opslabelsintro">Find an industry
+                    <a class="btn border_btn plane_btn" href="https://calendly.com/bookedcall/opslabelsintro">Find an
+                        industry
                         contact</a>
+                    <button class="menu_btn">
+                        <img src="./images/menu-btn.svg" alt="menu-btn">
+                    </button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Menu-btn -->
-    <div class="menu_btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000" stroke-width=".6" fill="rgba(0,0,0,0)"
-            stroke-linecap="round" style="cursor: pointer">
-            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
-                <animate dur="0.2s" attributeName="d"
-                    values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
-                    begin="start.begin" />
-                <animate dur="0.2s" attributeName="d"
-                    values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
-                    begin="reverse.begin" />
-            </path>
-            <rect width="10" height="10" stroke="none">
-                <animate dur="2s" id="reverse" attributeName="width" begin="click" />
-            </rect>
-            <rect width="10" height="10" stroke="none">
-                <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
-                <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
-            </rect>
-        </svg>
-    </div>
-
     <!-- Menubar -->
     <div id="menubar">
         <div class="row menu_content">
             <div class="col-2 col-lg-1 menu_left_col">
+                <div class="logo_img">
+                    <a href="/">
+                        <img src="./images/logo02.svg" alt="logo">
+                    </a>
+                </div>
+
+                <button class="menu_close_btn">
+                    <img src="./images/menu-btn-2.svg" alt="menu">
+                </button>
+
                 <div class="social_links">
                     <a href="#">
                         <img src="./images/linkedin.svg" alt="">
@@ -97,27 +89,27 @@
                     </nav>
 
                     <div class="menu_btns_group">
-                        <a class="btn green-btn" href="https://calendly.com/bookedcall/opslabelsintro">Join the
+                        <a class="btn diamond_btn border_btn bg_green_light"
+                            href="https://calendly.com/bookedcall/opslabelsintro">Join
+                            the
                             Network</a>
-                        <a class="btn perple-btn claim-btn" href="appointment.html">Find an industry contact</a>
+                        <a class="btn plane_btn border_btn bg-white" href="appointment.html">Find an industry
+                            contact</a>
                     </div>
                 </div>
 
-                <div class="logo-img">
+                <!-- <div class="logo-img">
                     <a href="/">
                         <img src="./images/logo.png" alt="">
                     </a>
-                </div>
+                </div> -->
 
-                <div class="arrowfly-img">
-                    <img src="./images/arrow-fly.png" alt="">
+                <div class="arrowfly_img">
+                    <img src="./images/plane-colored.svg" alt="plane-img">
                 </div>
             </div>
 
-            <div class="col-lg-5 ps-0 menu_right_col">
-                <div>
-                    <img src="./images/menu.jpg" alt="menu">
-                </div>
+            <div class="col-lg-5 menu_right_col">
             </div>
         </div>
     </div>
@@ -128,26 +120,24 @@
             <div class="container">
                 <div class="row gap-2 gap-sm-3 gap-md-4 gap-lg-0">
                     <div class="col-lg-6 p-lg-0" data-aos="fade-right">
-                        <div class="hero-left">
+                        <div class="hero_txt">
                             <h1>Work with top industry contacts to<br>
                                 <span id="typedElement"></span>
                             </h1>
-                            <p><b>OPSINTRO</b> provides an exclusive and powerful network of world leading business
-                                experts, enabling companies to accelerate their sales’ process, gain more traction
-                                and generate new clients. Specifically by introducing you to key contacts & action
-                                takers at the top.
+                            <p class="hero_para"><b>OPSINTRO</b> provides an exclusive and powerful network of business
+                                experts, enabling companies to accelerate their sales process and generate new clients.
+                                Specifically by introducing you to key inside contacts, action
+                                takers and decision makers.
                             </p>
 
-                            <div class="mt-4 d-flex align-items-center gap-5">
-                                <button class="btn bg-black text-white py-3 px-5">
-                                    <a href="">Find Out How</a>
-                                </button>
-                                <a href="" class="text-decoration-underline">JOIN THE NETWORK</a>
+                            <div class="btns_group">
+                                <button type="button" class="btn bg-black text-white find_more">Find Out More</button>
+                                <a href="" class="btn diamond_btn">JOIN THE NETWORK</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-10 col-lg-6 hero-img" data-aos="fade-up">
+                    <div class="col-md-10 col-lg-6 hero_img" data-aos="fade-up">
                         <img class="hand-img" src="./images/hero-img.png" alt="main-img">
                     </div>
                 </div>
@@ -213,15 +203,11 @@
                                     </div>
 
                                     <div class="col-lg-7 right_col">
-                                        <h5>UPGRADED PROJECTS & DESIGN</h5>
-                                        <p>Hiring top talent for your next project can be one of the most of fundamental
-                                            assets to
-                                            your business and cruial investments you ever make. The freelancers and
-                                            agencies on
-                                            our book have portfolio worthy of awards and create work which is driven
-                                            towards
-                                            brand identitiy and sales generation; which is the key difference with
-                                            Opsintro.</p>
+                                        <h5>OUR OPPORTUNITIES</h5>
+                                        <p>We are beyond excited to introduce you to contacts in our network that offer
+                                            you all the services required to accelerate your client acquisation and
+                                            conversion rates! We keep it simple as we know what works. These contacts
+                                            deliver and are the best of the best.</p>
                                     </div>
                                 </div>
                             </div>
@@ -240,15 +226,11 @@
                                     </div>
 
                                     <div class="col-lg-7 right_col">
-                                        <h5>UPGRADED PROJECTS & DESIGN</h5>
-                                        <p>Hiring top talent for your next project can be one of the most of fundamental
-                                            assets to
-                                            your business and cruial investments you ever make. The freelancers and
-                                            agencies on
-                                            our book have portfolio worthy of awards and create work which is driven
-                                            towards
-                                            brand identitiy and sales generation; which is the key difference with
-                                            Opsintro.</p>
+                                        <h5>OUR OPPORTUNITIES</h5>
+                                        <p>We are beyond excited to introduce you to contacts in our network that offer
+                                            you all the services required to accelerate your client acquisation and
+                                            conversion rates! We keep it simple as we know what works. These contacts
+                                            deliver and are the best of the best.</p>
                                     </div>
                                 </div>
                             </div>
@@ -283,16 +265,102 @@
                 <div class="col-lg-2"></div>
 
                 <div class="col-lg-5 features-text" data-aos="fade-right">
-                    <h4>HELPING first, RESULTS sooner after</h4>
-                    <p>We take a human-first approach & engage to understand your goals from a place of service. Results
-                        are driven by the companies in our network; we know can bring you incredible results.</p>
-                    <ul>
-                        <li>REPRESENTING Only Industry Experts</li>
-                        <li>Finally Turning Content Into Clients</li>
-                        <li>Our Top-Tier INSIDE Contact Book</li>
-                        <li>We really CARE > The Mission</li>
-                    </ul>
+                    <div class="accordion" id="featuresAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="featuresAccordion-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#featuresAccordion-collapseOne" aria-expanded="false"
+                                    aria-controls="featuresAccordion-collapseOne">
+                                    HELPING first, RESULTS sooner after
+                                </button>
+                            </h2>
+                            <div id="featuresAccordion-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="featuresAccordion-headingOne" data-bs-parent="#featuresAccordion">
+                                <div class="accordion-body">
+                                    <p>We take a human-first approach & engage to understand your goals from a place of
+                                        service. Results
+                                        are driven by the companies in our network; we know can bring you incredible
+                                        results.</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="featuresAccordion-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#featuresAccordion-collapseTwo" aria-expanded="false"
+                                    aria-controls="featuresAccordion-collapseTwo">
+                                    REPRESENTING Only Industry Experts
+                                </button>
+                            </h2>
+                            <div id="featuresAccordion-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="featuresAccordion-headingTwo" data-bs-parent="#featuresAccordion">
+                                <div class="accordion-body">
+                                    <p>We take a human-first approach & engage to understand your goals from a place of
+                                        service. Results
+                                        are driven by the companies in our network; we know can bring you incredible
+                                        results.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="featuresAccordion-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#featuresAccordion-collapseThree" aria-expanded="false"
+                                    aria-controls="featuresAccordion-collapseThree">
+                                    Finally Turning Content Into Clients
+                                </button>
+                            </h2>
+                            <div id="featuresAccordion-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="featuresAccordion-headingThree" data-bs-parent="#featuresAccordion">
+                                <div class="accordion-body">
+                                    <p>We take a human-first approach & engage to understand your goals from a place of
+                                        service. Results
+                                        are driven by the companies in our network; we know can bring you incredible
+                                        results.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="featuresAccordion-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#featuresAccordion-collapseFour" aria-expanded="false"
+                                    aria-controls="featuresAccordion-collapseFour">
+                                    Our Top-Tier INSIDE Contact Book
+                                </button>
+                            </h2>
+                            <div id="featuresAccordion-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="featuresAccordion-headingFour" data-bs-parent="#featuresAccordion">
+                                <div class="accordion-body">
+                                    <p>We take a human-first approach & engage to understand your goals from a place of
+                                        service. Results
+                                        are driven by the companies in our network; we know can bring you incredible
+                                        results.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="featuresAccordion-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#featuresAccordion-collapseFive" aria-expanded="false"
+                                    aria-controls="featuresAccordion-collapseFive">
+                                    We really CARE > The Mission
+                                </button>
+                            </h2>
+                            <div id="featuresAccordion-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="featuresAccordion-headingFive" data-bs-parent="#featuresAccordion">
+                                <div class="accordion-body">
+                                    <p>We take a human-first approach & engage to understand your goals from a place of
+                                        service. Results
+                                        are driven by the companies in our network; we know can bring you incredible
+                                        results.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
                     <!-- <div id="slidorion">
@@ -689,9 +757,7 @@
                     </div>
 
                     <div class="claim-btn-box">
-                        <a class="btn perple-btn float-start claim-btn" href="appointment.html">Claim your 1 free
-                            appt
-                            offer!</a>
+                        <a class="btn border_btn diamond_btn" href="appointment.html">Join the network</a>
                     </div>
                 </div>
 
@@ -796,8 +862,8 @@
                         </div>
                     </div>
 
-                    <div class="fly-arrow-img">
-                        <img src="./images/arrow-fly.png" alt="arrow-fly">
+                    <div class="arrowfly_img">
+                        <img src="./images/plane-colored.svg" alt="plane-img">
                     </div>
                 </div>
             </div>

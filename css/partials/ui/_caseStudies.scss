@@ -242,8 +242,8 @@
                     }
 
                     p {
-                        font-weight: 200;
-                        font-size: 1.3rem;
+                        font-weight: 400;
+                        font-size: 1.2rem;
                         padding-right: 50px;
                         line-height: 1.4;
 
@@ -348,183 +348,32 @@
                 }
 
                 .case_studies_btn_grid {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    align-items: center;
-                    gap: 20px;
                     margin-top: 4rem;
-                    color: black;
-                    font-size: 1.2rem;
-                    text-transform: uppercase;
-                    font-weight: 700;
-
-                    @include devices(xl) {
-                        margin-top: 36px;
-                    }
-
-                    @include devices(lg) {
-                        margin-top: 25px;
-                        gap: 25px;
-                    }
 
                     @include devices(md) {
-                        font-size: 0.9rem;
-                        padding-left: 14px;
-                    }
-
-                    @include devices(sm) {
-                        grid-template-columns: auto;
-                        gap: 11px;
-                        margin-top: 0px;
-                        padding-left: 2px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        margin-top: 3rem;
                     }
 
                     @include devices(xs) {
-                        margin: 20px 0px;
+                        margin-top: 1.5rem;
                     }
 
-                    .btn {
-                        border-radius: 50px;
-                    }
-
-                    .green-btn {
-                        height: 58px;
-                        margin-right: 0;
-                        padding-top: 14px;
-
-                        &::after {
-                            top: -22px;
-                            left: 10px;
-                            width: 58px;
-                            height: 36px;
-
-                            @include devices(xl) {
-                                top: -16px;
-                                left: 9px;
-                                width: 38px;
-                                height: 29px;
-                            }
-
-                            @include devices(lg) {
-                                top: -22px;
-                                left: 10px;
-                                width: 58px;
-                                height: 36px;
-                            }
-
-                            @include devices(md) {
-                                top: -17px;
-                                left: 19px;
-                                width: 44px;
-                                height: 44px;
-                            }
-                        }
+                    .diamond_btn {
+                        margin-right: 3rem;
 
                         @include devices(xl) {
-                            height: 44px;
-                            left: -2px;
-                            width: 100%;
-                            padding-top: 7px;
-                            font-size: 0.75rem;
+                            margin-right: 1.8rem;
                         }
 
                         @include devices(lg) {
-                            height: 46px;
-                            padding-top: 10px;
+                            margin-right: 0.7rem;
                         }
 
                         @include devices(md) {
-                            top: -12px;
-                            left: -4px;
-                            height: 50px;
-                            margin-top: 26px;
-                            padding-top: 11px;
-                            margin-right: 5px;
-                        }
-
-                        @include devices(xs) {
-                            height: 47px;
-                            margin-top: 26px;
-                            padding-top: 11px;
-                            font-size: 0.8rem;
-                        }
-                    }
-
-                    .perple-btn {
-                        height: 57px;
-                        width: 100%;
-                        text-align: center;
-                        padding-top: 14px;
-                        font-size: 15px;
-                        font-weight: bold;
-                        padding: 15px 22px;
-
-                        @include devices(xl) {
-                            margin-top: 3px;
-                            padding: 9px 10px;
-                            height: 44px;
-                            font-size: 12px;
-                        }
-
-                        @include devices(lg) {
-                            font-size: 0.75rem;
-                            padding: 9px 22px;
-                            height: 45px;
-                            margin-top: 4px;
-                        }
-
-
-                        @include devices(md) {
-                            margin-top: 15px;
-                            height: 51px;
-                            font-size: 13px;
-                            padding: 12px 22px;
-                        }
-
-                        @include devices(sm) {
-                            margin-top: 5px;
-                            font-size: 11px;
-                            height: 48px;
-                            padding: 12px 27px;
-                        }
-
-
-                        .star_bg_img {
-                            position: relative;
-                            top: -80px;
-                            left: 93%;
-                            z-index: 1;
-                            background-image: url("../images/spark.svg");
-                            background-repeat: no-repeat;
-                            background-size: 100%;
-                            background-position: center;
-                            height: 66px;
-                            width: 66px;
-
-                            @include devices(xl) {
-                                height: 31px;
-                                width: 36px;
-                                top: -48px;
-                            }
-
-                            @include devices(lg) {
-                                top: -53px;
-                                left: 96%;
-                                height: 42px;
-                                width: 42px;
-                            }
-
-                            @include devices(md) {
-                                top: -58px;
-                                left: 96%;
-                            }
-
-                            @include devices(sm) {
-                                top: -53px;
-                                left: 94%;
-                                height: 39px;
-                                width: 39px;
-                            }
+                            margin-right: 0;
                         }
                     }
                 }

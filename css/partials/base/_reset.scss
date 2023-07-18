@@ -20,6 +20,13 @@ a {
     font-family: $font_primary;
 }
 
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}
+
 ul {
     list-style-type: none;
 }
