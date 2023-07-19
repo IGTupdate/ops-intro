@@ -244,7 +244,7 @@
     </section>
 
     <!-- Features-section -->
-    <section class="section3 cp">
+    <section id="features" class="section3 cp">
         <div class="container">
             <div>
                 <h2 class="title_h2 mb-4">A NETWORK OF ACTION TAKERS</h2>
@@ -274,7 +274,7 @@
                                     HELPING first, RESULTS sooner after
                                 </button>
                             </h2>
-                            <div id="featuresAccordion-collapseOne" class="accordion-collapse collapse show"
+                            <div id="featuresAccordion-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="featuresAccordion-headingOne" data-bs-parent="#featuresAccordion">
                                 <div class="accordion-body">
                                     <p>We take a human-first approach & engage to understand your goals from a place of
@@ -361,38 +361,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <!-- <div id="slidorion">
-                        <div id="slider">
-                            <div class="slider-image" rel="section1">
-                                <img src="./images/abstract.jpg" width="500" height="400" />
-                            </div>
-                            <div class="slider-image" rel="section2">
-                                <img src="./images/abstract.jpg" width="500" height="400" />
-                            </div>
-                            <div class="slider-image" rel="section3">
-                                <img src="./images/menu.jpg" width="500" height="400" />
-                            </div>
-                        </div>
-                        <div id="accordion">
-                            <div class="header"><a class="slider-link" rel="section1">Kung Fu Panda 2</a></div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias quos adipisci quo
-                                exercitationem amet beatae
-                            </div>
-                            <div class="header"><a class="slider-link" rel="section2">The Dark Knight</a></div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias quos adipisci quo
-                                exercitationem amet beatae
-                            </div>
-                            <div class="header"><a class="slider-link" rel="section3">Hot Fuzz</a></div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias quos adipisci quo
-                                exercitationem amet beatae
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -449,7 +417,7 @@
     </section>
 
     <!-- Testi-section -->
-    <section class="section4 cp">
+    <section id="testi" class="section4 cp">
         <div class="container">
             <h2 class="title_h2 pb-5">WHAT THEY SAY ABOUT US...</h2>
             <div class="row justify-content-between testi_row">
@@ -1007,10 +975,6 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-    <!-- Slidorion JS -->
-    <script src="./slidorion/js/jquery.easing.js"></script>
-    <script src="./slidorion/js/jquery.slidorion.min.js"></script>
-
     <!-- Swiper-slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.js"></script>
 
@@ -1031,6 +995,30 @@
     <!-- Main JS -->
     <script src="./js/main.js"></script>
     <script src="./js/featureSlidorion.js"></script>
+
+    <script>
+
+        // Get all accordion buttons
+        const accordionButtons = document.querySelectorAll('#features .accordion-button');
+
+        // Function to toggle the accordion panels
+        const toggleAccordion = () => {
+            // Find the index of the currently active panel
+            const activeIndex = Array.from(accordionButtons).findIndex(function (button) {
+                return button.getAttribute('aria-expanded') === 'true';
+            });
+
+            // Calculate the index of the next panel
+            const nextIndex = (activeIndex + 1) % accordionButtons.length;
+
+            // Simulate a click event on the next accordion button
+            accordionButtons[nextIndex].click();
+        };
+
+        // Start the auto play interval
+        const autoplayInterval = setInterval(toggleAccordion, 2000);
+
+    </script>
 
 </body>
 

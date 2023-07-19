@@ -1063,11 +1063,11 @@ header .nav_btn button img {
   font-weight: 500;
 }
 
-.section3 {
+#features {
   position: relative;
   padding-top: 9rem;
 }
-.section3::after {
+#features::after {
   content: "";
   position: absolute;
   top: 145px;
@@ -1082,40 +1082,40 @@ header .nav_btn button img {
   transform: rotateY(180deg);
 }
 @media (max-width: 575.98px) {
-  .section3::after {
+  #features::after {
     display: none;
   }
 }
-.section3 .bg-img {
+#features .bg-img {
   pointer-events: none;
 }
-.section3 .bg-img img {
+#features .bg-img img {
   position: absolute;
 }
-.section3 .bg-img img:first-child {
+#features .bg-img img:first-child {
   top: 100px;
   left: -131px;
 }
-.section3 .bg-img img:last-child {
+#features .bg-img img:last-child {
   bottom: -160px;
   right: -100px;
 }
-.section3 .semi-font-text {
+#features .semi-font-text {
   width: 100%;
   margin-bottom: 0;
   margin-top: 0.9rem;
 }
 @media (max-width: 575.98px) {
-  .section3 .semi-font-text {
+  #features .semi-font-text {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 575.98px) {
-  .section3 .semi-font-text br {
+  #features .semi-font-text br {
     display: none;
   }
 }
-.section3 .container {
+#features .container {
   position: relative;
   z-index: 1;
 }
