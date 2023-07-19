@@ -3,12 +3,11 @@
     padding-top: 9rem;
 
     &::after {
-        @include pseudo("", 145px, auto, 25%, 35%);
-        right: -50px;
+        @include pseudo("", 145px, auto, 25%, 300px);
+        right: -30px;
         background-image: url(../images/section3-line.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        transform: rotateY(180deg);
 
         @include devices(xs) {
             display: none;
@@ -68,7 +67,33 @@
     }
 }
 
-.features-text {
+.features_img {
+    .frame {
+        border: 6px solid $black;
+        height: 430px;
+        border-radius: 16px;
+        overflow: hidden;
+
+        .frame_head {
+            // border-bottom: 6px solid $black;
+            // border-bottom-left-radius: 16px;
+            // border-bottom-right-radius: 16px;
+            overflow: hidden;
+
+            img {
+                @include img-fit();
+            }
+        }
+
+        .swiper-slide {
+            img {
+                @include img-fit();
+            }
+        }
+    }
+}
+
+.features_txt {
     .accordion-button {
         position: relative;
         font-family: $font_primary_variable;
@@ -76,37 +101,25 @@
         font-weight: 600;
         box-shadow: none !important;
 
-        // &::before {
-        //     @include pseudo("", 0, 0, 60px, 100%);
-        //     background-image: url(../images/arrow-right.png);
-        //     background-repeat: no-repeat;
-        //     background-size: contain;
-        //     left: -150px;
-        //     border-bottom: 12px solid $green;
-        //     padding-bottom: 2rem;
-        // }
-
         &::after {
             display: none;
         }
-    }
 
-    .accordion-button:focus {
-        box-shadow: none !important;
-    }
+        &:focus {
+            box-shadow: none !important;
+        }
 
-    .accordion-button:not(.collapsed) {
-        color: #000000;
-        background-color: transparent;
-        position: relative;
+        &:not(.collapsed) {
+            color: #000000;
+            background-color: transparent;
+            position: relative;
 
-        &::before {
-            @include pseudo("", 20px, 0, 60px, 100%);
-            background-image: url(../images/arrow-right.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            left: -150px;
-            border-bottom: 12px solid $green;
+            &::before {
+                @include pseudo("", 20px, -150px, 85px, 45px);
+                background-image: url(../images/arrow-right.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
         }
     }
 

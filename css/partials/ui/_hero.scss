@@ -41,13 +41,12 @@
 
         h1 {
             color: #030405;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
+            font-size: 3rem;
+            font-weight: 700;
             text-transform: uppercase;
 
             @include devices(xl) {
                 font-size: 2rem;
-                margin-bottom: 1rem;
             }
 
             @include devices(lg) {
@@ -65,17 +64,18 @@
             @include devices(xs) {
                 font-size: 1.85rem;
             }
+        }
+
+        h5 {
+            text-transform: uppercase;
+            color: #465898;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
 
             span {
-                color: #465898;
-
-                @include devices(sm) {
-                    font-size: 2.4rem;
-                }
-
-                @include devices(xs) {
-                    font-size: 1.55rem;
-                }
+                color: $pink;
             }
         }
 

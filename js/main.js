@@ -49,18 +49,29 @@ findMoreBtn.addEventListener("click", () => {
 });
 
 const servicesSwiper = new Swiper(".services-swiper", {
-  slidesPerView: 1,
+  // slidesPerView: "auto",
+  // loop: true,
+  // effect: "fade",
+  // fadeEffect: { crossFade: true },
+  // grabCursor: true,
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  // },
+
+  spaceBetween: 20,
+  centeredSlides: true,
+  speed: 4000,
+  autoplay: {
+    delay: 1,
+  },
   loop: true,
-  effect: "fade",
-  fadeEffect: { crossFade: true },
-  grabCursor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-  },
+  slidesPerView: "auto",
+  allowTouchMove: false,
+  disableOnInteraction: true,
 });
 
 const brandsSwiper = new Swiper(".brands-swiper", {
@@ -115,12 +126,7 @@ window.addEventListener("scroll", () => {
 
 // Typed
 var typed = new Typed("#typedElement", {
-  strings: [
-    "CLOSING MORE DEALS",
-    "15-20+ Leads",
-    "20-100+ Meetings",
-    "Valuable Connections",
-  ],
+  strings: ["SERVICES", "OPPORTUNITIES", "PROJECTS"],
   typeSpeed: 60,
   loop: true,
 });
