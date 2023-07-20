@@ -54,24 +54,24 @@
 
     .whyops-right-block {
         position: relative;
-        width: 92.5%;
+        // width: 92.5%;
         height: 100%;
-        margin-left: auto;
+        // margin-left: auto;
         display: grid;
         place-items: center;
 
         @include devices(md) {
             display: block;
-            width: 91%;
+            // width: 91%;
         }
 
-        @include devices(sm) {
-            width: 90%;
-        }
+        // @include devices(sm) {
+        //     width: 90%;
+        // }
 
-        @include devices(xs) {
-            width: 88%;
-        }
+        // @include devices(xs) {
+        //     width: 88%;
+        // }
 
         .whyops_head_btn {
             position: absolute;

@@ -103,7 +103,6 @@ footer {
         }
 
         .contact-text {
-            // @include mx-auto();
             margin-top: 7rem;
             font-weight: bold;
 
@@ -345,6 +344,7 @@ footer {
                                 }
 
                                 &.btn {
+                                    text-transform: none;
                                     border: 4px solid $black;
                                     border-radius: 20px;
                                     box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
@@ -432,20 +432,19 @@ footer {
 
     p {
         font-size: 1.2rem;
-        font-weight: 100;
-        padding-right: 90px;
+        font-weight: normal;
+
+        b {
+            font-weight: 500;
+            padding-left: 0.2rem;
+        }
 
         @include devices(xl) {
             font-size: 0.95rem;
         }
 
-        @include devices(lg) {
-            padding-right: 3rem;
-        }
-
         @include devices(md) {
             font-size: 1.5rem;
-            padding-right: 0;
         }
 
         @include devices(xs) {
@@ -571,9 +570,9 @@ footer {
                 font-size: 0.9rem;
             }
 
-            &:last-child {
-                margin-top: 0.7rem;
-            }
+            // &:last-child {
+            //     margin-top: 0.7rem;
+            // }
 
             a {
                 font-size: inherit;

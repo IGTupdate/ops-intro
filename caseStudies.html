@@ -28,10 +28,9 @@
 
 <body>
 
-  <div>
-    <div class="services-template">
-      <!-- left block -->
-      <div class="services-left_block" id="left-block">
+  <div id="case_studies">
+
+    <!-- <div class="services-left_block" id="left-block">
         <div class="logo_img">
           <a href="/">
             <img src="./images/logo02.svg" alt="logo">
@@ -53,34 +52,55 @@
             <img src="./images/instagram.svg" alt="">
           </a>
         </div>
+      </div> -->
+
+    <!-- Header -->
+    <header>
+      <div class="container-fluid">
+        <div class="navbar">
+          <div>
+            <a href="/">
+              <img class="site-logo" src="./images/logo02.svg" alt="logo">
+            </a>
+          </div>
+          <div class="nav_btn">
+            <!-- <a class="btn border_btn plane_btn" href="https://calendly.com/bookedcall/opslabelsintro">Find
+              an
+              industry
+              contact</a> -->
+            <button class="menu_btn">
+              <img src="./images/menu-btn.svg" alt="menu-btn">
+            </button>
+          </div>
+        </div>
       </div>
+    </header>
 
-      <!-- right block -->
-      <div class="services-main" id="right">
-        <div class="feature-right_block">
-          <div class="case_studies" data-aos="fade-up" data-aos-duration="2000">
-            <div class="case_studies_heading">
-              Featured <br>Case Studies
-            </div>
+    <div class="case_studies_content">
+      <div class="case_studies_txt" data-aos="fade-up" data-aos-duration="2000">
+        <div class="case_studies_heading">
+          Featured <br>Case Studies
+        </div>
 
-            <div class="case_studies_paragraph">
-              <!-- <p>Startups, Business Professionals as well as Leading Companies have worked with the OpsIntro team in
+        <div class="case_studies_paragraph">
+          <!-- <p>Startups, Business Professionals as well as Leading Companies have worked with the OpsIntro team in
                 order to generate new incredible content, scale their revenue and produce results by connecting with our
                 network.</p> -->
-              <p>Gain access to over 300+ experts and join tons of people benefiting from generating new opportunities
-                through the direct and expert contacts we’ve guaranteed them.</p>
-            </div>
+          <p>Gain access to over 300+ experts and join tons of people benefiting from generating new opportunities
+            through the direct and expert contacts we’ve guaranteed them.</p>
+        </div>
 
-            <!-- button elements in grid form -->
-            <div class="case_studies_btn_grid">
-              <a class="btn diamond_btn border_btn bg_green_light"
-                href="https://calendly.com/bookedcall/opslabelsintro">Join the Network</a>
-              <a class="btn plane_btn border_btn bg-white" href="appointment.html">Find an industry contact</a>
-            </div>
-          </div>
-          <!---------- image grid --------->
-          <div class="image_grid" data-aos="fade-up" data-aos-duration="7000">
-            <!-- <div class="image" id="img" onclick="showPopUp(0)">
+        <!-- button elements in grid form -->
+        <div class="case_studies_btn_grid">
+          <a class="btn diamond_btn border_btn bg_green_light"
+            href="https://calendly.com/bookedcall/opslabelsintro">Join the Network</a>
+          <a class="btn plane_btn border_btn bg-white" href="appointment.html">Find an industry contact</a>
+        </div>
+      </div>
+
+      <!---------- image grid --------->
+      <div class="image_grid" data-aos="fade-up" data-aos-duration="7000">
+        <!-- <div class="image" id="img" onclick="showPopUp(0)">
               <img src="../images/person.svg" alt="case_studies" />
               <div class="show_on_hover">
                 <div class="hide">
@@ -89,90 +109,43 @@
                 </div>
               </div>
             </div> -->
-            <div class="image" id="img1" onclick="showPopUp(1)">
-              <div class="img_wrapper">
-                <img src="./images/cs1.png" alt="case_studies" />
-              </div>
-              <div class="show_on_hover">
-                <div class="hide">
-                  <h3>Collective Gold</h3>
-                  <p>SALE Accelerator & Closer</p>
-                </div>
-              </div>
+        <div class="image" id="img1" onclick="showPopUp(1)">
+          <div class="img_wrapper">
+            <img src="./images/cs1.png" alt="case_studies" />
+          </div>
+          <div class="show_on_hover">
+            <div class="hide">
+              <h3>Collective Gold</h3>
+              <p>SALE Accelerator & Closer</p>
             </div>
+          </div>
+        </div>
 
-            <div class="image" id="img2" onclick="showPopUp(2)">
-              <div class="img_wrapper">
-                <img src="./images/whitney.svg" alt="case_studies" />
-              </div>
-              <div class="show_on_hover">
-                <div class="hide">
-                  <h3>Whitney</h3>
-                  <p>SALE Accelerator & Closers</p>
-                </div>
-              </div>
+        <div class="image" id="img2" onclick="showPopUp(2)">
+          <div class="img_wrapper">
+            <img src="./images/whitney.svg" alt="case_studies" />
+          </div>
+          <div class="show_on_hover">
+            <div class="hide">
+              <h3>Whitney</h3>
+              <p>SALE Accelerator & Closers</p>
             </div>
+          </div>
+        </div>
 
-            <div class="image" id="img3" onclick="showPopUp(3)">
-              <div class="img_wrapper">
-                <img src="./images/cs3.png" alt="case_studies" />
-              </div>
-              <div class="show_on_hover">
-                <div class="hide">
-                  <h3>Kelli</h3>
-                  <p>Appointment Setting Premium</p>
-                </div>
-              </div>
+        <div class="image" id="img3" onclick="showPopUp(3)">
+          <div class="img_wrapper">
+            <img src="./images/cs3.png" alt="case_studies" />
+          </div>
+          <div class="show_on_hover">
+            <div class="hide">
+              <h3>Kelli</h3>
+              <p>Appointment Setting Premium</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Brands-section -->
-    <section class="section3-logo" id="brands">
-      <div class="container-fluid px-4">
-        <div class="row text-center text-md-start gap-4 gap-md-0">
-          <div class="col-md-3">
-            <h2 class="word-spae-para">Trusted by leading<br> Brands and Startups</h2>
-          </div>
-
-          <div class="col-md-9">
-            <div class="swiper brands-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/brands/brands1.png">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="./images/brands/brands2.png">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="./images/brands/brands3.png">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="./images/brands/brands4.png">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="./images/brands/brands5.png">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="./images/brands/brands6.png">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="./images/brands/brands7.png">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Menubar -->
     <div id="menubar">
@@ -236,6 +209,57 @@
         </div>
       </div>
     </div>
+
+    <!-- Brands-section -->
+    <section id="brands">
+      <div class="container-fluid container-lg">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Trusted by leading<br> Brands and Startups</h2>
+          </div>
+        </div>
+        <!-- <div class="row text-center text-md-start gap-5 gap-md-0">
+              <div class="col-md-3">
+                  <h2>Trusted by leading<br> Brands and Startups</h2>
+              </div>
+
+              <div class="col-md-9">
+                  <div class="swiper brands-swiper">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="./images/brands/brands1.png">
+                          </div>
+
+                          <div class="swiper-slide">
+                              <img src="./images/brands/brands2.png">
+                          </div>
+
+                          <div class="swiper-slide">
+                              <img src="./images/brands/brands3.png">
+                          </div>
+
+                          <div class="swiper-slide">
+                              <img src="./images/brands/brands4.png">
+                          </div>
+
+                          <div class="swiper-slide">
+                              <img src="./images/brands/brands5.png">
+                          </div>
+
+                          <div class="swiper-slide">
+                              <img src="./images/brands/brands6.png">
+                          </div>
+
+                          <div class="swiper-slide">
+                              <img src="./images/brands/brands7.png">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+      </div>
+    </section>
+
   </div>
 
 

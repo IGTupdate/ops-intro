@@ -26,101 +26,101 @@
         }
     }
 
-    .services-template {
-        .services-left_block {
-            @include devices(lg) {
-                width: 7.5%;
-            }
+    // .services-template {
+    //     .services-left_block {
+    //         @include devices(lg) {
+    //             width: 7.5%;
+    //         }
 
-            @include devices(md) {
-                width: 9%;
-            }
+    //         @include devices(md) {
+    //             width: 9%;
+    //         }
 
-            @include devices(sm) {
-                width: 10%;
-            }
+    //         @include devices(sm) {
+    //             width: 10%;
+    //         }
 
-            @include devices(xs) {
-                width: 12%;
-            }
+    //         @include devices(xs) {
+    //             width: 12%;
+    //         }
 
-            .services-left_block-logo {
-                img {
-                    max-width: 190px;
-                    margin-top: 50px;
-                    margin-left: 84px;
+    //         .services-left_block-logo {
+    //             img {
+    //                 max-width: 190px;
+    //                 margin-top: 50px;
+    //                 margin-left: 84px;
 
-                    @include devices(xl) {
-                        max-width: 140px;
-                        margin-top: 35px;
-                        margin-left: 64px;
-                    }
+    //                 @include devices(xl) {
+    //                     max-width: 140px;
+    //                     margin-top: 35px;
+    //                     margin-left: 64px;
+    //                 }
 
-                    @include devices(lg) {
-                        max-width: 120px;
-                        margin-top: 15px;
-                        margin-left: 50px;
-                    }
+    //                 @include devices(lg) {
+    //                     max-width: 120px;
+    //                     margin-top: 15px;
+    //                     margin-left: 50px;
+    //                 }
 
-                    @include devices(md) {
-                        max-width: 150px;
-                        margin-left: 35px;
-                        margin-top: 20px;
-                    }
+    //                 @include devices(md) {
+    //                     max-width: 150px;
+    //                     margin-left: 35px;
+    //                     margin-top: 20px;
+    //                 }
 
-                    @include devices(xs) {
-                        max-width: 100px;
-                        margin-left: 20px;
-                        margin-top: 30px;
-                    }
-                }
-            }
+    //                 @include devices(xs) {
+    //                     max-width: 100px;
+    //                     margin-left: 20px;
+    //                     margin-top: 30px;
+    //                 }
+    //             }
+    //         }
 
-            .studiesDetails-left_menu {
-                .menu_btn {
-                    top: 44%;
-                    left: 45px;
+    //         .studiesDetails-left_menu {
+    //             .menu_btn {
+    //                 top: 44%;
+    //                 left: 45px;
 
-                    @include devices(xl) {
-                        left: 30px;
-                    }
+    //                 @include devices(xl) {
+    //                     left: 30px;
+    //                 }
 
-                    @include devices(lg) {
-                        left: 18px;
-                    }
+    //                 @include devices(lg) {
+    //                     left: 18px;
+    //                 }
 
-                    @include devices(sm) {
-                        left: 16px;
-                    }
+    //                 @include devices(sm) {
+    //                     left: 16px;
+    //                 }
 
-                    @include devices(xs) {
-                        left: 6px;
-                    }
-                }
-            }
-        }
-    }
+    //                 @include devices(xs) {
+    //                     left: 6px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     .contactpage-right-block {
         position: relative;
-        width: 92.5%;
         height: 100%;
-        margin-left: auto;
+        // width: 92.5%;
+        // margin-left: auto;
         display: grid;
         place-items: center;
 
         @include devices(md) {
             display: block;
-            width: 91%;
+            // width: 91%;
         }
 
-        @include devices(sm) {
-            width: 90%;
-        }
+        // @include devices(sm) {
+        //     width: 90%;
+        // }
 
-        @include devices(xs) {
-            width: 88%;
-        }
+        // @include devices(xs) {
+        //     width: 88%;
+        // }
     }
 
     .contactpage_head_btn {

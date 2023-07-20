@@ -43,9 +43,11 @@ AOS.init({
 // hero-findMore-btn
 const findMoreBtn = document.querySelector(".find_more");
 const heroPara = $(".hero_para");
+const heroSubHead = $(".hero_subHead");
 
 findMoreBtn.addEventListener("click", () => {
   heroPara.slideToggle("fast", "linear");
+  heroSubHead.slideToggle("fast", "linear");
 });
 
 const servicesSwiper = new Swiper(".services-swiper", {

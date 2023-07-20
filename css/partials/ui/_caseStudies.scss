@@ -1,527 +1,429 @@
-.services-template {
-    .services-left_block {
+#case_studies {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/abstract.jpg);
+    @include bg-cover();
+
+    @include devices(lg) {
+        height: unset;
+    }
+
+    .case_studies_content {
+        display: flex;
+        height: 90%;
 
         @include devices(lg) {
-            width: 7%;
+            flex-direction: column;
+            height: unset;
         }
 
-        @include devices(md) {
-            width: 12%;
-            position: fixed;
-            background: #eaeeef;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 9;
-        }
+        .case_studies_txt {
+            padding: 50px 50px 0px 50px;
+            width: 50%;
+            color: white;
 
-        @include devices(sm) {
-            width: 19%;
-        }
-
-
-        .services-left_block-logo {
-            img {
-                @include devices(md) {
-                    max-width: 118px;
-                }
+            @include devices(xl) {
+                padding: 40px 40px 5px 40px;
             }
-        }
-
-        .service-left_block-toggle {
-            .menu_btn {
-                position: absolute;
-            }
-        }
-
-        .services-left_social_media {
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            width: 100%;
-        }
-
-        .studiesDetails-left_menu {
-            .menu_btn {
-                position: absolute;
-                top: 44%;
-                left: 44px;
-
-                @include devices(xl) {
-                    left: 30px;
-                }
-
-                @include devices(lg) {
-                    top: 34%;
-                    left: 15px;
-                }
-
-                @include devices(md) {
-                    top: 39%;
-                    left: 30px;
-                }
-
-                @include devices(sm) {
-                    left: 24px;
-                }
-
-                @include devices(xs) {
-                    left: 14px;
-                    top: 41%;
-                }
-
-                span {
-                    @include devices(md) {
-                        width: 84%;
-                    }
-                }
-            }
-        }
-    }
-
-    #left-block {
-        width: 7.5%;
-        float: left;
-        position: relative;
-        height: 1165px;
-        z-index: 999;
-        height: auto;
-
-        @include devices(md) {
-            width: 12.5%;
-        }
-
-        @include devices(sm) {
-            width: 20.5%;
-        }
-
-        .studiesDetails-left_menu {
-            .menu_btn {
-                @include devices(xs) {
-                    left: 15px;
-                    top: 25%;
-                }
-            }
-        }
-    }
-
-    #right {
-        margin-left: 0;
-    }
-
-    .services-main {
-        .feature-right_block {
-            display: flex;
-            flex-direction: row;
 
             @include devices(lg) {
-                flex-direction: column;
+                padding: 31px;
             }
 
-            .case_studies {
-                padding: 50px 50px 0px 50px;
-                width: 50%;
-                color: white;
+            @include devices(lg) {
+                width: 100%;
+            }
+
+            @include devices(sm) {
+                padding: 14px;
+            }
+
+            .case_studies_heading {
+                font-size: 4rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-top: 10rem;
 
                 @include devices(xl) {
-                    padding: 40px 40px 5px 40px;
+                    font-size: 45px;
+                    line-height: 42px;
+                    margin-top: 5.2rem;
+                    margin-top: 8rem;
+                    padding: 0px;
                 }
 
                 @include devices(lg) {
-                    padding: 31px;
+                    font-size: 48px;
+                    line-height: 54px;
                 }
 
-                @include devices(lg) {
-                    width: 100%;
+                @include devices(md) {
+                    font-size: 49px;
+                    margin-top: 6rem;
+                    line-height: 58px;
                 }
 
                 @include devices(sm) {
-                    padding: 14px;
+                    font-size: 24px;
+                    margin-top: 7rem;
+                    line-height: 24px;
+                    text-align: unset;
                 }
 
-                .case_studies_heading {
-                    font-size: 4rem;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    line-height: 1.2;
-                    margin-top: 10rem;
+                @include devices(xs) {
+                    font-size: 36px;
+                    margin-top: 7rem;
+                    line-height: 40px;
+                }
+            }
+
+            .circular_div_section {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                padding: 0px 10px 0px 10px;
+
+                @include devices(xl) {
+                    gap: 10px;
+                }
+
+                @include devices(lg) {
+                    justify-content: flex-start;
+                }
+
+                @include devices(md) {
+                    justify-content: center;
+                }
+
+                div {
+                    height: 28px;
+                    width: 28px;
+                    border-radius: 50%;
+                    border: 2.4px solid black;
+                    @include margin-y(1.1rem, 1.1rem);
 
                     @include devices(xl) {
-                        font-size: 45px;
-                        line-height: 42px;
-                        margin-top: 5.2rem;
-                        margin-top: 8rem;
-                        padding: 0px;
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50%;
+                        border: 2.5px solid black;
                     }
 
                     @include devices(lg) {
-                        font-size: 48px;
-                        line-height: 54px;
+                        height: 23px;
+                        width: 23px;
                     }
 
                     @include devices(md) {
-                        font-size: 49px;
-                        margin-top: 6rem;
-                        line-height: 58px;
+                        height: 30px;
+                        width: 30px;
+                        border-width: 3.4px;
                     }
 
                     @include devices(sm) {
-                        font-size: 24px;
-                        margin-top: 7rem;
-                        line-height: 24px;
-                        text-align: unset;
-                    }
-
-                    @include devices(xs) {
-                        font-size: 36px;
-                        margin-top: 7rem;
-                        line-height: 40px;
-                    }
-                }
-
-                .circular_div_section {
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-                    padding: 0px 10px 0px 10px;
-
-                    @include devices(xl) {
-                        gap: 10px;
-                    }
-
-                    @include devices(lg) {
-                        justify-content: flex-start;
-                    }
-
-                    @include devices(md) {
-                        justify-content: center;
-                    }
-
-                    div {
-                        height: 28px;
-                        width: 28px;
-                        border-radius: 50%;
-                        border: 2.4px solid black;
-                        @include margin-y(1.1rem, 1.1rem);
-
-                        @include devices(xl) {
-                            height: 24px;
-                            width: 24px;
-                            border-radius: 50%;
-                            border: 2.5px solid black;
-                        }
-
-                        @include devices(lg) {
-                            height: 23px;
-                            width: 23px;
-                        }
-
-                        @include devices(md) {
-                            height: 30px;
-                            width: 30px;
-                            border-width: 3.4px;
-                        }
-
-                        @include devices(sm) {
-                            height: 25px;
-                            width: 25px;
-                            border-width: 3.1px;
-                            @include margin-y(1.7rem, 1.7rem);
-                        }
-                    }
-                }
-
-                .case_studies_paragraph {
-
-                    @include devices(xl) {
-                        padding: 0;
-                    }
-
-                    @include devices(xs) {
-                        padding: 0px;
-                    }
-
-                    p {
-                        font-weight: 400;
-                        font-size: 1.2rem;
-                        padding-right: 50px;
-                        line-height: 1.4;
-
-                        &:first-child {
-                            margin-top: 2.2rem;
-                            margin-bottom: 1.4rem;
-                        }
-
-                        @include devices(xl) {
-                            font-size: 0.95rem;
-                            padding-right: 0px;
-                            line-height: 18px;
-                            margin-bottom: 0.9rem;
-                        }
-
-                        @include devices(lg) {
-                            font-size: 1rem;
-                            line-height: 24px;
-                            padding-right: 0px;
-                            margin-bottom: 1rem;
-                        }
-
-                        @include devices(md) {
-                            font-size: 1.2rem;
-                            line-height: 22px;
-                            text-align: justify;
-                            padding-right: 0px;
-                            margin-bottom: 1.5rem;
-                        }
-
-                        @include devices(sm) {
-                            font-size: 1rem;
-                            line-height: 19px;
-                        }
-
-                        @include devices(xs) {
-                            margin-bottom: 1rem;
-                            text-align: left;
-                        }
-                    }
-                }
-
-                hr {
-                    display: block;
-                    margin-top: 0.5em;
-                    margin-bottom: 0.5em;
-                    margin-left: auto;
-                    margin-right: auto;
-                    border-style: dashed;
-                    border-width: 1px;
-                    border-color: grey;
-                }
-
-                .experience {
-
-
-                    p {
-                        &:first-child {
-                            font-size: 1rem;
-                            margin-top: 3%;
-                            letter-spacing: 0.015rem;
-                            text-transform: capitalize;
-                            font-weight: lighter;
-
-                            @include devices(xl) {
-                                font-size: 0.9rem;
-                                margin-top: 2%;
-                            }
-
-                            @include devices(xs) {
-                                font-size: 0.8rem;
-                            }
-                        }
-
-                        &:last-child {
-                            text-transform: uppercase;
-                            margin-top: 13px;
-                            line-height: 20px;
-                            letter-spacing: 0.01rem;
-                            font-size: 0.95rem;
-
-                            @include devices(xl) {
-                                margin-top: 10px;
-                                line-height: 16px;
-                                letter-spacing: 0.01rem;
-                                font-size: 0.75rem;
-                            }
-
-                            @include devices(lg) {
-                                font-size: 0.8rem;
-                            }
-
-                            @include devices(xs) {
-                                font-size: 0.7rem;
-                            }
-
-                            span {
-                                text-transform: none !important;
-                            }
-                        }
-                    }
-                }
-
-                .case_studies_btn_grid {
-                    margin-top: 4rem;
-
-                    @include devices(md) {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 2rem;
-                        margin-top: 3rem;
-                    }
-
-                    @include devices(xs) {
-                        margin-top: 1.5rem;
-                    }
-
-                    .diamond_btn {
-                        margin-right: 3rem;
-
-                        @include devices(xl) {
-                            margin-right: 1.8rem;
-                        }
-
-                        @include devices(lg) {
-                            margin-right: 0.7rem;
-                        }
-
-                        @include devices(md) {
-                            margin-right: 0;
-                        }
+                        height: 25px;
+                        width: 25px;
+                        border-width: 3.1px;
+                        @include margin-y(1.7rem, 1.7rem);
                     }
                 }
             }
 
-            .image_grid {
-                width: 50%;
-                display: grid;
-                @include grid-cols(2, 1fr, 0);
-                grid-auto-rows: 409px;
+            .case_studies_paragraph {
 
                 @include devices(xl) {
-                    grid-auto-rows: 296px;
-                }
-
-                @include devices(lg) {
-                    grid-auto-rows: 450px;
-                    width: 100%;
-                }
-
-                @include devices(md) {
-                    grid-auto-rows: 340px;
-                }
-
-                @include devices(sm) {
-                    grid-template-columns: auto;
-                    grid-auto-rows: 325px;
+                    padding: 0;
                 }
 
                 @include devices(xs) {
-                    grid-auto-rows: 291px;
+                    padding: 0px;
                 }
 
-                #img1 {
-                    grid-column: span 2;
+                p {
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    padding-right: 50px;
+                    line-height: 1.4;
+
+                    &:first-child {
+                        margin-top: 2.2rem;
+                        margin-bottom: 1.4rem;
+                    }
+
+                    @include devices(xl) {
+                        font-size: 0.95rem;
+                        padding-right: 0px;
+                        line-height: 18px;
+                        margin-bottom: 0.9rem;
+                    }
+
+                    @include devices(lg) {
+                        font-size: 1rem;
+                        line-height: 24px;
+                        padding-right: 0px;
+                        margin-bottom: 1rem;
+                    }
+
+                    @include devices(md) {
+                        font-size: 1.2rem;
+                        line-height: 22px;
+                        text-align: justify;
+                        padding-right: 0px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    @include devices(sm) {
+                        font-size: 1rem;
+                        line-height: 19px;
+                    }
+
+                    @include devices(xs) {
+                        margin-bottom: 1rem;
+                        text-align: left;
+                    }
                 }
+            }
 
-                .image {
-                    position: relative;
-                    overflow: hidden;
+            hr {
+                display: block;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: dashed;
+                border-width: 1px;
+                border-color: grey;
+            }
 
-                    &:hover .hide {
-                        display: block;
-                        opacity: 1;
+            .experience {
 
-                        @include devices(lg) {
-                            display: none;
-                        }
-                    }
 
-                    .img_wrapper {
-                        @include dimension(100%, 100%);
-                        border: 1px solid black;
-                        cursor: pointer;
-                        overflow: hidden;
+                p {
+                    &:first-child {
+                        font-size: 1rem;
+                        margin-top: 3%;
+                        letter-spacing: 0.015rem;
+                        text-transform: capitalize;
+                        font-weight: lighter;
 
-                        img {
-                            @include img-fit();
-                        }
-                    }
-
-                    .show_on_hover {
-                        position: absolute;
-                        bottom: 20px;
-                        left: 0;
-                        width: 100%;
-                        text-transform: uppercase;
-                        transition: opacity .5s ease-in-out;
-                        -moz-transition: opacity .5s ease-in-out;
-                        -webkit-transition: opacity .5s ease-in-out;
-
-                        div {
-                            padding: 20px;
-                            width: 90%;
-                            margin: auto;
-                            border: 2px solid white;
-                            background-color: white;
+                        @include devices(xl) {
                             font-size: 0.9rem;
-                            text-align: justify;
-                            line-height: 35px;
+                            margin-top: 2%;
+                        }
 
-                            @include devices(xl) {
-                                padding: 11px;
-                                width: 90%;
-                                font-size: 0.9rem;
-                                line-height: 24px;
-                            }
-
-                            @include devices(lg) {
-                                width: 74%;
-                            }
-
-                            @include devices(md) {
-                                width: 90%;
-                            }
-
-                            @include devices(xs) {
-                                line-height: 15px;
-                            }
-
-                            h3 {
-                                font-size: 1.4rem;
-                                font-weight: bold;
-
-                                @include devices(xl) {
-                                    font-size: 1rem;
-                                }
-
-                                @include devices(sm) {
-                                    font-size: 17px;
-                                }
-
-
-                            }
-
-                            p {
-                                font-size: 1.2rem;
-
-                                @include devices(xl) {
-                                    font-size: 1rem;
-                                }
-
-                                @include devices(sm) {
-                                    font-size: 0.75rem;
-                                }
-                            }
+                        @include devices(xs) {
+                            font-size: 0.8rem;
                         }
                     }
 
-                    .hide {
-                        display: none;
+                    &:last-child {
+                        text-transform: uppercase;
+                        margin-top: 13px;
+                        line-height: 20px;
+                        letter-spacing: 0.01rem;
+                        font-size: 0.95rem;
+
+                        @include devices(xl) {
+                            margin-top: 10px;
+                            line-height: 16px;
+                            letter-spacing: 0.01rem;
+                            font-size: 0.75rem;
+                        }
 
                         @include devices(lg) {
-                            display: block;
+                            font-size: 0.8rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 0.7rem;
+                        }
+
+                        span {
+                            text-transform: none !important;
                         }
                     }
+                }
+            }
 
+            .case_studies_btn_grid {
+                margin-top: 4rem;
+
+                @include devices(md) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    margin-top: 3rem;
+                }
+
+                @include devices(xs) {
+                    margin-top: 1.5rem;
+                }
+
+                .diamond_btn {
+                    margin-right: 3rem;
+
+                    @include devices(xl) {
+                        margin-right: 1.8rem;
+                    }
+
+                    @include devices(lg) {
+                        margin-right: 0.7rem;
+                    }
+
+                    @include devices(md) {
+                        margin-right: 0;
+                    }
                 }
             }
         }
+
+        .image_grid {
+            width: 50%;
+            display: grid;
+            @include grid-cols(2, 1fr, 0);
+            // grid-auto-rows: 409px;
+
+            // @include devices(xl) {
+            //     grid-auto-rows: 296px;
+            // }
+
+            @include devices(lg) {
+                // grid-auto-rows: 450px;
+                width: 100%;
+            }
+
+            // @include devices(md) {
+            //     grid-auto-rows: 340px;
+            // }
+
+            @include devices(sm) {
+                grid-template-columns: auto;
+                // grid-auto-rows: 325px;
+            }
+
+            // @include devices(xs) {
+            //     grid-auto-rows: 291px;
+            // }
+
+            #img1 {
+                grid-column: span 2;
+            }
+
+            .image {
+                position: relative;
+                overflow: hidden;
+
+                &:hover .hide {
+                    display: block;
+                    opacity: 1;
+
+                    @include devices(lg) {
+                        display: none;
+                    }
+                }
+
+                .img_wrapper {
+                    @include dimension(100%, 100%);
+                    border: 2px solid black;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    img {
+                        @include img-fit();
+                    }
+                }
+
+                .show_on_hover {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 0;
+                    width: 100%;
+                    text-transform: uppercase;
+                    transition: opacity .5s ease-in-out;
+                    -moz-transition: opacity .5s ease-in-out;
+                    -webkit-transition: opacity .5s ease-in-out;
+
+                    div {
+                        padding: 20px;
+                        width: 90%;
+                        margin: auto;
+                        border: 2px solid white;
+                        background-color: white;
+                        font-size: 0.9rem;
+                        text-align: justify;
+                        line-height: 35px;
+
+                        @include devices(xl) {
+                            padding: 11px;
+                            width: 90%;
+                            font-size: 0.9rem;
+                            line-height: 24px;
+                        }
+
+                        @include devices(lg) {
+                            width: 74%;
+                        }
+
+                        @include devices(md) {
+                            width: 90%;
+                        }
+
+                        @include devices(xs) {
+                            line-height: 15px;
+                        }
+
+                        h3 {
+                            font-size: 1.4rem;
+                            font-weight: bold;
+
+                            @include devices(xl) {
+                                font-size: 1rem;
+                            }
+
+                            @include devices(sm) {
+                                font-size: 17px;
+                            }
+
+
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+
+                            @include devices(xl) {
+                                font-size: 1rem;
+                            }
+
+                            @include devices(sm) {
+                                font-size: 0.75rem;
+                            }
+                        }
+                    }
+                }
+
+                .hide {
+                    display: none;
+
+                    @include devices(lg) {
+                        display: block;
+                    }
+                }
+
+            }
+        }
     }
-}
 
-#brands {
-    @include padding-y(0.5rem, 0.5rem);
+    #brands {
+        height: 10%;
+        @include padding-y(0, 0);
+        display: grid;
+        place-items: center;
 
-    @include devices(xs) {
-        @include padding-y(1rem, 1rem);
+        @include devices(lg) {
+            height: unset;
+        }
     }
 }
 

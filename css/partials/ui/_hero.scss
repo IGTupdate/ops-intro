@@ -44,6 +44,7 @@
             font-size: 3rem;
             font-weight: 700;
             text-transform: uppercase;
+            padding-bottom: 1rem;
 
             @include devices(xl) {
                 font-size: 2rem;
@@ -66,25 +67,22 @@
             }
         }
 
-        h5 {
+        .hero_subHead {
             text-transform: uppercase;
             color: #465898;
             font-size: 1.1rem;
             font-weight: 600;
-            margin-top: 1rem;
-            margin-bottom: 1.5rem;
 
             span {
                 color: $pink;
             }
         }
 
-        p {
+        .hero_para {
             display: none;
             width: 600px;
             font-size: 1rem;
             line-height: 1.5;
-            margin-bottom: 1.5rem;
 
             @include devices(xl) {
                 font-size: 0.92rem;
@@ -113,7 +111,7 @@
             display: flex;
             align-items: center;
             gap: 2rem;
-            padding-top: 1rem;
+            padding-top: 2.5rem;
 
             .btn {
                 &.find_more {
