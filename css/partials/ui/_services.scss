@@ -179,33 +179,6 @@
             }
         }
     }
-
-    .filterBtn_wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.6rem;
-
-        .filterBtn {
-            background: #222;
-            color: #fff;
-            font-size: 1.2rem;
-            padding: 0.8rem 2rem;
-            border-radius: 6px;
-            opacity: 0.6;
-            transition: opacity 0.1s;
-
-            &.active,
-            &:hover {
-                opacity: 1;
-            }
-
-            img {
-                width: 26px;
-                margin-right: 0.5rem;
-            }
-        }
-    }
 }
 
 .services-swiper {

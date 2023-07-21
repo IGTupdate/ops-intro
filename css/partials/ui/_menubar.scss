@@ -20,6 +20,20 @@
         pointer-events: all;
     }
 
+    @include devices(md) {
+        background-position: unset;
+    }
+
+
+    header {
+        .site-logo {
+            @include devices(sm) {
+                width: 80px;
+                display: block;
+            }
+        }
+    }
+
     .menu_left_col {
         padding-right: 0;
         min-height: 100vh;
@@ -54,11 +68,17 @@
     .menu_mid_col {
         display: grid;
         align-items: center;
-        padding-left: 5rem;
+        padding-left: 10rem;
         position: relative;
+
+        @include devices(xl) {
+            padding-left: 6rem;
+        }
 
         @include devices(md) {
             min-height: 100vh;
+            justify-content: center;
+            @include padding-x(2rem, 2rem);
         }
 
         nav {
@@ -76,7 +96,7 @@
             }
 
             a {
-                font-size: 4.4rem;
+                font-size: 4.2rem;
                 text-transform: uppercase;
                 font-weight: 600;
                 color: $white;
@@ -129,13 +149,13 @@
 
             @include devices(md) {
                 display: flex;
-                flex-direction: column;
                 gap: 2rem;
-                margin-top: 3rem;
+                margin-top: 4rem;
             }
 
             @include devices(xs) {
-                margin-top: 1.5rem;
+                margin-top: 2rem;
+                flex-direction: column;
             }
 
             .diamond_btn {

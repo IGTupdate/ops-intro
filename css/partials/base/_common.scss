@@ -120,6 +120,15 @@ button:not(:disabled) {
     color: $black;
     @include padding-y(0.67rem, 0.67rem);
 
+    @include devices(xl) {
+        font-size: 0.8rem;
+        @include padding-y(0.5rem, 0.5rem);
+    }
+
+    @include devices(xs) {
+        font-size: 0.6rem;
+    }
+
     &.border_btn {
         border: 1px solid $black;
     }
@@ -151,6 +160,43 @@ button:not(:disabled) {
 
 .cp {
     @include padding-y(7rem, 7rem)
+}
+
+.filterBtn_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+
+    .filterBtn {
+        background: #222;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+        border-radius: 6px;
+        opacity: 0.6;
+        letter-spacing: 1px;
+        transition: opacity 0.1s;
+
+        @include devices(xl) {
+            font-size: 0.8rem;
+            padding: 0.6rem 1.3rem;
+        }
+
+        &.active,
+        &:hover {
+            opacity: 1;
+        }
+
+        img {
+            width: 26px;
+            margin-right: 0.5rem;
+
+            @include devices(xl) {
+                width: 20px;
+            }
+        }
+    }
 }
 
 .divider {

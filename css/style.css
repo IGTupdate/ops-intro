@@ -223,6 +223,18 @@ button:not(:disabled) {
   padding-top: 0.67rem;
   padding-bottom: 0.67rem;
 }
+@media (max-width: 1399.98px) {
+  .btn {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .btn {
+    font-size: 0.6rem;
+  }
+}
 .btn.border_btn {
   border: 1px solid #000000;
 }
@@ -261,6 +273,41 @@ button:not(:disabled) {
 .cp {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.filterBtn_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.filterBtn_wrapper .filterBtn {
+  background: #222;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+  transition: opacity 0.1s;
+}
+@media (max-width: 1399.98px) {
+  .filterBtn_wrapper .filterBtn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.3rem;
+  }
+}
+.filterBtn_wrapper .filterBtn.active, .filterBtn_wrapper .filterBtn:hover {
+  opacity: 1;
+}
+.filterBtn_wrapper .filterBtn img {
+  width: 26px;
+  margin-right: 0.5rem;
+}
+@media (max-width: 1399.98px) {
+  .filterBtn_wrapper .filterBtn img {
+    width: 20px;
+  }
 }
 
 .divider {
@@ -414,9 +461,23 @@ header .site-logo {
     width: 140px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   header .site-logo {
-    width: 80px;
+    display: none;
+  }
+}
+header .site-logo-mob {
+  display: none;
+  width: 60px;
+}
+@media (max-width: 767.98px) {
+  header .site-logo-mob {
+    display: block;
+  }
+}
+@media (max-width: 575.98px) {
+  header .site-logo-mob {
+    width: 40px;
   }
 }
 header .nav_btn {
@@ -424,14 +485,20 @@ header .nav_btn {
   align-items: center;
   gap: 3rem;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   header .nav_btn {
-    transform: scale(0.8);
+    gap: 1rem;
   }
 }
 header .nav_btn button {
   width: 50px;
   height: 50px;
+}
+@media (max-width: 575.98px) {
+  header .nav_btn button {
+    width: 30px;
+    height: 30px;
+  }
 }
 header .nav_btn button img {
   width: 100%;
@@ -462,6 +529,17 @@ header .nav_btn button img {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
+}
+@media (max-width: 991.98px) {
+  #menubar {
+    background-position: unset;
+  }
+}
+@media (max-width: 767.98px) {
+  #menubar header .site-logo {
+    width: 80px;
+    display: block;
+  }
 }
 #menubar .menu_left_col {
   padding-right: 0;
@@ -496,12 +574,20 @@ header .nav_btn button img {
 #menubar .menu_mid_col {
   display: grid;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 10rem;
   position: relative;
+}
+@media (max-width: 1399.98px) {
+  #menubar .menu_mid_col {
+    padding-left: 6rem;
+  }
 }
 @media (max-width: 991.98px) {
   #menubar .menu_mid_col {
     min-height: 100vh;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 #menubar .menu_mid_col nav {
@@ -521,7 +607,7 @@ header .nav_btn button img {
   }
 }
 #menubar .menu_mid_col nav a {
-  font-size: 4.4rem;
+  font-size: 4.2rem;
   text-transform: uppercase;
   font-weight: 600;
   color: #ffffff;
@@ -571,14 +657,14 @@ header .nav_btn button img {
 @media (max-width: 991.98px) {
   #menubar .menu_mid_col .menu_btns_group {
     display: flex;
-    flex-direction: column;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 @media (max-width: 575.98px) {
   #menubar .menu_mid_col .menu_btns_group {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    flex-direction: column;
   }
 }
 #menubar .menu_mid_col .menu_btns_group .diamond_btn {
@@ -814,33 +900,75 @@ header .nav_btn button img {
 @media (max-width: 991.98px) {
   #opportunities {
     height: unset;
+    min-height: 100vh;
+    background-position: unset;
+  }
+}
+
+.opportunities_block {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 991.98px) {
+  .opportunities_block {
+    display: block;
   }
 }
 
 .opportunities_content {
-  margin-top: 10rem;
+  margin-top: 4rem;
+}
+@media (max-width: 991.98px) {
+  .opportunities_content {
+    margin-top: 0;
+    padding-top: 12rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .opportunities_content {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+  }
 }
 .opportunities_content .title h2 {
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 600;
   position: relative;
+}
+@media (max-width: 1399.98px) {
+  .opportunities_content .title h2 {
+    font-size: 2.2rem;
+  }
 }
 .opportunities_content .title h2::after {
   content: "";
   position: absolute;
   top: -110px;
   left: 580px;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   pointer-events: none;
   background-image: url(../images/oppor-plane.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media (max-width: 1399.98px) {
+  .opportunities_content .title h2::after {
+    width: 400px;
+    height: 400px;
+  }
+}
 .opportunities_content .title h3 {
   font-style: italic;
   color: #F40758;
-  font-size: 2rem;
+  font-size: 1.7rem;
+}
+@media (max-width: 1399.98px) {
+  .opportunities_content .title h3 {
+    font-size: 1.1rem;
+  }
 }
 .opportunities_content .title .mid_content {
   display: flex;
@@ -849,46 +977,81 @@ header .nav_btn button img {
 }
 .opportunities_content .title .mid_content .divider {
   width: 70%;
-  height: 4px;
+  height: 3px;
   background-color: #fff;
   border-radius: 10px;
+}
+@media (max-width: 991.98px) {
+  .opportunities_content .title .mid_content .divider {
+    width: 60%;
+  }
 }
 
 .opportunities_row {
   margin-top: 4rem;
 }
+@media (max-width: 1399.98px) {
+  .opportunities_row {
+    margin-top: 3rem;
+  }
+}
 .opportunities_row .left_col .box {
-  margin-left: 3rem;
+  margin-left: 0.75rem;
 }
 .opportunities_row .left_col .box h5 {
   text-decoration: underline;
   font-size: 1.4rem;
   color: #F40758;
 }
+@media (max-width: 1399.98px) {
+  .opportunities_row .left_col .box h5 {
+    font-size: 1rem;
+  }
+}
 .opportunities_row .left_col .box p {
-  margin-top: 1.8rem;
-  margin-bottom: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 400;
   font-size: 1.1rem;
+}
+@media (max-width: 1399.98px) {
+  .opportunities_row .left_col .box p {
+    font-size: 0.8rem;
+  }
 }
 .opportunities_row .left_col .box ul li {
   font-size: 1.1rem;
   font-weight: 500;
 }
+@media (max-width: 1399.98px) {
+  .opportunities_row .left_col .box ul li {
+    font-size: 0.8rem;
+  }
+}
 .opportunities_row .right_col {
-  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
 }
 .opportunities_row .right_col .box {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
-.opportunities_row .right_col .box button {
-  font-size: 1.4rem;
-  font-weight: 600;
-  border-radius: 18px;
+.opportunities_row .right_col .box .img_wrapper {
+  height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (max-width: 1399.98px) {
+  .opportunities_row .right_col .box .img_wrapper {
+    height: 250px;
+  }
+}
+.opportunities_row .right_col .box .img_wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services_sect {
@@ -1034,28 +1197,6 @@ header .nav_btn button img {
 .services_box .box .right_col p {
   font-weight: 500;
 }
-.services_box .filterBtn_wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6rem;
-}
-.services_box .filterBtn_wrapper .filterBtn {
-  background: #222;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 0.8rem 2rem;
-  border-radius: 6px;
-  opacity: 0.6;
-  transition: opacity 0.1s;
-}
-.services_box .filterBtn_wrapper .filterBtn.active, .services_box .filterBtn_wrapper .filterBtn:hover {
-  opacity: 1;
-}
-.services_box .filterBtn_wrapper .filterBtn img {
-  width: 26px;
-  margin-right: 0.5rem;
-}
 
 .services-swiper {
   padding-top: 5rem;
@@ -1164,6 +1305,9 @@ header .nav_btn button img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.features_img .frame .swiper {
+  height: 100%;
 }
 .features_img .frame .swiper-slide img {
   width: 100%;

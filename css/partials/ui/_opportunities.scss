@@ -8,31 +8,65 @@
 
     @include devices(md) {
         height: unset;
+        min-height: 100vh;
+        background-position: unset;
+    }
+}
+
+.opportunities_block {
+    height: 100%;
+    @include centered();
+
+    @include devices(md) {
+        display: block;
     }
 }
 
 .opportunities_content {
-    margin-top: 10rem;
+    margin-top: 4rem;
+
+    @include devices(md) {
+        margin-top: 0;
+        padding-top: 12rem;
+        padding-bottom: 3rem;
+    }
+
+    @include devices(xs) {
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+    }
 
     .title {
 
         h2 {
-            font-size: 4rem;
+            font-size: 3.2rem;
             font-weight: 600;
             position: relative;
 
+            @include devices(xl) {
+                font-size: 2.2rem;
+            }
+
             &::after {
-                @include pseudo("", -110px, 580px, 600px, 600px);
+                @include pseudo("", -110px, 580px, 500px, 500px);
                 background-image: url(../images/oppor-plane.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                @include devices(xl) {
+                    @include dimension(400px, 400px);
+                }
             }
         }
 
         h3 {
             font-style: italic;
             color: $pink;
-            font-size: 2rem;
+            font-size: 1.7rem;
+
+            @include devices(xl) {
+                font-size: 1.1rem;
+            }
         }
 
         .mid_content {
@@ -42,9 +76,13 @@
 
             .divider {
                 width: 70%;
-                height: 4px;
+                height: 3px;
                 background-color: #fff;
                 border-radius: 10px;
+
+                @include devices(md) {
+                    width: 60%;
+                }
             }
         }
     }
@@ -53,45 +91,69 @@
 .opportunities_row {
     margin-top: 4rem;
 
+    @include devices(xl) {
+        margin-top: 3rem;
+    }
+
     .left_col {
         .box {
-            margin-left: 3rem;
+            margin-left: 0.75rem;
 
             h5 {
                 text-decoration: underline;
                 font-size: 1.4rem;
                 color: $pink;
+
+                @include devices(xl) {
+                    font-size: 1rem;
+                }
             }
 
             p {
-                @include margin-y(1.8rem, 1.8rem);
+                @include margin-y(1.5rem, 1.5rem);
                 font-weight: 400;
                 font-size: 1.1rem;
+
+                @include devices(xl) {
+                    font-size: 0.8rem;
+                }
             }
 
             ul {
                 li {
                     font-size: 1.1rem;
                     font-weight: 500;
+
+                    @include devices(xl) {
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
     }
 
     .right_col {
-        margin-top: 5rem;
         @include mx-auto();
 
         .box {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
 
-            button {
-                font-size: 1.4rem;
-                font-weight: 600;
-                border-radius: 18px;
+            .img_wrapper {
+                height: 320px;
+                border-radius: 8px;
+                overflow: hidden;
+
+                @include devices(xl) {
+                    height: 250px;
+                }
+
+                img {
+                    @include img-fit();
+                }
             }
+
         }
     }
 }

@@ -21,8 +21,21 @@ header {
             width: 140px;
         }
 
+        @include devices(sm) {
+            display: none;
+        }
+    }
+
+    .site-logo-mob {
+        display: none;
+        width: 60px;
+
+        @include devices(sm) {
+            display: block;
+        }
+
         @include devices(xs) {
-            width: 80px;
+            width: 40px;
         }
     }
 
@@ -31,12 +44,16 @@ header {
         align-items: center;
         gap: 3rem;
 
-        @include devices(xs) {
-            transform: scale(0.8);
+        @include devices(sm) {
+            gap: 1rem;
         }
 
         button {
             @include dimension(50px, 50px);
+
+            @include devices(xs) {
+                @include dimension(30px, 30px);
+            }
 
             img {
                 @include img-fit();
