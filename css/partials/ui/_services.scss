@@ -53,29 +53,60 @@
     align-items: center;
     gap: 4rem;
 
-    h4 {
-        line-height: 1.5;
-        position: relative;
+    .left_col {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
 
-        &::before {
-            @include pseudo("", auto, -60px, 20px, 42px);
-            bottom: 10px;
-            background-image: url(../images/arrow-down.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+        div {
+            &:first-child {
+                text-align: center;
+            }
+        }
+
+        img {
+            width: 16px;
+            display: inline-block;
+            @include margin-y(1rem, 2rem);
+        }
+
+        p {
+            font-weight: 300;
+            letter-spacing: 1px;
+
+            a {
+                text-decoration: underline;
+                font-weight: inherit;
+                color: $green3;
+                opacity: 0.8;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        h4 {
+            line-height: 1.5;
         }
     }
 
-    h3 {
-        font-size: 2.5rem;
-        font-weight: 600;
-        margin-bottom: 0.3rem;
+    .right_col {
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        p {
+            font-size: 1.06rem;
+            font-weight: 400;
+        }
     }
 
-    p {
-        font-size: 1.1rem;
-        font-weight: 400;
-    }
 }
 
 .services_box {

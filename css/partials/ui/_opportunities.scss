@@ -12,38 +12,40 @@
 }
 
 .opportunities_content {
-    margin-top: 9rem;
+    margin-top: 10rem;
 
     .title {
-        position: relative;
-
-        &::after {
-            @include pseudo("", -120px, auto, 900px, 100%);
-            right: 0;
-            background-image: url(../images/oppor-plane.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
 
         h2 {
             font-size: 4rem;
             font-weight: 600;
-            padding-bottom: 0.8rem;
             position: relative;
 
             &::after {
-                @include pseudo("", auto, 0, 70%, 4px);
-                bottom: 0;
-                background-color: #fff;
-                border-radius: 10px;
+                @include pseudo("", -110px, 580px, 600px, 600px);
+                background-image: url(../images/oppor-plane.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
             }
         }
 
         h3 {
-            margin-top: 1rem;
             font-style: italic;
             color: $pink;
             font-size: 2rem;
+        }
+
+        .mid_content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .divider {
+                width: 70%;
+                height: 4px;
+                background-color: #fff;
+                border-radius: 10px;
+            }
         }
     }
 }
@@ -72,10 +74,6 @@
                     font-size: 1.1rem;
                     font-weight: 500;
                 }
-            }
-
-            .btn {
-                margin-top: 4rem;
             }
         }
     }

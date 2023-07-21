@@ -275,28 +275,6 @@
 
     }
 
-    .caseStudies-business {
-        height: 5vh;
-        text-align: right;
-        padding-right: 3%;
-        font-size: 1.2rem;
-        color: white;
-        font-weight: lighter;
-
-        @include devices(lg) {
-            font-size: 1rem;
-        }
-
-        @include devices(sm) {
-            font-size: 0.7rem;
-            padding-top: 14px;
-        }
-
-        @include devices(xs) {
-            padding-top: 6px;
-        }
-    }
-
     .caseStudies-footer {
         height: 30vh;
         width: 100%;

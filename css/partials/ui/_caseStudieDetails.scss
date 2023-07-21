@@ -225,6 +225,10 @@
         color: white;
         font-weight: lighter;
 
+        b {
+            font-weight: 600;
+        }
+
         @include devices(lg) {
             font-size: 1rem;
         }
