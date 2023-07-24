@@ -29,14 +29,20 @@
 
             @include devices(lg) {
                 padding: 31px;
+                padding-bottom: 3rem;
             }
 
             @include devices(lg) {
                 width: 100%;
             }
 
+            @include devices(md) {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+            }
+
             @include devices(sm) {
-                padding: 14px;
+                @include padding-x(0.9rem, 0.9rem);
             }
 
             .case_studies_heading {
@@ -66,9 +72,6 @@
                 }
 
                 @include devices(sm) {
-                    font-size: 24px;
-                    margin-top: 7rem;
-                    line-height: 24px;
                     text-align: unset;
                 }
 
@@ -175,7 +178,6 @@
                     }
 
                     @include devices(sm) {
-                        font-size: 1rem;
                         line-height: 19px;
                     }
 
@@ -252,7 +254,6 @@
 
                 @include devices(md) {
                     display: flex;
-                    flex-direction: column;
                     gap: 2rem;
                     margin-top: 3rem;
                 }
@@ -276,6 +277,10 @@
                         margin-right: 0;
                     }
                 }
+            }
+
+            .social_icons {
+                margin-top: 2rem;
             }
         }
 
@@ -423,6 +428,7 @@
 
         @include devices(lg) {
             height: unset;
+            @include padding-y(1rem, 1rem);
         }
     }
 }

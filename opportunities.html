@@ -49,21 +49,19 @@
 
         <!-- Header -->
         <header>
-            <div class="container">
+            <div class="container-fluid header_container">
                 <div class="navbar">
                     <div>
                         <a href="/">
-                            <img class="site-logo" src="./images/logo.svg" alt="logo">
-                            <img class="site-logo-mob" src="./images/logo_plane.svg" alt="logo">
+                            <img class="site-logo" src="./images/logo-white.svg" alt="logo">
+                            <img class="site-logo-mob" src="./images/logo_plane-white.svg" alt="logo">
                         </a>
                     </div>
                     <div class="nav_btn">
-                        <a class="btn border_btn" href="https://calendly.com/opsintro_ready/strategy?month=2023-07">Find
-                            an
-                            industry
-                            contact</a>
+                        <a class="btn border_btn bg-white" href="https://calendly.com/opsintro_ready/strategy">Find an
+                            industry contact</a>
                         <button class="menu_btn">
-                            <img src="./images/menu-btn.svg" alt="menu-btn">
+                            <img src="./images/menu-btn-white.svg" alt="menu-btn">
                         </button>
                     </div>
                 </div>
@@ -73,21 +71,22 @@
         <!-- Menubar -->
         <div id="menubar">
             <header>
-                <div class="container">
+                <div class="container-fluid header_container">
                     <div class="navbar">
                         <div>
                             <a href="/">
-                                <img class="site-logo" src="./images/logo02.svg" alt="logo">
+                                <img class="site-logo" src="./images/logo-white.svg" alt="logo">
                             </a>
                         </div>
                         <div class="nav_btn">
                             <button class="menu_close_btn">
-                                <img src="./images/menu-btn-white.svg" alt="menu-btn">
+                                <img src="./images/menu-btn.svg" alt="menu-btn">
                             </button>
                         </div>
                     </div>
                 </div>
             </header>
+
             <div class="row menu_content">
                 <!-- <div class="col-2 col-lg-1 menu_left_col">
                 <div class="logo_img">
@@ -117,18 +116,18 @@
                     <div>
                         <nav>
                             <a href="/">About</a>
-                            <a href="opportunities.html">Opportunities</a>
+                            <a href="opportunities.html">Our Contacts</a>
                             <a href="caseStudies.html">Case Studies</a>
-                            <a href="whyOpslabel.html">Why Opslabel</a>
+                            <a href="whyOpslabel.html">Why Opsintro</a>
                             <a href="contact.html">Contact</a>
                         </nav>
 
                         <div class="menu_btns_group">
-                            <a class="btn diamond_btn border_btn bg_green_light"
-                                href="https://calendly.com/opsintro_ready/strategy?month=2023-07">Join
+                            <a class="btn diamond_btn border_btn bg_green_light" href="appointment.html">Join
                                 the
                                 Network</a>
-                            <a class="btn plane_btn border_btn bg-white" href="appointment.html">Find an industry
+                            <a class="btn plane_btn border_btn bg-white"
+                                href="https://calendly.com/opsintro_ready/strategy">Find an industry
                                 contact</a>
                         </div>
                     </div>
@@ -153,12 +152,12 @@
             <div class="opportunities_content">
                 <div class="container">
                     <div class="title">
-                        <h2>OPPORTUNITIES</h2>
+                        <h2>OUR CONTACTS</h2>
                         <div class="mid_content">
                             <div class="divider"></div>
-                            <div>
+                            <!-- <div>
                                 <a href="#" class="btn border_btn bg-white">FIND AN INDUSTRY CONTACT</a>
-                            </div>
+                            </div> -->
                         </div>
                         <h3>READY !</h3>
                     </div>
@@ -168,28 +167,32 @@
                     <div class="row">
                         <div class="col-12 filterBtn_wrapper">
                             <button class="filterBtn active" data-filter="estate">
-                                <img src="./images/oppor-estate.svg" alt="">
+                                <img src="./images/opport/icon-estate.svg" alt="">
                                 Commercial Real Estate
                             </button>
                             <button class="filterBtn" data-filter="renovation">
-                                <img src="./images/oppor-renovation.svg" alt="">
+                                <img src="./images/opport/icon-renovation.svg" alt="">
                                 Renovation
                             </button>
                             <button class="filterBtn" data-filter="suppliers">
-                                <img src="./images/oppor-truck.svg" alt="">
+                                <img src="./images/opport/icon-suppliers.svg" alt="">
                                 Superb Suppliers
                             </button>
                             <button class="filterBtn" data-filter="connections">
-                                <img src="./images/oppor-connection.svg" alt="">
+                                <img src="./images/opport/icon-connection.svg" alt="">
                                 Brand Connections
                             </button>
+                            <button class="filterBtn" data-filter="promotion">
+                                <img src="./images/opport/icon-promotion.svg" alt="">
+                                Promotion & Content
+                            </button>
                             <button class="filterBtn" data-filter="dev">
-                                <img src="./images/oppor-dev.svg" alt="">
+                                <img src="./images/opport/icon-dev.svg" alt="">
                                 Digital Design & Development
                             </button>
-                            <button class="filterBtn" data-filter="promotional">
-                                <img src="" alt="">
-                                Promotional Content
+                            <button class="filterBtn" data-filter="sales">
+                                <img src="./images/opport/icon-sales.svg" alt="">
+                                Sales & Lead Generation
                             </button>
                         </div>
                     </div>
@@ -247,8 +250,8 @@
                                 </ul>
                             </div>
 
-                            <div class="box d-none" data-item="promotional">
-                                <h5>PROMOTIONAL CONTENT</h5>
+                            <div class="box d-none" data-item="promotion">
+                                <h5>PROMOTION & CONTENT</h5>
                                 <p>Trust us when we say we hate typical marketing- so the contacts
                                     in our network work differently by boosting brand identity and
                                     share your core values. From creating incredible SALESFOCUSED content to finding hot
@@ -298,6 +301,22 @@
                                     <li>> BRAND CONSULTANTS</li>
                                 </ul>
                             </div>
+
+                            <div class="box d-none" data-item="sales">
+                                <h5>SALES & LEAD GENERATION</h5>
+                                <p>OPSINTRO understands that new clients and closing deals are
+                                    the lifeblood of any business. We enable you to hire those that
+                                    can automate the process of find new clients as well as supply
+                                    the trained sales teams that secure you contracts.
+                                </p>
+                                <ul>
+                                    <li>> SKILLED CLOSERS</li>
+                                    <li>> NEW CLIENT LEADS</li>
+                                    <li>> SALES CONSULTING</li>
+                                    <li>> DONE FOR YOU SERVICES</li>
+                                    <li>> APPOINTMENT SETTING</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="col-lg-5 right_col">
@@ -319,12 +338,12 @@
                                 </div>
                             </div>
 
-                            <div class="box d-none" data-item="promotional">
+                            <div class="box d-none" data-item="promotion">
                                 <div class="img_wrapper">
-                                    <img src="./images/opport/promotional1.jpg" alt="">
+                                    <img src="./images/opport/promotion1.jpg" alt="">
                                 </div>
                                 <div class="img_wrapper">
-                                    <img src="./images/opport/promotional2.jpg" alt="">
+                                    <img src="./images/opport/promotion2.jpg" alt="">
                                 </div>
                             </div>
 
@@ -348,14 +367,48 @@
 
                             <div class="box d-none" data-item="dev">
                                 <div class="img_wrapper">
-                                    <img src="./images/opport/dev1.png" alt="">
+                                    <img src="./images/opport/dev1.jpg" alt="">
                                 </div>
                                 <div class="img_wrapper">
                                     <img src="./images/opport/dev2.jpg" alt="">
                                 </div>
                             </div>
+
+                            <div class="box d-none" data-item="sales">
+                                <div class="img_wrapper">
+                                    <img src="./images/opport/sales1.jpg" alt="">
+                                </div>
+                                <div class="img_wrapper">
+                                    <img src="./images/opport/sales2.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="container">
+                    <ul class="social_icons">
+                        <li>
+                            <a href="#">
+                                <img src="./images/fb.svg" alt="fb">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/instagram.svg" alt="insta">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/mail.svg" alt="mail">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/linkedin.svg" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

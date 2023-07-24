@@ -190,17 +190,18 @@
 
                 .whyops_text_box {
                     color: $white;
-                    @include margin-x(1rem, 1rem);
+                    // @include margin-x(1rem, 1rem);
 
-                    @include devices(xs) {
-                        @include margin-x(0.6rem, 0.6rem);
-                    }
+                    // @include devices(xs) {
+                    //     @include margin-x(0.6rem, 0.6rem);
+                    // }
 
                     h2 {
                         text-transform: uppercase;
-                        margin-bottom: 0.5rem;
-                        font-size: 3.5rem;
+                        font-size: 3.3rem;
                         font-weight: 700;
+                        margin-bottom: 0.8rem;
+                        margin-left: -35px;
 
                         @include devices(xl) {
                             font-size: 2.2rem;
@@ -208,6 +209,7 @@
 
                         @include devices(lg) {
                             font-size: 1.8rem;
+                            margin-left: unset;
                         }
 
                         @include devices(md) {
@@ -225,16 +227,12 @@
                     }
 
                     p {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         line-height: 1.4;
                         font-weight: 400;
 
                         @include devices(xl) {
-                            font-size: 0.95rem;
-                        }
-
-                        @include devices(lg) {
-                            font-size: 0.875rem;
+                            font-size: 0.8rem;
                         }
 
                         @include devices(md) {
@@ -249,6 +247,16 @@
                             @include devices(md) {
                                 display: none;
                             }
+                        }
+                    }
+                }
+
+                .whyops_right_col {
+                    .social_icons {
+                        margin-top: 2rem;
+
+                        @include devices(md) {
+                            justify-content: center;
                         }
                     }
                 }
@@ -305,7 +313,6 @@
 
 .whyops_swiper {
     padding-top: 2rem;
-    padding-bottom: 1rem;
     margin-top: 1rem;
 
     @include devices(xl) {
@@ -321,15 +328,15 @@
     .swiper-slide {
 
         .box {
-            @include margin-x(1rem, 1rem);
+            // @include margin-x(1rem, 1rem);
             color: $black;
             border: 4px solid $black;
             border-radius: 15px;
             box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
 
-            @include devices(sm) {
-                @include margin-x(0.4rem, 0.4rem);
-            }
+            // @include devices(sm) {
+            //     @include margin-x(0.4rem, 0.4rem);
+            // }
 
             &:not(:last-child) {
                 margin-bottom: 2rem;
@@ -352,17 +359,18 @@
     .swiper-button-next,
     .swiper-button-prev {
         font-size: 2rem;
-        top: 0;
+        top: -20px;
         color: #fff;
         height: auto;
+        margin-top: 0;
+        display: unset;
 
         &::after {
             content: '';
         }
 
         @include devices(xl) {
-            font-size: 1.8rem;
-            top: 8px;
+            font-size: 1.5rem;
         }
 
         @include devices(md) {
@@ -403,10 +411,6 @@
             text-transform: uppercase;
 
             @include devices(xl) {
-                font-size: 1.06rem;
-            }
-
-            @include devices(lg) {
                 font-size: 1rem;
             }
 
@@ -424,11 +428,7 @@
             line-height: 1.3;
 
             @include devices(xl) {
-                font-size: 0.9rem;
-            }
-
-            @include devices(lg) {
-                font-size: 0.875rem;
+                font-size: 0.75rem;
             }
 
             @include devices(md) {

@@ -85,25 +85,9 @@
 
     .appointment-right-block {
         position: relative;
-        width: 92.5%;
         height: 100%;
-        margin-left: auto;
-        // background-color: #2a2a2a;
         display: grid;
         align-items: center;
-
-        @include devices(md) {
-            width: 91%;
-        }
-
-        @include devices(sm) {
-            display: block;
-            width: 90%;
-        }
-
-        @include devices(xs) {
-            width: 88%;
-        }
 
         .appointment_head_btn {
             position: absolute;
@@ -140,8 +124,8 @@
             }
 
             @include devices(xs) {
-                padding-top: 12rem;
-                padding-bottom: 10rem;
+                padding-top: 8rem;
+                padding-bottom: 5rem;
             }
 
             .appointment_row {
@@ -186,7 +170,7 @@
                     }
                 }
 
-                ul {
+                .appt_list {
                     @include margin-y(3rem, 3rem);
 
                     @include devices(xl) {
@@ -282,24 +266,12 @@
                         z-index: 1;
 
                         @include devices(xl) {
-                            @include dimension(320px, 320px);
+                            @include dimension(350px, 350px);
                             top: -180px;
-                            right: -270px;
-                        }
-
-                        @include devices(lg) {
-                            @include dimension(280px, 280px);
-                            top: -160px;
-                            right: -250px;
+                            right: -500px;
                         }
 
                         @include devices(md) {
-                            @include dimension(200px, 200px);
-                            top: -100px;
-                            right: -160px;
-                        }
-
-                        @include devices(sm) {
                             display: none;
                         }
                     }
@@ -333,6 +305,10 @@
                         //         color: #b183ba;
                         //     }
                         // }
+
+                        @include devices(xl) {
+                            font-size: 1rem;
+                        }
                     }
                 }
 
@@ -355,6 +331,14 @@
 
                     span {
                         color: $pink;
+                    }
+                }
+
+                .social_icons {
+                    margin-top: 2rem;
+
+                    @include devices(md) {
+                        margin-top: 4rem;
                     }
                 }
             }

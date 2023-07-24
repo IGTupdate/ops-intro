@@ -163,6 +163,22 @@
             z-index: 3;
         }
 
+        .contact_form_wrapper {
+            width: 1100px;
+
+            @include devices(xl) {
+                width: 900px;
+            }
+
+            @include devices(lg) {
+                width: 800px;
+            }
+
+            @include devices(md) {
+                width: auto;
+            }
+        }
+
         .bg-img {
 
             @include devices(xs) {
@@ -361,7 +377,7 @@
 
         .contact_body {
             background-color: $white;
-            padding: 2.5rem 0 5rem;
+            padding: 2.5rem 0 4rem;
 
             @include devices(xl) {
                 padding: 1.5rem 0 2.8rem;
@@ -387,8 +403,12 @@
                 justify-content: center;
                 gap: 5rem;
 
-                @include devices(lg) {
+                @include devices(xl) {
                     gap: 4rem;
+                }
+
+                @include devices(lg) {
+                    gap: 3rem;
                 }
 
                 @include devices(md) {
@@ -416,23 +436,26 @@
             margin-bottom: 3.5rem;
 
             @include devices(xl) {
-                font-size: 1.5rem;
+                font-size: 2.4rem;
+                margin-bottom: 2.5rem;
             }
 
             @include devices(lg) {
-                font-size: 1.4rem;
+                font-size: 2rem;
             }
 
             @include devices(md) {
-                font-size: 2.4rem;
+                font-size: 3.5rem;
+                margin-top: 2rem;
+                margin-bottom: 4rem;
             }
 
             @include devices(sm) {
-                font-size: 1.8rem;
+                font-size: 2.8rem;
             }
 
             @include devices(xs) {
-                font-size: 1.2rem;
+                font-size: 2rem;
             }
         }
 
@@ -454,7 +477,7 @@
         }
 
         .divider {
-            @include margin-y(1.6rem, 3rem);
+            @include margin-y(1.6rem, 2rem);
         }
 
         .contact_options {
@@ -480,18 +503,18 @@
                 gap: 0.8rem;
 
                 img {
-                    width: 45px;
+                    width: 40px;
 
                     @include devices(xl) {
-                        width: 35px;
+                        width: 30px;
                     }
 
                     @include devices(md) {
-                        width: 50px;
+                        width: 40px;
                     }
 
                     @include devices(sm) {
-                        width: 40px;
+                        width: 30px;
                     }
                 }
 
@@ -517,6 +540,14 @@
                         opacity: 1;
                     }
                 }
+            }
+        }
+
+        .social_icons {
+            margin-top: 1rem;
+
+            @include devices(md) {
+                margin-top: 2rem;
             }
         }
     }
@@ -547,7 +578,7 @@
             font-weight: 500;
 
             @include devices(xl) {
-                font-size: 0.875rem;
+                font-size: 0.8rem;
             }
 
             @include devices(md) {

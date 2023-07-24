@@ -15,10 +15,10 @@ header {
     }
 
     .site-logo {
-        width: 150px;
+        width: 160px;
 
         @include devices(xl) {
-            width: 140px;
+            width: 120px;
         }
 
         @include devices(sm) {
@@ -44,12 +44,21 @@ header {
         align-items: center;
         gap: 3rem;
 
+        @include devices(xl) {
+            gap: 2rem;
+        }
+
         @include devices(sm) {
             gap: 1rem;
         }
 
-        button {
+        .menu_btn,
+        .menu_close_btn {
             @include dimension(50px, 50px);
+
+            @include devices(xl) {
+                @include dimension(40px, 40px);
+            }
 
             @include devices(xs) {
                 @include dimension(30px, 30px);

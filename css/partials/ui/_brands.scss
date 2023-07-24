@@ -9,7 +9,7 @@
         color: #666;
         text-transform: uppercase;
 
-        @include devices(md) {
+        @include devices(xl) {
             font-size: 1rem;
         }
 

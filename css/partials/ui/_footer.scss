@@ -511,9 +511,7 @@ footer {
         }
     }
 
-    ul.social-icons {
-        display: flex;
-        gap: 1rem;
+    .social_icons {
         margin-top: 1.5rem;
 
         @include devices(xl) {
@@ -523,30 +521,6 @@ footer {
         @include devices(md) {
             justify-content: center;
             margin-top: 1.5rem;
-        }
-
-        li {
-            transition: transform 0.2s;
-
-            &:hover {
-                transform: translateY(-3px);
-            }
-
-            img {
-                width: 32px;
-
-                @include devices(xl) {
-                    width: 25px;
-                }
-
-                @include devices(md) {
-                    width: 40px;
-                }
-
-                @include devices(xs) {
-                    width: 25px;
-                }
-            }
         }
     }
 

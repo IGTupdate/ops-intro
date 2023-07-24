@@ -21,7 +21,7 @@
 
     &::after {
         @include pseudo("", -25px, 15%, 90px, 90px);
-        background-image: url(../images/plane.png);
+        background-image: url(../images/plane-colored-2.svg);
         background-repeat: no-repeat;
         background-size: contain;
         transform: translateX(-50%);
@@ -88,6 +88,7 @@
 
         h4 {
             line-height: 1.5;
+            text-align: center;
         }
     }
 

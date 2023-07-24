@@ -29,7 +29,7 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container-fluid header_container">
             <div class="navbar">
                 <div>
                     <a href="/">
@@ -38,7 +38,7 @@
                     </a>
                 </div>
                 <div class="nav_btn">
-                    <a class="btn border_btn" href="https://calendly.com/opsintro_ready/strategy?month=2023-07">Find an
+                    <a class="btn border_btn" href="https://calendly.com/opsintro_ready/strategy">Find an
                         industry
                         contact</a>
                     <button class="menu_btn">
@@ -52,21 +52,23 @@
     <!-- Menubar -->
     <div id="menubar">
         <header>
-            <div class="container">
+            <div class="container-fluid header_container">
                 <div class="navbar">
                     <div>
                         <a href="/">
-                            <img class="site-logo" src="./images/logo02.svg" alt="logo">
+                            <img class="site-logo" src="./images/logo-white.svg" alt="logo">
                         </a>
                     </div>
                     <div class="nav_btn">
                         <button class="menu_close_btn">
-                            <img src="./images/menu-btn-white.svg" alt="menu-btn">
+                            <img src="./images/menu-btn.svg" alt="menu-btn">
+                            <img src="./images/menu-btn.svg" alt="menu-btn">
                         </button>
                     </div>
                 </div>
             </div>
         </header>
+
         <div class="row menu_content">
             <!-- <div class="col-2 col-lg-1 menu_left_col">
                 <div class="logo_img">
@@ -96,18 +98,18 @@
                 <div>
                     <nav>
                         <a href="/">About</a>
-                        <a href="opportunities.html">Opportunities</a>
+                        <a href="opportunities.html">Our Contacts</a>
                         <a href="caseStudies.html">Case Studies</a>
-                        <a href="whyOpslabel.html">Why Opslabel</a>
+                        <a href="whyOpslabel.html">Why Opsintro</a>
                         <a href="contact.html">Contact</a>
                     </nav>
 
                     <div class="menu_btns_group">
-                        <a class="btn diamond_btn border_btn bg_green_light"
-                            href="https://calendly.com/opsintro_ready/strategy?month=2023-07">Join
+                        <a class="btn diamond_btn border_btn bg_green_light" href="appointment.html">Join
                             the
                             Network</a>
-                        <a class="btn plane_btn border_btn bg-white" href="appointment.html">Find an industry
+                        <a class="btn plane_btn border_btn bg-white"
+                            href="https://calendly.com/opsintro_ready/strategy">Find an industry
                             contact</a>
                     </div>
                 </div>
@@ -140,9 +142,9 @@
                                     id="typedElement"></span>
                                 you need right now.</h5>
                             <p class="hero_para"><b>OPSINTRO</b> provides an exclusive and powerful network of business
-                                experts, brands and top-tier service providers enabling you to find new opportunities
-                                and accelerate search results. Specifically by introducing you to key inside contacts,
-                                action takers and decision makers.
+                                experts, brand connections and top-tier service providers enabling you to find new
+                                opportunities and accelerate search results. Specifically by introducing you to key
+                                inside contacts, action takers and decision makers.
                             </p>
 
                             <div class="btns_group">
@@ -170,7 +172,7 @@
                         <p>BROWSE ALL <a href="opportunities.html">HERE</a></p>
                     </div>
                     <div>
-                        <h4>A NETWORK OF <br>OPPORTUNITIES</h4>
+                        <h4>GET TALKING TO <br>THE RIGHT PERSON</h4>
                     </div>
                 </div>
                 <div class="mid_col">
@@ -178,7 +180,7 @@
                 </div>
                 <div class="right_col">
                     <h3>5.0 <img src="./images/star-green.png" alt="star"></h3>
-                    <p>Leaders In Partnerships, Top Service<br> Contacts & New Client Acquisition</p>
+                    <p>Leaders In Partnerships, Top Service<br> Contacts & New Client Acquisition.</p>
                 </div>
             </div>
         </div>
@@ -266,26 +268,34 @@
         <div class="services_box">
             <div class="container">
                 <div class="row">
-                    <div class="col filterBtn_wrapper">
-                        <button class="filterBtn active">
-                            <img src="./images/oppor-estate.svg" alt="">
+                    <div class="col-12 filterBtn_wrapper">
+                        <button class="filterBtn active" data-filter="estate">
+                            <img src="./images/opport/icon-estate.svg" alt="">
                             Commercial Real Estate
                         </button>
-                        <button class="filterBtn">
-                            <img src="./images/oppor-renovation.svg" alt="">
+                        <button class="filterBtn" data-filter="renovation">
+                            <img src="./images/opport/icon-renovation.svg" alt="">
                             Renovation
                         </button>
-                        <button class="filterBtn">
-                            <img src="./images/oppor-truck.svg" alt="">
+                        <button class="filterBtn" data-filter="suppliers">
+                            <img src="./images/opport/icon-suppliers.svg" alt="">
                             Superb Suppliers
                         </button>
-                        <button class="filterBtn">
-                            <img src="./images/oppor-connection.svg" alt="">
+                        <button class="filterBtn" data-filter="connections">
+                            <img src="./images/opport/icon-connection.svg" alt="">
                             Brand Connections
                         </button>
-                        <button class="filterBtn">
-                            <img src="./images/oppor-dev.svg" alt="">
+                        <button class="filterBtn" data-filter="promotion">
+                            <img src="./images/opport/icon-promotion.svg" alt="">
+                            Promotion & Content
+                        </button>
+                        <button class="filterBtn" data-filter="dev">
+                            <img src="./images/opport/icon-dev.svg" alt="">
                             Digital Design & Development
+                        </button>
+                        <button class="filterBtn" data-filter="sales">
+                            <img src="./images/opport/icon-sales.svg" alt="">
+                            Sales & Lead Generation
                         </button>
                     </div>
                 </div>
@@ -332,7 +342,7 @@
     <section id="features" class="section3 cp">
         <div class="container">
             <div>
-                <h2 class="title_h2 mb-4">GET TALKING TO THE RIGHT PERSON</h2>
+                <h2 class="title_h2 mb-4">A NETWORK OF DIRECT CONTACTS</h2>
                 <p data-aos="slide-right">NO ONE likes talking slimy sales people or getting through to someone that
                     can’t really help.<br> > So we do the OPPOSITE by really personally connecting DIRECTLY with real
                     experts, those<br> that actually fulfil the service & the people with TOP positions within that
@@ -541,7 +551,7 @@
                                 </div>
                                 <div class="testi-img">
                                     <figure>
-                                        <img src="./images/testi/testi1.png">
+                                        <img src="./images/testi/testi1.png" alt="testi-img">
                                     </figure>
                                 </div>
                             </div>
@@ -553,7 +563,7 @@
                                 </div>
                                 <div class="testi-img">
                                     <figure>
-                                        <img src="./images/testi/testi2.png">
+                                        <img src="./images/whitney.png" alt="testi-img">
                                     </figure>
                                 </div>
                             </div>
@@ -565,7 +575,7 @@
                                 </div>
                                 <div class="testi-img">
                                     <figure>
-                                        <img src="./images/testi/testi3.png">
+                                        <img src="./images/cs3.png" alt="testi-img">
                                     </figure>
                                 </div>
                             </div>
@@ -581,8 +591,8 @@
                                 <div class="qt_text">
                                     <p>
                                         "Hiring a top designer through OpsIntro has exceeded our high
-                                        expectations.<br> Intro has enabled us to find one of the best contacts in the
-                                        industry. The team<br> are pleasure to work incredibly humble yet professional.
+                                        expectations. Intro has enabled us to find one of the best contacts in the
+                                        industry. The team are pleasure to work incredibly humble yet professional.
                                         Thank you!
                                     </p>
                                 </div>
@@ -597,9 +607,9 @@
                             <div class="swiper-slide">
                                 <div class="qt_text">
                                     <p>
-                                        "You showed me that getting to £12-16K months<br> for me is really just a math
-                                        equation. Now that you introduced me to <br> the director who has a system to
-                                        create an offer. It's not as <br> incredibly hard as I thought- it's just a
+                                        "You showed me that getting to £12-16K months for me is really just a math
+                                        equation. Now that you introduced me to the director who has a system to
+                                        create an offer. It's not as incredibly hard as I thought- it's just a
                                         process!
                                     </p>
                                 </div>
@@ -615,8 +625,8 @@
                             <div class="swiper-slide">
                                 <div class="qt_text">
                                     <p>- Started with Sales Closing company in our networkwith a £8K/month sales goal.
-                                        <br>Just 1 month of sales consulting yielded her 1st £10K month! New leads
-                                        flooded her DM's, <br>and alas making sales was (dare she might say)...fun!
+                                        Just 1 month of sales consulting yielded her 1st £10K month! New leads
+                                        flooded her DM's, and alas making sales was (dare she might say)...fun!
                                     </p>
                                 </div>
                                 <div class="qt_text-1">
@@ -720,23 +730,17 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    How are you different to other SAAS Lead Generation Platforms?
+                                    Do I have to pay to use Opsintro?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Opsintro offers the most complete all-in-one SAAS Lead Generation and Meeting
-                                        booking service on the market. This includes the Industry leading B2B Lead
-                                        Generation Platform, which offers up to 500 invites per week, plus inmail,
-                                        email, automated likes, follows, endorsements plus an inbuilt CRM pipeline
-                                        funnel feature, and a data enrichment tool to give you the ultimate edge when
-                                        growing your pipeline.</p>
-
-                                    <p>Plus you get access to hundreds of unique products and services, that no other
-                                        company offers such as Done for you Lead Generation and Appointment Setting, Ai
-                                        Sales Reps (Linkedin Profile Bots), Discounted Linkedin Sales Navigator, Landing
-                                        pages and more!</p>
+                                    <p>No! Finding a contact is 100% Free because we want to make getting to the right
+                                        person as seamless and effortless as possible. What’s more, if you just wanted
+                                        to hire quickly and didn’t want to go through too many people, we get it- that’s
+                                        why we’ll happily manage your project, handle payments and take 99% of your
+                                        plate, should you prefer to hire through us.</p>
                                 </div>
                             </div>
                         </div>
@@ -745,15 +749,16 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    What is your definition of a lead?
+                                    Category/Service I’m Looking For Isn’t Listed.
+                                    Can I still Use Opsintro?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>We define a lead in our company as a prospect who meets your Ideal Client Profile
-                                        (ICP) criteria with an active interest in your product/service and/ or with the
-                                        intent for a call/further discussion.</p>
+                                    <p>Of Course! Our network expands far and wide across multiple industries; just let
+                                        us know what it is that you’re looking for. We’ll point you in the right
+                                        direction :)</p>
                                 </div>
                             </div>
                         </div>
@@ -762,15 +767,21 @@
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    What is your Minimum Term?
+                                    How Do You Provide & Guarantee Top Contacts?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>There is no minimum term. We offer our services on a monthly, quarterly and
-                                        annual basis. Quarterly and Annual payments are required upfront, message our
-                                        support to set this up.</p>
+                                    <p>Once you’ve spoken to one of our industry experts ( via a Call/Watsapp/email )
+                                        and they’ve understood exactly what or who you are looking for, we will send you
+                                        a list of direct contacts and let them know you are on your way! It’s as simple
+                                        as that.</p>
+
+                                    <p>Our Industry Contacts are like partners and, with a background in private service
+                                        & luxury goods, we love operating at the highest quality level. Our contacts are
+                                        tried & tested through a vigorous selection process but if you’re unhappy, you
+                                        can come back to us anytime!</p>
                                 </div>
                             </div>
                         </div>
@@ -779,20 +790,21 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Do I need a LinkedIn Premium account to use Opsintro?
+                                    I’m Looking To Get More Brand Deals & Discounts- Can you Help?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>No you can run outreach on a Basic Linkedin account but we would recommend that
-                                        you purchase our discounted sales navigator as it enables more outreach sent and
-                                        more targeted prospect lists.</p>
+                                    <p>Looks like you’ve come to the right place. Whilst you may not need a contact or
+                                        be looking to hire; the companies in our exclusive network sometimes give
+                                        Opsintro some extra deals & offer which we can pass onto you. Watch out on our
+                                        socials or ask us direct!</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion-item">
+                        <!-- <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -832,7 +844,7 @@
                                         customers.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="claim-btn-box">
@@ -846,15 +858,18 @@
                             <h2 class="accordion-header" id="headingSeven">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    Is Opsintro GDPR compliant?
+                                    Does Opsintro provide any services?
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <p>GDPR doesn’t affect LinkedIn outreach campaigns. We also ensure our email
-                                        campaigns are fully GDPR compliant by specific protocols led by our outreach
-                                        team.</p>
+                                    <p>Yes! And we keep it simple- offering Business Introductions. Delivering a bucket
+                                        load of new clients through our recommendations. We want to partner with the
+                                        best who are proud of what they do & offer.</p>
+
+                                    <p>You’ll also get access to our exclusive lead partners who can drive you more
+                                        appointments, find new referral partners or even close sales for you.</p>
                                 </div>
                             </div>
                         </div>
@@ -863,21 +878,18 @@
                             <h2 class="accordion-header" id="headingEight">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    How does the onboarding process work?
+                                    How Can I Work With Opsintro To Get More Clients?
                                 </button>
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <p>Opsintro has a simple but very effective lead generation and appointment booking
-                                        strategy. We ask you to submit our onboarding questionnaire with information
-                                        about the product/service you want to go to market and we then build a bespoke
-                                        campaign taking 24-48 hours. You will also be invited to have a call with your
-                                        Campaign Manager on a 1 on 1 call. Once built, we send to you for approval then
-                                        launch it using our Ai outreach software. We sync our lead gen platform with you
-                                        on slack so you get automatic updates everytime a prospect replies to the
-                                        automated outreach and when a conversation is tagged in the inbox as a lead or
-                                        booked appointment.</p>
+                                    <p>JOIN THE NETWORK and we’ll jump into discussing what you offer & if we are a good
+                                        fit for one another. If we partner with you, we run Introductions campaigns to
+                                        promote and recommend you ONLY with dedicated accounts to a pool of top
+                                        potential clients. Real, GENUINE referrals that we’ve qualified based on your
+                                        criteria before we’ll hand them over to you ! Delivering a flurry of HOT leads
+                                        into your inbox.</p>
                                 </div>
                             </div>
                         </div>
@@ -886,22 +898,24 @@
                             <h2 class="accordion-header" id="headingNine">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                    What support do you provide for the Lead plans?
+                                    Why Join The Opsintro Network?
                                 </button>
                             </h2>
                             <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <p>With our Lead plan we find your ideal customers and provide our tried and tested
-                                        high response rate templates for the lead generation campaigns so you can be in
-                                        the best position to generate leads and new opportunities for your business.</p>
-
-                                    <p>We generate the Lead, you handle the response and appointment setting.</p>
+                                    <p>We work with some incredible companies and ONLY represent those we know provide
+                                        the
+                                        BEST service, products or results to clients month after month. Gone are the
+                                        days of random and icky promotion. We go up and beyond shouting for the rooftops
+                                        about doing the best by people and want to share your amazing service so we can
+                                        celebrate YOUR SUCCESS. We only WIN if you WIN!
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion-item">
+                        <!-- <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTen">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
@@ -938,7 +952,7 @@
                                         support team via our Live Chat feature.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="arrowfly_img">
@@ -961,11 +975,10 @@
                 <div class="col-12">
                     <h3 class="site-upercase-title">READY TO GET STARTED?</h3>
                     <p>We know how frustrating it can be to going from person to person - so we can’t
-                        wait to introduce you directly. <br>
-                        Book Your <span>FREE</span> STRATEGY CALL <a
+                        wait to introduce you directly.</p>
+                    <p class="mt-3">Book Your <span>FREE</span> STRATEGY CALL <a
                             href="https://calendly.com/bookedcall/Opslabelsintro">NOW</a> -
-                        Find Your Expert.
-                    </p>
+                        Find Your Expert.</p>
                     <div class="stars">
                         <img src="./images/star.svg" alt="stars">
                         <img src="./images/star.svg" alt="stars">
@@ -999,7 +1012,7 @@
                                 <h3 class="contact-title">Contact</h3>
                                 <ul class="contact-btns">
                                     <li class="star-bg">
-                                        <a href="https://calendly.com/bookedcall/opslabelsintro"
+                                        <a href="https://calendly.com/opsintro_ready/strategy"
                                             class="book-demo btn bg_green2">Find an Industry Contact</a>
                                         <img src="./images/bg-star.svg" alt="">
                                     </li>
@@ -1029,7 +1042,7 @@
                         <p>E: <b><a href="mailto:contact@opsintro.com">contact@opsintro.com</a></b></p>
                         <p>A: <b>Office 114803, PO Box 6945, London, W1A 6US</b></p>
 
-                        <ul class="social-icons">
+                        <ul class="social_icons">
                             <li>
                                 <a href="#">
                                     <img src="./images/fb.svg" alt="fb">
@@ -1056,22 +1069,21 @@
                         <h3 class="footer-links-title">COMPANY</h3>
                         <ul class="footer-links">
                             <li><a href="#">ABOUT</a></li>
-                            <li><a href="services.html">ALL OUR OPPORTUNITIES</a></li>
-                            <li><a href="https://calendly.com/bookedcall/opslabelsintro">LOGINS</a></li>
+                            <li><a href="https://calendly.com/bookedcall/opslabelsintro">JOIN THE NETWORK</a></li>
                             <li><a href="#">TERMS & CONDITIONS</a></li>
-                            <!-- <li><a href="appointment.html">CLAIM A FREE APPOINTMENT</a></li> -->
                         </ul>
                     </div>
                     <div class="col-lg-3">
                         <h3 class="footer-links-title">OVERVIEW</h3>
                         <ul class="footer-links">
-                            <li><a href="#">FREE STRATEGY</a></li>
-                            <li><a href="#services">SERVICES</a></li>
+                            <li><a href="#">FREE STRATEGY CALL</a></li>
+                            <li><a href="#">OUR CONTACTS</a></li>
                             <li><a href="whyOpslabel.html">WHY OPSINTRO</a></li>
                             <li><a href="caseStudies.html">CASE STUDIES & REVIEWS</a></li>
                             <li><a href="#works">HOW IT WORKS</a></li>
                             <li><a href="#faq">FAQ’S</a></li>
-                            <!-- <li><a href="https://calendly.com/bookedcall/opslabelsintro">GET STARTED</a></li> -->
+                            <li class="mt-3"><a href="https://calendly.com/bookedcall/opslabelsintro">GET STARTED</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1124,15 +1136,15 @@
         };
 
         // featuresSwiper (calling the toggleAccordion function when slides changes)
-        const featuresSwiper = new Swiper('.features-swiper', {
-            simulateTouch: false,
-            autoplay: {
-                delay: 2500,
-            },
-            on: {
-                slideChange: () => toggleAccordion()
-            },
-        });
+        // const featuresSwiper = new Swiper('.features-swiper', {
+        //     simulateTouch: false,
+        //     autoplay: {
+        //         delay: 2500,
+        //     },
+        //     on: {
+        //         slideChange: () => toggleAccordion()
+        //     },
+        // });
 
     </script>
 
