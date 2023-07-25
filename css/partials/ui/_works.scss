@@ -42,7 +42,7 @@
             width: 20%;
             position: absolute;
 
-            @include devices(xs) {
+            @include devices(md) {
                 display: none;
             }
 
@@ -62,15 +62,6 @@
                 @include devices(xl) {
                     right: 90px;
                 }
-            }
-        }
-
-        &+p {
-            font-size: 1.1rem;
-            margin-top: 0.8rem;
-
-            @include devices(xl) {
-                font-size: 1rem;
             }
         }
     }

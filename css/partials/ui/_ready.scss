@@ -20,15 +20,6 @@
     }
 
     p {
-        font-size: 1.14rem;
-
-        @include devices(md) {
-            font-size: 1.5rem;
-        }
-
-        @include devices(xs) {
-            font-size: 0.9rem;
-        }
 
         span {
             color: $pink;

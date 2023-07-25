@@ -16,94 +16,108 @@
 
     @include devices(xl) {
         padding-top: 170px;
-        height: 565px;
+        height: 612px;
     }
 
     @include devices(lg) {
-        height: 500px;
+        height: 560px;
     }
 
     @include devices(md) {
-        height: 948px;
+        height: 1100px;
     }
 
     @include devices(sm) {
-        height: 991px;
+        padding-top: 120px;
+        height: 820px;
     }
 
-    @include devices(xs) {
-        padding-top: 120px;
-        height: 713px;
+    .hero_row {
+        @include devices(md) {
+            gap: 4.4rem;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @include devices(sm) {
+            gap: 3.5rem;
+        }
     }
 
     .hero_txt {
         padding-top: 2rem;
 
+        @include devices(lg) {
+            padding-top: 0;
+        }
+
         h1 {
-            color: #030405;
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
             text-transform: uppercase;
             padding-bottom: 1rem;
 
             @include devices(xl) {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             @include devices(lg) {
-                font-size: 1.7rem;
+                font-size: 2.2rem;
             }
 
             @include devices(md) {
-                font-size: 2rem;
-            }
-
-            @include devices(sm) {
                 font-size: 2.8rem;
             }
 
-            @include devices(xs) {
-                font-size: 1.85rem;
+            @include devices(sm) {
+                font-size: 1.9rem;
             }
         }
 
         .hero_subHead {
             text-transform: uppercase;
             color: #465898;
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             font-weight: 600;
+
+            @include devices(xl) {
+                font-size: 1rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.5rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1.1rem;
+            }
 
             span {
                 color: $pink;
+            }
+
+            br {
+                @include devices(sm) {
+                    display: none;
+                }
             }
         }
 
         .hero_para {
             display: none;
-            width: 640px;
-            font-size: 1rem;
+            font-size: 1.2rem;
             line-height: 1.5;
 
             @include devices(xl) {
                 font-size: 0.92rem;
             }
 
-            @include devices(lg) {
-                width: 480px;
-            }
-
             @include devices(md) {
-                font-size: 1.1rem;
-                width: 580px;
+                font-size: 1.3rem;
             }
 
             @include devices(sm) {
-                width: auto;
-                line-height: 1.3;
-            }
-
-            @include devices(xs) {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
 
@@ -113,12 +127,20 @@
             gap: 2rem;
             padding-top: 2.5rem;
 
+            @include devices(md) {
+                justify-content: center;
+            }
+
             .btn {
                 &.find_more {
                     @include padding-x(1.3rem, 1.3rem);
                     font-size: 1.1rem;
                     font-weight: 500;
                     text-transform: capitalize;
+
+                    @include devices(xl) {
+                        font-size: 0.85rem;
+                    }
                 }
 
                 &.diamond_btn {
@@ -143,17 +165,8 @@
             position: relative;
             z-index: 1;
 
-            @include devices(xl) {
-                margin-left: 3rem;
-            }
-
-            @include devices(lg) {
-                margin-left: 1.5rem;
-            }
-
             @include devices(md) {
                 margin-top: 0;
-                margin-left: 0;
             }
         }
 
