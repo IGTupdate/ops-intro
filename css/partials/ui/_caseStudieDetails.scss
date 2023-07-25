@@ -4,17 +4,41 @@
     display: flex;
     flex-direction: column;
 
+    @include devices(lg) {
+        height: unset;
+        min-height: 100vh;
+    }
+
     .caseStudies-details-header {
-        height: 7vh;
-        background-color: #000;
-        width: 100%;
+        text-align: right;
 
         button {
-            div {
-                height: 2px;
-                width: 25px;
+            margin-top: 2rem;
+            margin-right: 2rem;
+
+            @include devices(lg) {
+                margin-top: 1.5rem;
+                margin-right: 1.5rem;
+            }
+
+            @include devices(md) {
+                margin-top: 2rem;
+            }
+
+            span {
+                display: block;
+                height: 2.5px;
+                width: 28px;
                 background-color: white;
                 border-radius: 50px;
+
+                @include devices(lg) {
+                    width: 20px;
+                }
+
+                @include devices(md) {
+                    width: 26px;
+                }
 
                 &:first-child {
                     transform: rotate(45deg);
@@ -25,21 +49,25 @@
                     transform: rotate(135deg);
                     transform-origin: top;
                 }
-
-                @include devices(sm) {
-                    width: 19px;
-                }
             }
         }
     }
 
     .caseStudies-client-details {
-        height: 58vh;
-        width: 100%;
+        height: 80%;
+        @include margin-y(1rem, 1.5rem);
+
+        @include devices(lg) {
+            margin-bottom: 1rem;
+        }
+
+        @include devices(md) {
+            height: auto;
+            @include margin-y(4rem, 5rem);
+        }
 
         @include devices(sm) {
-            height: 60vh;
-            padding-top: 7px;
+            margin-bottom: 3rem;
         }
 
         .client-details-img {
@@ -47,23 +75,20 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 60px;
             width: 77%;
-            height: 97%;
-            margin: auto;
-            margin-top: 1.5%;
+            @include mx-auto();
 
             @include devices(lg) {
                 gap: 30px;
-                margin-top: 1%;
+                width: 96%;
             }
 
             @include devices(md) {
-                gap: 18px;
-                width: 90%;
+                grid-template-columns: auto;
+                width: 70%;
             }
 
             @include devices(sm) {
-                grid-template-columns: auto;
-                gap: 0;
+                width: 80%;
             }
 
             .client-details {
@@ -72,74 +97,73 @@
                 gap: 40px;
                 align-items: flex-end;
                 justify-content: center;
-                // width:30%;
 
-                @include devices(sm) {
+                @include devices(md) {
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
-                    height: 56px;
                     gap: 20px;
                 }
 
+                @include devices(sm) {
+                    flex-direction: column;
+                }
+
                 div {
-                    border: 1px solid white;
-                    width: 60%;
-                    height: 140px;
+                    width: 65%;
+                    @include padding-y(2rem, 2rem);
                     border: 5px solid black;
-                    border-radius: 26px;
                     border-bottom: 12px solid black;
                     border-right: 12px solid black;
+                    border-radius: 26px;
                     text-align: center;
-                    padding-top: 32px;
                     font-size: 1.2rem;
                     font-weight: 600;
-                    line-height: 30px;
                     color: $black;
 
+                    @include devices(xl) {
+                        width: 75%;
+                        @include padding-y(1.5rem, 1.5rem);
+                    }
+
                     @include devices(lg) {
-                        height: 100px;
-                        width: 72%;
-                        padding-top: 13px;
-                        font-size: 0.8rem;
-                        line-height: 28px;
+                        @include padding-y(0.8rem, 0.8rem);
                     }
 
                     @include devices(md) {
-                        height: 87px;
-                        width: 75%;
-                        padding-top: 15px;
-                        font-size: 0.6rem;
-                        line-height: 21px;
-                    }
-
-                    @include devices(sm) {
-                        height: 55px;
-                        width: 75%;
-                        padding-top: 6px;
-                        font-size: 0.6rem;
-                        line-height: 13px;
-                        border-radius: 18px;
+                        @include padding-y(1rem, 1rem);
                     }
 
                     h4 {
                         font-size: 1.2rem;
                         font-weight: 600;
+
+                        @include devices(xl) {
+                            font-size: 1rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 0.8rem;
+                        }
+
+                        @include devices(md) {
+                            font-size: 1rem;
+                        }
                     }
 
                     h2 {
                         font-weight: normal;
 
+                        @include devices(xl) {
+                            font-size: 1.8rem;
+                        }
+
                         @include devices(lg) {
-                            font-size: 2rem;
+                            font-size: 1.4rem;
                         }
 
                         @include devices(md) {
-                            font-size: 1.5rem;
-                        }
-
-                        @include devices(sm) {
-                            font-size: 0.9rem;
+                            font-size: 1.8rem;
                         }
                     }
                 }
@@ -147,23 +171,14 @@
 
             .flex-end {
                 align-items: flex-start;
+
+                @include devices(sm) {
+                    align-items: center;
+                }
             }
 
             .image-section {
                 overflow: hidden;
-
-                @include devices(sm) {
-                    height: 199px;
-                    width: 66%;
-                    margin: auto;
-                    margin-bottom: 8.5px;
-                    margin-top: 8px;
-                }
-
-                @include devices(xs) {
-                    height: 41vh;
-                    width: 80%;
-                }
 
                 div {
                     border: 4px solid black;
@@ -182,46 +197,51 @@
                             height: 43px;
                         }
 
-                        @include devices(sm) {
-                            height: 36px;
+                        @include devices(lg) {
+                            height: 30px;
+                        }
+
+                        @include devices(md) {
+                            height: 45px;
+                            background-size: 26% 55%;
                         }
                     }
 
                     &:last-child {
-                        height: 90%;
                         width: 100%;
-                        background-image: url("../images/cs1.png");
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
+                        height: 500px;
+                        overflow: hidden;
                         border-top: none;
 
                         @include devices(xl) {
-                            height: 86%;
+                            height: 320px;
                         }
 
                         @include devices(lg) {
-                            background-size: 100% 100%;
+                            height: 220px;
+                        }
+
+                        @include devices(md) {
+                            height: 600px;
                         }
 
                         @include devices(sm) {
-                            height: 86%;
-                            background-size: cover;
-                            background-image: url("../images/testi/testi1.png");
-                            border: 2px solid black;
+                            height: 400px;
+                        }
+
+                        img {
+                            @include img-fit();
                         }
                     }
                 }
             }
         }
-
     }
 
     .caseStudies-business {
-        height: 5vh;
         text-align: right;
-        padding-right: 3%;
-        font-size: 1.2rem;
+        padding-right: 4%;
+        font-size: 1.3rem;
         color: white;
         font-weight: lighter;
 
@@ -229,113 +249,153 @@
             font-weight: 600;
         }
 
+        @include devices(xl) {
+            font-size: 1.05rem;
+        }
+
         @include devices(lg) {
-            font-size: 1rem;
+            font-size: 0.8rem;
+            padding-right: 8%;
+        }
+
+        @include devices(md) {
+            font-size: 1.1rem;
+            padding-right: 8%;
+        }
+
+        @include devices(sm) {
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 
     .caseStudies-footer {
-        height: 30vh;
-        width: 100%;
         background-color: #000;
         color: white;
+        position: relative;
+        margin-top: 1rem;
+
+        @include devices(md) {
+            margin-top: 2rem;
+        }
+
+        @include devices(sm) {
+            margin-top: 3rem;
+        }
 
         .plane-bg {
             position: absolute;
-            top: 64%;
+            top: 0;
             left: 8%;
-            height: 88px;
-            width: 78px;
+            width: 70px;
+            height: 50px;
+            @include margin-y(-25px, -25px);
             background-image: url("../images/plane.png");
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: contain;
             background-position: center;
 
             @include devices(lg) {
-                top: 63%;
-                left: 8%;
-                height: 78px;
-                width: 47px;
+                width: 40px;
             }
 
-            @include devices(sm) {
-                top: 65%;
-                left: 5%;
-                height: 60px;
-                width: 31px;
+            @include devices(md) {
+                width: 50px;
             }
         }
 
         .footer-div {
             width: 80%;
-            margin: auto;
-            height: 100%;
-            padding: 24px 0px;
+            @include mx-auto();
+            @include padding-y(3.5rem, 3rem);
 
-            @include devices(sm) {
-                padding: 15px 0px;
+            @include devices(lg) {
+                width: 85%;
+                @include padding-y(2.5rem, 2rem);
             }
 
-            @include devices(xs) {
-                padding: 7px 0px;
+            @include devices(md) {
+                width: 80%;
+                @include padding-y(3.8rem, 3rem);
             }
 
             h2 {
                 font-weight: 600;
-                line-height: 54px;
+
+                @include devices(xl) {
+                    font-size: 1.8rem;
+                }
 
                 @include devices(lg) {
-                    font-size: 1.5rem;
-                    line-height: 35px;
+                    font-size: 1.4rem;
+                }
+
+                @include devices(md) {
+                    font-size: 2rem;
                 }
 
                 @include devices(sm) {
-                    font-size: 1.05rem;
-                    line-height: 25px;
-                }
-
-                @include devices(xs) {
-                    font-size: 0.9rem;
+                    font-size: 1.5rem;
                 }
             }
 
             h4 {
                 font-weight: 300;
-                margin-bottom: 20px;
+                @include margin-y(0.6rem, 1.4rem);
+
+                @include devices(lg) {
+                    margin-bottom: 0.9rem;
+                }
+
+                @include devices(md) {
+                    margin-bottom: 1.2rem;
+                }
 
                 b {
                     font-weight: 500;
                 }
 
+                @include devices(xl) {
+                    font-size: 1.4rem;
+                }
+
                 @include devices(lg) {
-                    font-weight: lighter;
-                    font-size: .9rem;
-                    margin-bottom: 10px;
+                    font-size: 1rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.5rem;
                 }
 
                 @include devices(sm) {
-                    font-size: 0.72rem;
-                    margin-bottom: 8px;
+                    font-size: 1.2rem;
                 }
             }
 
             p {
-                line-height: 28px;
-                font-size: 1.1rem;
-                font-weight: 100;
+                font-size: 1.3rem;
+                font-weight: 200;
+                letter-spacing: 0.8px;
+
+                @include devices(xl) {
+                    font-size: 1rem;
+                }
 
                 @include devices(lg) {
-                    line-height: 19px;
                     font-size: .9rem;
                 }
 
                 @include devices(md) {
-                    line-height: 14px;
-                    font-size: 0.71rem;
+                    font-size: 1.2rem;
                 }
 
                 @include devices(sm) {
-                    font-size: 0.68rem;
+                    font-size: 1rem;
+                }
+
+                &:last-child {
+                    margin-top: 0.5rem;
                 }
             }
 
