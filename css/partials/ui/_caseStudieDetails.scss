@@ -1,61 +1,36 @@
+#modals {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1005;
+    background-color: #161416;
+    padding-top: 4rem;
+    animation: zoom-in-zoom-out .3s ease-out;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(0.8, 0.8);
+    }
+
+    50% {
+        transform: scale(0.9, 0.9);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
 .caseStudies-details {
     background-color: #161416;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    @include devices(lg) {
-        height: unset;
-        min-height: 100vh;
-    }
-
-    .caseStudies-details-header {
-        text-align: right;
-
-        button {
-            margin-top: 2rem;
-            margin-right: 2rem;
-
-            @include devices(lg) {
-                margin-top: 1.5rem;
-                margin-right: 1.5rem;
-            }
-
-            @include devices(md) {
-                margin-top: 2rem;
-            }
-
-            span {
-                display: block;
-                height: 2.5px;
-                width: 28px;
-                background-color: white;
-                border-radius: 50px;
-
-                @include devices(lg) {
-                    width: 20px;
-                }
-
-                @include devices(md) {
-                    width: 26px;
-                }
-
-                &:first-child {
-                    transform: rotate(45deg);
-                    transform-origin: top;
-                }
-
-                &:last-child {
-                    transform: rotate(135deg);
-                    transform-origin: top;
-                }
-            }
-        }
-    }
 
     .caseStudies-client-details {
-        height: 80%;
-        @include margin-y(1rem, 1.5rem);
+        @include margin-y(1rem, 2rem);
 
         @include devices(lg) {
             margin-bottom: 1rem;
@@ -250,6 +225,7 @@
         }
 
         @include devices(xl) {
+            padding-right: 6%;
             font-size: 1.05rem;
         }
 
@@ -274,7 +250,7 @@
         background-color: #000;
         color: white;
         position: relative;
-        margin-top: 1rem;
+        margin-top: 2rem;
 
         @include devices(md) {
             margin-top: 2rem;
@@ -308,7 +284,7 @@
         .footer-div {
             width: 80%;
             @include mx-auto();
-            @include padding-y(3.5rem, 3rem);
+            @include padding-y(4rem, 3rem);
 
             @include devices(lg) {
                 width: 85%;
@@ -342,7 +318,7 @@
 
             h4 {
                 font-weight: 300;
-                @include margin-y(0.6rem, 1.4rem);
+                @include margin-y(0.8rem, 1.4rem);
 
                 @include devices(lg) {
                     margin-bottom: 0.9rem;
@@ -403,4 +379,50 @@
 
     }
 
+}
+
+.modal_close_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    button {
+        margin-top: 2rem;
+        margin-right: 2rem;
+
+        @include devices(lg) {
+            margin-top: 1.5rem;
+            margin-right: 1.5rem;
+        }
+
+        @include devices(md) {
+            margin-top: 2rem;
+        }
+
+        span {
+            display: block;
+            height: 2.5px;
+            width: 28px;
+            background-color: white;
+            border-radius: 50px;
+
+            @include devices(lg) {
+                width: 20px;
+            }
+
+            @include devices(md) {
+                width: 26px;
+            }
+
+            &:first-child {
+                transform: rotate(45deg);
+                transform-origin: top;
+            }
+
+            &:last-child {
+                transform: rotate(135deg);
+                transform-origin: top;
+            }
+        }
+    }
 }

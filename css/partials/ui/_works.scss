@@ -8,16 +8,7 @@
         pointer-events: none;
 
         @include devices(md) {
-            top: -70px;
-        }
-
-        @include devices(sm) {
-            top: -40px;
-        }
-
-        @include devices(xs) {
-            top: -20px;
-            right: -280px;
+            display: none;
         }
     }
 

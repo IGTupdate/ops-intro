@@ -19,12 +19,12 @@ if (isset($_POST['submit'])) {
         $mail->isSMTP();
         $mail->Host = 'smtp-relay.sendinblue.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contact@opslabel.com';
+        $mail->Username = 'contact@opsintro.com';
         $mail->Password = '9ys5k4Br7zUDZOHV';
         $mail->SMTPSecure = 'tls';
         $mail->Port = '587';
         $mail->setFrom($email);
-        $mail->addAddress('contact@opslabel.com');
+        $mail->addAddress('contact@opsintro.com');
         $mail->isHTML(true);
         $mail->Subject = 'New Form Submission';
         $mail->Body = "Name: $name <br>Email: $email <br>Subject: $subj <br>Message: $message";

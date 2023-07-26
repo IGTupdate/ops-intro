@@ -9,79 +9,79 @@
         height: unset;
     }
 
-    .services-template {
-        .services-left_block {
-            @include devices(lg) {
-                width: 7.5%;
-            }
+    // .services-template {
+    //     .services-left_block {
+    //         @include devices(lg) {
+    //             width: 7.5%;
+    //         }
 
-            @include devices(md) {
-                width: 9%;
-            }
+    //         @include devices(md) {
+    //             width: 9%;
+    //         }
 
-            @include devices(sm) {
-                width: 10%;
-            }
+    //         @include devices(sm) {
+    //             width: 10%;
+    //         }
 
-            @include devices(xs) {
-                width: 12%;
-            }
+    //         @include devices(xs) {
+    //             width: 12%;
+    //         }
 
-            .services-left_block-logo {
-                img {
-                    max-width: 190px;
-                    margin-top: 50px;
-                    margin-left: 84px;
+    //         .services-left_block-logo {
+    //             img {
+    //                 max-width: 190px;
+    //                 margin-top: 50px;
+    //                 margin-left: 84px;
 
-                    @include devices(xl) {
-                        max-width: 140px;
-                        margin-top: 35px;
-                        margin-left: 64px;
-                    }
+    //                 @include devices(xl) {
+    //                     max-width: 140px;
+    //                     margin-top: 35px;
+    //                     margin-left: 64px;
+    //                 }
 
-                    @include devices(lg) {
-                        max-width: 120px;
-                        margin-top: 30px;
-                        margin-left: 50px;
-                    }
+    //                 @include devices(lg) {
+    //                     max-width: 120px;
+    //                     margin-top: 30px;
+    //                     margin-left: 50px;
+    //                 }
 
-                    @include devices(md) {
-                        max-width: 150px;
-                        margin-top: 50px;
-                        margin-left: 35px;
-                    }
+    //                 @include devices(md) {
+    //                     max-width: 150px;
+    //                     margin-top: 50px;
+    //                     margin-left: 35px;
+    //                 }
 
-                    @include devices(xs) {
-                        max-width: 100px;
-                        margin-left: 20px;
-                    }
-                }
-            }
+    //                 @include devices(xs) {
+    //                     max-width: 100px;
+    //                     margin-left: 20px;
+    //                 }
+    //             }
+    //         }
 
-            .studiesDetails-left_menu {
-                .menu_btn {
-                    top: 44%;
-                    left: 45px;
+    //         .studiesDetails-left_menu {
+    //             .menu_btn {
+    //                 top: 44%;
+    //                 left: 45px;
 
-                    @include devices(xl) {
-                        left: 30px;
-                    }
+    //                 @include devices(xl) {
+    //                     left: 30px;
+    //                 }
 
-                    @include devices(lg) {
-                        left: 18px;
-                    }
+    //                 @include devices(lg) {
+    //                     left: 18px;
+    //                 }
 
-                    @include devices(sm) {
-                        left: 16px;
-                    }
+    //                 @include devices(sm) {
+    //                     left: 16px;
+    //                 }
 
-                    @include devices(xs) {
-                        left: 6px;
-                    }
-                }
-            }
-        }
-    }
+    //                 @include devices(xs) {
+    //                     left: 6px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     .appointment-right-block {
         position: relative;
@@ -113,17 +113,16 @@
         .appointment_content {
             margin-top: 3rem;
 
+            @include devices(lg) {
+                margin-top: 4rem;
+            }
+
             @include devices(md) {
                 margin-top: 0;
-                padding-top: 6rem;
+                padding-top: 3rem;
             }
 
             @include devices(sm) {
-                padding-top: 20rem;
-                padding-bottom: 15rem;
-            }
-
-            @include devices(xs) {
                 padding-top: 8rem;
                 padding-bottom: 5rem;
             }
@@ -148,7 +147,7 @@
                     }
 
                     @include devices(lg) {
-                        font-size: 1.6rem;
+                        font-size: 1.5rem;
                     }
 
                     @include devices(md) {
@@ -174,15 +173,15 @@
                     @include margin-y(3rem, 3rem);
 
                     @include devices(xl) {
-                        @include margin-y(2rem, 2.2rem);
+                        @include margin-y(2.2rem, 2.8rem);
                     }
 
                     @include devices(lg) {
-                        @include margin-y(1.6rem, 2rem);
+                        @include margin-y(1.5rem, 2rem);
                     }
 
                     @include devices(md) {
-                        @include margin-y(2.2rem, 2.4rem);
+                        @include margin-y(2.2rem, 3rem);
                     }
 
                     @include devices(xs) {
@@ -192,32 +191,45 @@
                     li {
                         display: flex;
                         align-items: center;
-                        gap: 0.3rem;
+                        gap: 0.5rem;
+
+                        @include devices(sm) {
+                            align-items: flex-start;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 0.3rem;
+
+                            @include devices(sm) {
+                                margin-bottom: 0.6rem;
+                            }
+                        }
 
                         div {
                             &:first-child {
 
                                 @include devices(sm) {
-                                    width: 5%;
+                                    width: 8%;
+                                    text-align: center;
                                 }
 
                                 img {
                                     width: 30px;
 
                                     @include devices(xl) {
-                                        width: 16px;
+                                        width: 24px;
                                     }
 
                                     @include devices(lg) {
-                                        width: 14px;
+                                        width: 20px;
                                     }
 
                                     @include devices(md) {
-                                        width: 18px;
+                                        width: 26px;
                                     }
 
-                                    @include devices(xs) {
-                                        width: 14px;
+                                    @include devices(sm) {
+                                        width: 20px;
                                     }
                                 }
                             }
@@ -225,7 +237,7 @@
                             &:last-child {
 
                                 @include devices(sm) {
-                                    width: 95%;
+                                    width: 92%;
                                 }
 
                                 span {
@@ -236,14 +248,14 @@
                                     }
 
                                     @include devices(lg) {
-                                        font-size: 1rem;
+                                        font-size: 0.9rem;
                                     }
 
                                     @include devices(md) {
                                         font-size: 1.4rem;
                                     }
 
-                                    @include devices(xs) {
+                                    @include devices(sm) {
                                         font-size: 1rem;
                                     }
                                 }
@@ -282,10 +294,21 @@
                         font-size: 1.3rem;
                         @include padding-x(2.5rem, 2.5rem);
 
-                        &::after {
-                            width: 30px;
-                            top: -16px;
-                            right: 10px;
+                        @include devices(xl) {
+                            font-size: 1rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 0.9rem;
+                            @include padding-x(2.2rem, 2.2rem);
+                        }
+
+                        @include devices(md) {
+                            font-size: 1.1rem;
+                        }
+
+                        @include devices(sm) {
+                            font-size: 1rem;
                         }
 
                         // span {
@@ -305,10 +328,6 @@
                         //         color: #b183ba;
                         //     }
                         // }
-
-                        @include devices(xl) {
-                            font-size: 1rem;
-                        }
                     }
                 }
 
@@ -317,16 +336,16 @@
                     font-weight: normal;
 
                     @include devices(xl) {
-                        font-size: 0.8rem;
+                        font-size: 1rem;
                     }
 
                     @include devices(lg) {
-                        margin-top: 1.5rem;
+                        font-size: 0.85rem;
                     }
 
                     @include devices(md) {
                         font-size: 1rem;
-                        margin-top: 2.2rem;
+                        line-height: 1.6;
                     }
 
                     span {
@@ -365,10 +384,6 @@
 
                     @include devices(lg) {
                         width: 420px;
-                    }
-
-                    @include devices(md) {
-                        width: 500px;
                     }
 
                 }

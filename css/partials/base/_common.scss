@@ -152,12 +152,23 @@ button:not(:disabled) {
     &.plane_btn {
 
         &::after {
-            @include pseudo($content: "", $top: -20px, $left: auto, $width: 40px, $height: 100%);
+            @include pseudo($content: "", $top: 0, $left: auto, $width: 40px, $height: 100%);
             right: 50px;
+            @include margin-y(-20px, -20px);
             background-image: url(../images/plane-colored-2.svg);
             background-repeat: no-repeat;
             background-size: contain;
             filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.5));
+
+            @include devices(xl) {
+                width: 34px;
+                @include margin-y(-17px, -17px);
+            }
+
+            @include devices(xs) {
+                width: 28px;
+                @include margin-y(-14px, -14px);
+            }
         }
     }
 
@@ -165,11 +176,22 @@ button:not(:disabled) {
         @include padding-x(2.2rem, 2.2rem);
 
         &::after {
-            @include pseudo($content: "", $top: -15px, $left: auto, $width: 26px, $height: 100%);
-            right: 90px;
+            @include pseudo($content: "", $top: 0, $left: 50%, $width: 25px, $height: 100%);
+            transform: translateX(-50%);
+            @include margin-y(-13px, -13px);
             background-image: url(../images/diamond.svg);
             background-repeat: no-repeat;
             background-size: contain;
+
+            @include devices(xl) {
+                width: 20px;
+                @include margin-y(-11px, -11px);
+            }
+
+            @include devices(sm) {
+                width: 16px;
+                @include margin-y(-9px, -9px);
+            }
         }
     }
 }
@@ -187,7 +209,7 @@ button:not(:disabled) {
     .filterBtn {
         background: #222;
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         padding: 0.8rem 1.8rem;
         border-radius: 6px;
         opacity: 0.6;
@@ -205,7 +227,7 @@ button:not(:disabled) {
         }
 
         img {
-            width: 26px;
+            width: 25px;
             margin-right: 0.5rem;
 
             @include devices(xl) {
@@ -285,7 +307,7 @@ h2.title_h2 {
         }
 
         img {
-            width: 30px;
+            width: 28px;
 
             @include devices(xl) {
                 width: 23px;

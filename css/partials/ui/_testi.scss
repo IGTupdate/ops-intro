@@ -12,12 +12,13 @@
     @include devices(md) {
         background-position-y: 0;
         background-size: 118% 100%;
-        padding-bottom: 10rem;
+        background-size: cover;
+        padding-bottom: 8rem;
     }
 
-    @include devices(xs) {
-        background-size: 260% 100%;
-        padding-bottom: 2rem;
+    @include devices(sm) {
+        background-position-x: -250px;
+        padding-bottom: 4rem;
     }
 
     &::before {
