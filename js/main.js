@@ -51,14 +51,14 @@ findMoreBtn.addEventListener("click", () => {
 });
 
 const servicesSwiper = new Swiper(".services-swiper", {
-  // spaceBetween: 20,
-  // centeredSlides: true,
-  // speed: 4000,
-  // autoplay: true,
-  // loop: true,
-  // slidesPerView: "auto",
-  // allowTouchMove: false,
-  // disableOnInteraction: true,
+  spaceBetween: 20,
+  centeredSlides: true,
+  speed: 4000,
+  autoplay: true,
+  loop: true,
+  slidesPerView: "auto",
+  allowTouchMove: false,
+  disableOnInteraction: true,
 });
 
 const brandsSwiper = new Swiper(".brands-swiper", {
