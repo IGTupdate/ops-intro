@@ -58,7 +58,7 @@ const servicesSwiper = new Swiper(".services-swiper", {
   loop: true,
   slidesPerView: "auto",
   allowTouchMove: false,
-  disableOnInteraction: true,
+  disableOnInteraction: false,
 });
 
 const brandsSwiper = new Swiper(".brands-swiper", {
