@@ -17,10 +17,10 @@ if (isset($_POST['submit'])) {
 
     try {
         $mail->isSMTP();
-        $mail->Host = 'smtp-relay.sendinblue.com';
+        $mail->Host = 'smtp-relay.brevo.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'contact@opsintro.com';
-        $mail->Password = '9ys5k4Br7zUDZOHV';
+        $mail->Password = 'BZy8dcCKpsEwUm1j';
         $mail->SMTPSecure = 'tls';
         $mail->Port = '587';
         $mail->setFrom($email);
