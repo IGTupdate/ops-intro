@@ -158,6 +158,10 @@
                         @include padding-x(0.75rem, 0.75rem);
                     }
 
+                    &:hover {
+                        box-shadow: none;
+                    }
+
                     &::after {
                         width: 16px;
 

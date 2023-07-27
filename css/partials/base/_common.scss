@@ -194,6 +194,19 @@ button:not(:disabled) {
             }
         }
     }
+
+    &:hover {
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.15);
+    }
+
+    &.bg_green_light,
+    &.bg-white {
+        &:hover {
+            background-color: $green_light;
+            color: $black;
+            box-shadow: 0 5px 12px rgba($color: #ffffff, $alpha: 0.25);
+        }
+    }
 }
 
 .cp {

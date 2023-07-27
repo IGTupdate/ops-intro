@@ -324,6 +324,14 @@ button:not(:disabled) {
     margin-bottom: -9px;
   }
 }
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.btn.bg_green_light:hover, .btn.bg-white:hover {
+  background-color: #D4EEE1;
+  color: #000000;
+  box-shadow: 0 5px 12px rgba(255, 255, 255, 0.25);
+}
 
 .cp {
   padding-top: 7rem;
@@ -995,6 +1003,9 @@ header .nav_btn .menu_close_btn img {
     padding-right: 0.75rem;
   }
 }
+.hero-section .hero_txt .btns_group .btn.diamond_btn:hover {
+  box-shadow: none;
+}
 .hero-section .hero_txt .btns_group .btn.diamond_btn::after {
   width: 16px;
 }
@@ -1025,7 +1036,6 @@ header .nav_btn .menu_close_btn img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
 }
 @media (max-width: 991.98px) {
   #opportunities {
@@ -1036,6 +1046,7 @@ header .nav_btn .menu_close_btn img {
 }
 
 .opportunities_block {
+  color: #ffffff;
   height: 100%;
   display: grid;
   place-items: center;
@@ -3003,6 +3014,9 @@ footer::after {
   border: 4px solid #000000;
   border-radius: 20px;
   box-shadow: rgb(0, 0, 0) 4px 4px 0.6px;
+}
+.contact-section .contact-wrapper .contact-box .contact-outer .contact-inner ul.contact-btns li a.btn.bg_green_dark:hover {
+  color: #000000 !important;
 }
 .contact-section .contact-wrapper .contact-box .contact-outer .contact-inner p.contact-foot-title {
   margin-top: 1.2rem;
@@ -6104,6 +6118,9 @@ footer::after {
   #contact_page {
     height: unset;
   }
+}
+#contact_page .btn.bg_green_light:hover, #contact_page .btn.bg-white:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 991.98px) {
   #contact_page.contactSuccess {

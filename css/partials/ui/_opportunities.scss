@@ -4,7 +4,6 @@
     position: relative;
     background-image: url(../images/abstract.jpg);
     @include bg-cover();
-    color: #fff;
 
     @include devices(md) {
         height: unset;
@@ -14,6 +13,7 @@
 }
 
 .opportunities_block {
+    color: #ffffff;
     height: 100%;
     @include centered();
 
