@@ -109,6 +109,10 @@
                         @include padding-y(1rem, 1rem);
                     }
 
+                    @include devices(sm) {
+                        width: 78%;
+                    }
+
                     h4 {
                         font-size: 1.2rem;
                         font-weight: 600;
@@ -123,6 +127,10 @@
 
                         @include devices(md) {
                             font-size: 1rem;
+                        }
+
+                        @include devices(sm) {
+                            font-size: 0.875rem;
                         }
                     }
 
@@ -139,6 +147,10 @@
 
                         @include devices(md) {
                             font-size: 1.8rem;
+                        }
+
+                        @include devices(sm) {
+                            font-size: 1.5rem;
                         }
                     }
                 }
@@ -240,6 +252,7 @@
         }
 
         @include devices(sm) {
+            font-size: 0.9rem;
             text-align: center;
             padding-left: 1rem;
             padding-right: 1rem;

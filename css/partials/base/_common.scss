@@ -142,7 +142,7 @@ button:not(:disabled) {
     }
 
     @include devices(xs) {
-        font-size: 0.6rem;
+        font-size: 0.62rem;
     }
 
     &.border_btn {

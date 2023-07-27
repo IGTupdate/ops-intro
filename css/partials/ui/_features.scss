@@ -59,7 +59,7 @@
     align-items: center;
 
     @include devices(md) {
-        gap: 4rem;
+        gap: 2rem;
     }
 
     @include devices(xs) {
@@ -105,6 +105,22 @@
         font-weight: 600;
         box-shadow: none !important;
 
+        @include devices(xl) {
+            font-size: 1.3rem;
+        }
+
+        @include devices(lg) {
+            font-size: 1.1rem;
+        }
+
+        @include devices(md) {
+            font-size: 1.5rem;
+        }
+
+        @include devices(sm) {
+            font-size: 1.1rem;
+        }
+
         &::after {
             display: none;
         }
@@ -119,10 +135,22 @@
             position: relative;
 
             &::before {
-                @include pseudo("", 20px, -150px, 85px, 45px);
+                @include pseudo("", 0, -145px, 85px, 35px);
+                @include margin-y(17.5px, 17.5px);
                 background-image: url(../images/arrow-right.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                @include devices(lg) {
+                    width: 70px;
+                    height: 28px;
+                    @include margin-y(14px, 14px);
+                    left: -115px;
+                }
+
+                @include devices(md) {
+                    display: none;
+                }
             }
         }
     }
@@ -135,5 +163,19 @@
 
     .accordion-body {
         padding-top: 0;
+
+        p {
+            @include devices(lg) {
+                font-size: 0.875rem;
+            }
+
+            @include devices(md) {
+                font-size: 1rem;
+            }
+
+            @include devices(sm) {
+                font-size: 0.9rem;
+            }
+        }
     }
 }

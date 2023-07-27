@@ -12,9 +12,5 @@
         @include devices(xl) {
             font-size: 1rem;
         }
-
-        @include devices(sm) {
-            font-size: 1.2rem;
-        }
     }
 }

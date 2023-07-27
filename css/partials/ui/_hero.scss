@@ -89,7 +89,7 @@
             }
 
             @include devices(sm) {
-                font-size: 1.1rem;
+                font-size: 1.05rem;
             }
 
             span {
@@ -131,6 +131,10 @@
                 justify-content: center;
             }
 
+            @include devices(sm) {
+                gap: 1.5rem;
+            }
+
             .btn {
                 &.find_more {
                     @include padding-x(1.3rem, 1.3rem);
@@ -141,13 +145,25 @@
                     @include devices(xl) {
                         font-size: 0.85rem;
                     }
+
+                    @include devices(xs) {
+                        font-size: 0.62rem;
+                    }
                 }
 
                 &.diamond_btn {
                     text-decoration: underline;
 
+                    @include devices(sm) {
+                        @include padding-x(0.75rem, 0.75rem);
+                    }
+
                     &::after {
                         width: 16px;
+
+                        @include devices(sm) {
+                            width: 13px;
+                        }
                     }
                 }
             }
