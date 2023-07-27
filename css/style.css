@@ -6138,6 +6138,15 @@ footer::after {
     place-items: center;
   }
 }
+#contact_page.contactSuccess .social_icons {
+  margin-top: 1rem;
+}
+@media (max-width: 991.98px) {
+  #contact_page.contactSuccess .social_icons {
+    margin-top: 3rem;
+    justify-content: center;
+  }
+}
 #contact_page .contactpage-right-block {
   position: relative;
   height: 100%;
