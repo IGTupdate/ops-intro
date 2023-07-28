@@ -113,7 +113,13 @@ window.addEventListener("scroll", () => {
 
 // Typed
 var typed = new Typed("#typedElement", {
-  strings: ["SERVICES", "OPPORTUNITIES", "PROJECTS"],
+  strings: [
+    "ACCELERATE YOUR SALES PROCESS",
+    "TURN CONTENT INTO CLIENTS",
+    "GAIN VALUABLE AND EXPERT CONTACTS",
+    "CLOSE X10 MORE DEALS",
+    "GENERATE TONS OF NEW CLIENTS",
+  ],
   typeSpeed: 60,
   loop: true,
 });

@@ -476,9 +476,17 @@ footer {
             font-size: 1.1rem;
         }
 
-        // &.foot-para {
-        //     margin-top: 1rem;
-        // }
+        &.foot_contact {
+            @include devices(xs) {
+                font-size: 0.88rem;
+            }
+
+            a {
+                @include devices(xs) {
+                    font-size: 0.88rem;
+                }
+            }
+        }
     }
 
     h5 {

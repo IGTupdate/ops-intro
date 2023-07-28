@@ -342,7 +342,7 @@ button:not(:disabled) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 .filterBtn_wrapper .filterBtn {
   background: #222;
@@ -1111,6 +1111,7 @@ header .nav_btn .menu_close_btn img {
   font-style: italic;
   color: #F40758;
   font-size: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 @media (max-width: 1599.98px) {
   .opportunities_content .title h3 {
@@ -1129,9 +1130,6 @@ header .nav_btn .menu_close_btn img {
   .opportunities_content .title .mid_content .divider {
     width: 100%;
   }
-}
-.opportunities_content .filterBtn_wrapper {
-  margin-top: 1.5rem;
 }
 .opportunities_content .social_icons {
   justify-content: flex-end;
@@ -2543,7 +2541,7 @@ header .nav_btn .menu_close_btn img {
   }
 }
 #faq .accordion-body p:last-child {
-  margin-top: 1rem;
+  margin-top: 1.8rem;
 }
 #faq .accordian-left {
   margin-top: 3rem;
@@ -3131,6 +3129,16 @@ footer::after {
 @media (max-width: 575.98px) {
   .footer-section p {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer-section p.foot_contact {
+    font-size: 0.88rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer-section p.foot_contact a {
+    font-size: 0.88rem;
   }
 }
 .footer-section h5 {
@@ -6146,7 +6154,7 @@ footer::after {
   }
 }
 #contact_page.contactSuccess .social_icons {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 @media (max-width: 991.98px) {
   #contact_page.contactSuccess .social_icons {

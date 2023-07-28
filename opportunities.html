@@ -164,17 +164,17 @@
                 </div>
 
                 <div class="container">
-                    <div class="row">
+                    <div class="row gap-3">
                         <div class="col-12 filterBtn_wrapper">
-                            <button class="filterBtn active" data-filter="estate">
+                            <!-- <button class="filterBtn" data-filter="estate">
                                 <img src="./images/opport/icon-estate.svg" alt="">
                                 Commercial Real Estate
                             </button>
                             <button class="filterBtn" data-filter="renovation">
                                 <img src="./images/opport/icon-renovation.svg" alt="">
                                 Renovation
-                            </button>
-                            <button class="filterBtn" data-filter="suppliers">
+                            </button> -->
+                            <button class="filterBtn active" data-filter="suppliers">
                                 <img src="./images/opport/icon-suppliers.svg" alt="">
                                 Superb Suppliers
                             </button>
@@ -186,6 +186,9 @@
                                 <img src="./images/opport/icon-promotion.svg" alt="">
                                 Promotion & Content
                             </button>
+                        </div>
+
+                        <div class="col-12 filterBtn_wrapper">
                             <button class="filterBtn" data-filter="dev">
                                 <img src="./images/opport/icon-dev.svg" alt="">
                                 Digital Design & Development
@@ -202,7 +205,7 @@
                     <div class="row gap-5 opportunities_row">
 
                         <div class="col-lg-6 left_col">
-                            <div class="box" data-item="estate">
+                            <!-- <div class="box" data-item="estate">
                                 <h5>COMMERCIAL REAL ESTATE</h5>
                                 <p>OPSINTRO understands that when it comes to real-estate, it’s
                                     like searching for a needle in a haystack! We represent some
@@ -216,9 +219,9 @@
                                     <li>> LAND & DEVELOPMENT</li>
                                     <li>> PROPERTY INVESTMENT</li>
                                 </ul>
-                            </div>
+                            </div> -->
 
-                            <div class="box d-none" data-item="suppliers">
+                            <div class="box" data-item="suppliers">
                                 <h5>SUPERB SUPPLIERS</h5>
                                 <p>Sourcing the best products and having a consistent source of
                                     them can be crucial for ensuring you can provide your customers with what they need;
@@ -266,7 +269,7 @@
                                 </ul>
                             </div>
 
-                            <div class="box d-none" data-item="renovation">
+                            <!-- <div class="box d-none" data-item="renovation">
                                 <h5>RENOVATION</h5>
                                 <p>Now it gets exciting! From the smallest to the grandest of
                                     projects; you want someone that you can rely on. Our contacts already work with some
@@ -281,7 +284,7 @@
                                     <li>> CONVERSION & REFURBLISHMENT</li>
                                     <li>> INTERIOR DESIGN</li>
                                 </ul>
-                            </div>
+                            </div> -->
 
                             <div class="box d-none" data-item="dev">
                                 <h5>DIGITAL DESIGN & DEVELOPMENT</h5>
@@ -320,14 +323,14 @@
                         </div>
 
                         <div class="col-lg-5 right_col">
-                            <div class="box" data-item="estate">
+                            <!-- <div class="box" data-item="estate">
                                 <div class="img_wrapper">
                                     <img src="./images/opport/estate1.jpg" alt="">
                                 </div>
                                 <div class="img_wrapper">
                                     <img src="./images/opport/estate2.jpg" alt="">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="box d-none" data-item="connections">
                                 <div class="img_wrapper">
@@ -347,16 +350,16 @@
                                 </div>
                             </div>
 
-                            <div class="box d-none" data-item="renovation">
+                            <!-- <div class="box d-none" data-item="renovation">
                                 <div class="img_wrapper">
                                     <img src="./images/opport/renovation1.jpg" alt="">
                                 </div>
                                 <div class="img_wrapper">
                                     <img src="./images/opport/renovation2.jpg" alt="">
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="box d-none" data-item="suppliers">
+                            <div class="box" data-item="suppliers">
                                 <div class="img_wrapper">
                                     <img src="./images/opport/suppliers1.jpg" alt="">
                                 </div>
@@ -428,7 +431,7 @@
         filterBtns.forEach(btn => {
             btn.addEventListener("click", (e) => {
 
-                e.target.parentElement.querySelector('.active').classList.remove('active');
+                e.target.parentElement.parentElement.querySelector('.active').classList.remove('active');
                 e.target.classList.add('active');
 
                 const btnAttr = btn.getAttribute("data-filter");

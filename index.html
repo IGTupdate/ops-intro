@@ -137,13 +137,12 @@
                     <div class="col-lg-6 p-lg-0" data-aos="fade-right">
                         <div class="hero_txt">
                             <h1>Quit Searching <br>Start Contacting</h1>
-                            <h5 class="hero_subHead">Exclusive, direct & top class connections <br>for the <span
-                                    id="typedElement"></span>
-                                you need right now.</h5>
-                            <p class="hero_para"><b>OPSINTRO</b> provides an exclusive and powerful network of business
-                                experts, brand connections and top-tier service providers enabling you to find new
-                                opportunities and accelerate search results. Specifically by introducing you to key
-                                inside contacts, action takers and decision makers.
+                            <h5 class="hero_subHead">Exclusive, direct & top class connections <br>to <span
+                                    id="typedElement"></span></h5>
+                            <p class="hero_para"><b>OPSINTRO</b> provides an exclusive and powerful network of world
+                                leading business experts, brand connections and top-tier service providers enabling
+                                companies to find new opportunities, accelerate their sales process and generate new
+                                clients. Specifically by introducing you to key inside contacts and action takers.
                             </p>
 
                             <div class="btns_group">
@@ -186,16 +185,16 @@
 
         <div class="services_box">
             <div class="container">
-                <div class="row">
+                <div class="row gap-3">
                     <div class="col-12 filterBtn_wrapper">
-                        <button class="filterBtn active" data-filter="estate">
+                        <!-- <button class="filterBtn active" data-filter="estate">
                             <img src="./images/opport/icon-estate.svg" alt="">
                             Commercial Real Estate
                         </button>
                         <button class="filterBtn" data-filter="renovation">
                             <img src="./images/opport/icon-renovation.svg" alt="">
                             Renovation
-                        </button>
+                        </button> -->
                         <button class="filterBtn" data-filter="suppliers">
                             <img src="./images/opport/icon-suppliers.svg" alt="">
                             Superb Suppliers
@@ -208,6 +207,9 @@
                             <img src="./images/opport/icon-promotion.svg" alt="">
                             Promotion & Content
                         </button>
+                    </div>
+
+                    <div class="col-12 filterBtn_wrapper">
                         <button class="filterBtn" data-filter="dev">
                             <img src="./images/opport/icon-dev.svg" alt="">
                             Digital Design & Development
@@ -358,16 +360,16 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#featuresAccordion-collapseThree" aria-expanded="false"
                                     aria-controls="featuresAccordion-collapseThree">
-                                    SERVICES Focused On OPPORTUNITIES
+                                    SERVICES Focused On Business Acceleration
                                 </button>
                             </h2>
                             <div id="featuresAccordion-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="featuresAccordion-headingThree" data-bs-parent="#featuresAccordion">
                                 <div class="accordion-body">
-                                    <p>This is what makes OpsIntro so unique by focusing specfically on
-                                        services that will contribute to what ever your working on right now. In simple
-                                        terms, that means we specialise in representing industry contacts we’ve tried
-                                        and tested; and know will lead to gaining new opportunties & results.</p>
+                                    <p>This is what makes OpsIntro so unique by focusing specifically on services
+                                        that will contribute to accelerating business performance. In simple terms, that
+                                        means we specialise in representing industry contacts we’ve tried and tested;
+                                        and we know will lead to gaining new clients and quality project results.</p>
                                 </div>
                             </div>
                         </div>
@@ -819,7 +821,8 @@
                                     <p>JOIN THE NETWORK and we’ll jump into discussing what you offer & if we are a good
                                         fit for one another. If we partner with you, we run Introductions campaigns to
                                         promote and recommend you ONLY with dedicated accounts to a pool of top
-                                        potential clients. Real, GENUINE referrals that we’ve qualified based on your
+                                        potential clients.</p>
+                                    <p>Real, GENUINE referrals that we’ve qualified based on your
                                         criteria before we’ll hand them over to you ! Delivering a flurry of HOT leads
                                         into your inbox.</p>
                                 </div>
@@ -975,8 +978,9 @@
                     <div class="col-lg-6">
                         <p class="foot-para">WORK WITH INDUSTRY LEADERS</p>
                         <h5>GET IN TOUCH</h5>
-                        <p>E: <b><a href="mailto:contact@opsintro.com">contact@opsintro.com</a></b></p>
-                        <p>A: Office 114803, PO Box 6945, London, W1A 6US</p>
+                        <p class="foot_contact">E: <b><a href="mailto:contact@opsintro.com">contact@opsintro.com</a></b>
+                        </p>
+                        <p class="foot_contact">A: Office 114803, PO Box 6945, London, W1A 6US</p>
 
                         <ul class="social_icons">
                             <li>
@@ -1075,7 +1079,7 @@
         const featuresSwiper = new Swiper('.features-swiper', {
             simulateTouch: false,
             autoplay: {
-                delay: 2500,
+                delay: 3500,
             },
             on: {
                 slideChange: () => toggleAccordion()
