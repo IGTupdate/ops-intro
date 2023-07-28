@@ -3535,6 +3535,12 @@ footer::after {
 #case_studies .case_studies_content .image_grid #img1 {
   grid-column: span 2;
 }
+@media (max-width: 575.98px) {
+  #case_studies .case_studies_content .image_grid #img2 .img_wrapper,
+  #case_studies .case_studies_content .image_grid #img3 .img_wrapper {
+    min-height: 246px;
+  }
+}
 #case_studies .case_studies_content .image_grid .image {
   position: relative;
   overflow: hidden;

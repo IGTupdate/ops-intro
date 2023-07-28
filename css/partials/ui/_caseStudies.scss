@@ -276,6 +276,15 @@
                 grid-column: span 2;
             }
 
+            #img2,
+            #img3 {
+                .img_wrapper {
+                    @include devices(xs) {
+                        min-height: 246px;
+                    }
+                }
+            }
+
             .image {
                 position: relative;
                 overflow: hidden;
