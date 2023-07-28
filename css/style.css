@@ -1674,19 +1674,23 @@ header .nav_btn .menu_close_btn img {
 .section4 {
   position: relative;
   color: #fff;
-  background: url(../images/section_4.png);
+  background: url(../images/section_4.svg);
   background-repeat: no-repeat;
-  background-size: 103% 100%;
+  background-size: cover;
   background-position-y: -110px;
   background-position-x: -20px;
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
+@media (max-width: 1599.98px) {
+  .section4 {
+    background-position-y: -90px;
+  }
+}
 @media (max-width: 991.98px) {
   .section4 {
     background-position-y: 0;
-    background-size: 118% 100%;
-    background-size: cover;
+    background-position-x: center;
     padding-bottom: 8rem;
   }
 }
@@ -6119,9 +6123,6 @@ footer::after {
     height: unset;
   }
 }
-#contact_page .btn.bg_green_light:hover, #contact_page .btn.bg-white:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-}
 @media (max-width: 991.98px) {
   #contact_page.contactSuccess {
     height: 100vh;
@@ -6316,6 +6317,9 @@ footer::after {
   #contact_page .contactpage_content .bg-img img:last-child {
     right: -10px;
   }
+}
+#contact_page .contactpage_content .btn.bg_green_light:hover, #contact_page .contactpage_content .btn.bg-white:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 #contact_page .contact_form_box {
   border: 5px solid #000000;

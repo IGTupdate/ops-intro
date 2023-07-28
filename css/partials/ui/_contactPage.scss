@@ -9,16 +9,6 @@
         height: unset;
     }
 
-    .btn {
-
-        &.bg_green_light,
-        &.bg-white {
-            &:hover {
-                box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.15);
-            }
-        }
-    }
-
     &.contactSuccess {
         @include devices(md) {
             height: 100vh;
@@ -215,6 +205,16 @@
                 }
             }
 
+        }
+
+        .btn {
+
+            &.bg_green_light,
+            &.bg-white {
+                &:hover {
+                    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.15);
+                }
+            }
         }
     }
 

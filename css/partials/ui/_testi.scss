@@ -1,18 +1,21 @@
 .section4 {
     position: relative;
     color: #fff;
-    background: url(../images/section_4.png);
+    background: url(../images/section_4.svg);
     background-repeat: no-repeat;
-    background-size: 103% 100%;
+    background-size: cover;
     background-position-y: -110px;
     background-position-x: -20px;
     padding-top: 5rem;
     padding-bottom: 3rem;
 
+    @include devices(xl) {
+        background-position-y: -90px;
+    }
+
     @include devices(md) {
         background-position-y: 0;
-        background-size: 118% 100%;
-        background-size: cover;
+        background-position-x: center;
         padding-bottom: 8rem;
     }
 
