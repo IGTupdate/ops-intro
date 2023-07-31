@@ -66,7 +66,7 @@
                         </a>
                     </div>
                     <div class="nav_btn">
-                        <a class="btn border_btn bg-white" href="https://calendly.com/opsintro_ready/strategy">Find an
+                        <a class="btn border_btn bg-white" href="https://dtsx8n40k4l.typeform.com/to/i0cJVZC8">Find an
                             industry contact</a>
                         <button class="menu_btn">
                             <img src="./images/menu-btn-white.svg" alt="menu-btn">
@@ -135,7 +135,7 @@
                                 the
                                 Network</a>
                             <a class="btn plane_btn border_btn bg-white"
-                                href="https://calendly.com/opsintro_ready/strategy">Find an industry
+                                href="https://dtsx8n40k4l.typeform.com/to/i0cJVZC8">Find an industry
                                 contact</a>
                         </div>
                     </div>
@@ -355,12 +355,6 @@
     <!-- Swiper-slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.js"></script>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Typedjs -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
@@ -371,6 +365,29 @@
 
     <!-- Main JS -->
     <script src="./js/main.js"></script>
+
+    <script>
+        const whyopsSwiper = new Swiper(".whyops_swiper", {
+            slidesPerView: 1,
+            slideToClickedSlide: true,
+            touchMoveStopPropagation: false,
+            simulateTouch: false,
+            allowSwipeToNext: true,
+            allowSwipeToPrev: true,
+            allowPageScroll: "auto ",
+            navigation: {
+                nextEl: ".whyops_swiper .swiper-button-next",
+                prevEl: ".whyops_swiper .swiper-button-prev",
+            },
+        });
+
+        const whyopsInnerSwiper = new Swiper(".whyops_inner_swiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 
 </body>
 

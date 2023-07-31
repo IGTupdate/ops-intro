@@ -5,10 +5,10 @@
     @include bg-cover();
 
     @include devices(lg) {
-        height: unset;
+        height: auto;
     }
 
-    // to diable AOS-animations on Small Screens
+    // to disable AOS-animations on Small Screens
     .aos-animate,
     .aos-init {
         @include devices(lg) {
@@ -25,7 +25,7 @@
 
         @include devices(lg) {
             flex-direction: column;
-            height: unset;
+            height: auto;
         }
 
         .case_studies_txt {
@@ -274,6 +274,12 @@
 
             #img1 {
                 grid-column: span 2;
+
+                .img_wrapper {
+                    @include devices(xs) {
+                        min-height: 212px;
+                    }
+                }
             }
 
             #img2,
@@ -289,12 +295,10 @@
                 position: relative;
                 overflow: hidden;
 
-                &:hover .hide {
-                    display: block;
-                    opacity: 1;
-
-                    @include devices(lg) {
-                        display: none;
+                &:hover {
+                    .show_on_hover {
+                        opacity: 1;
+                        transform: translateY(0);
                     }
                 }
 
@@ -315,9 +319,14 @@
                     left: 0;
                     width: 100%;
                     text-transform: uppercase;
-                    transition: opacity .5s ease-in-out;
-                    -moz-transition: opacity .5s ease-in-out;
-                    -webkit-transition: opacity .5s ease-in-out;
+                    opacity: 0;
+                    transform: translateY(100%);
+                    transition: .3s ease;
+
+                    @include devices(lg) {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
 
                     div {
                         padding: 20px;
@@ -370,14 +379,6 @@
                     }
                 }
 
-                .hide {
-                    display: none;
-
-                    @include devices(lg) {
-                        display: block;
-                    }
-                }
-
             }
         }
     }
@@ -389,7 +390,7 @@
         place-items: center;
 
         @include devices(lg) {
-            height: unset;
+            height: auto;
             @include padding-y(1rem, 1rem);
         }
     }
@@ -548,9 +549,4 @@
     .text {
         font-size: 11px
     }
-}
-
-
-.overflow {
-    overflow: hidden;
 }

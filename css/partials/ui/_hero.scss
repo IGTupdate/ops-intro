@@ -29,7 +29,11 @@
 
     @include devices(sm) {
         padding-top: 120px;
-        height: 820px;
+        height: 900px;
+    }
+
+    @include devices(xs) {
+        height: 800px;
     }
 
     .hero_row {
@@ -96,11 +100,19 @@
                 color: $pink;
             }
 
-            br {
-                @include devices(sm) {
-                    display: none;
-                }
-            }
+            // .mob_break {
+            //     display: none;
+
+            //     @include devices(sm) {
+            //         display: unset;
+            //     }
+            // }
+
+            // br {
+            //     @include devices(sm) {
+            //         display: none;
+            //     }
+            // }
         }
 
         .hero_para {
