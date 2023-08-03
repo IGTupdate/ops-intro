@@ -29,10 +29,6 @@
 
     @include devices(sm) {
         padding-top: 120px;
-        height: 900px;
-    }
-
-    @include devices(xs) {
         height: 800px;
     }
 
