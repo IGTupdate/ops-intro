@@ -42,6 +42,7 @@ const servicesSwiper = new Swiper(".services-swiper", {
 
 /*-------- Feature section's Autoplay-Accordion -------*/
 const accordionButtons = document.querySelectorAll("#features .accordion-button");
+const featuresTxt = document.querySelector(".features_txt");
 
 // Function to toggle the accordion panels
 const toggleAccordion = () => {
@@ -67,6 +68,15 @@ const featuresSwiper = new Swiper(".features-swiper", {
         slideChange: () => toggleAccordion(),
     },
 });
+
+featuresTxt.addEventListener('mouseover', () => {
+    featuresSwiper.autoplay.stop();
+});
+
+featuresTxt.addEventListener('mouseout', () => {
+    featuresSwiper.autoplay.start();
+});
+
 
 /*-------- Testimonials Swiper -------*/
 const testiSwiper1 = new Swiper(".testi-swiper-img", {
