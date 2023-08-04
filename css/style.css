@@ -3531,22 +3531,11 @@ footer::after {
 }
 @media (max-width: 767.98px) {
   #case_studies .case_studies_content .image_grid {
-    grid-template-columns: auto;
+    display: unset;
   }
 }
 #case_studies .case_studies_content .image_grid #img1 {
   grid-column: span 2;
-}
-@media (max-width: 575.98px) {
-  #case_studies .case_studies_content .image_grid #img1 .img_wrapper {
-    min-height: 212px;
-  }
-}
-@media (max-width: 575.98px) {
-  #case_studies .case_studies_content .image_grid #img2 .img_wrapper,
-  #case_studies .case_studies_content .image_grid #img3 .img_wrapper {
-    min-height: 246px;
-  }
 }
 #case_studies .case_studies_content .image_grid .image {
   position: relative;
