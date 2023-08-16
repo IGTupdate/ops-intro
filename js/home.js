@@ -62,7 +62,7 @@ const toggleAccordion = () => {
 const featuresSwiper = new Swiper(".features-swiper", {
     simulateTouch: false,
     autoplay: {
-        delay: 3500,
+        delay: 4000,
     },
     on: {
         slideChange: () => toggleAccordion(),
@@ -74,6 +74,10 @@ featuresTxt.addEventListener('mouseover', () => {
 });
 
 featuresTxt.addEventListener('mouseout', () => {
+    featuresSwiper.autoplay.start();
+});
+
+featuresTxt.addEventListener('touchend', () => {
     featuresSwiper.autoplay.start();
 });
 
